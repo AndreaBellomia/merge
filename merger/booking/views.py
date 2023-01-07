@@ -1,0 +1,116 @@
+# Application Import 
+from booking.models             import Appointments, Booking
+from booking.api.serializers    import AppointmentsSerializer, BookingSerializer
+
+# Django Import 
+from django.shortcuts           import get_object_or_404
+
+# Rest Frameword import
+from rest_framework             import generics, status
+from rest_framework.views       import APIView
+from rest_framework.response    import Response
+
+
+# Other Library Import 
+
+
+
+
+
+class AppointmentsListApiView(APIView):
+    """
+    EndPoints Return a list of appointments and add new appointment
+    """
+
+    def get(self, request):
+        preboking = Appointments.objects.all()
+        serializer = AppointmentsSerializer(preboking, many=True)
+        return Response(serializer.data)
+    
+    def post(self, request):
+        serializer = AppointmentsSerializer(data=request.data)
+        if serializer.is_valid() and serializer.validate(data=request.data):
+            serializer.save()
+            return Response(serializer.data, status=status.HTTP_201_CREATED)
+        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+
+    
+class AppointmentDatailApiView(APIView):
+    """
+    EndPoints Return a specific appointment update and delete one
+    """
+
+    def get_object(self, pk):
+        query = get_object_or_404(Appointments, pk=pk)
+        return query
+
+    def get(self, request, pk):
+        instace = self.get_object(pk)
+        serializer = AppointmentsSerializer(instace)
+        return Response(serializer.data)    
+
+    def put(self, request, pk):
+        instace = self.get_object(pk)
+        serializer = AppointmentsSerializer(instace, data=request.data)
+        if serializer.is_valid() and serializer.validate(data=request.data):
+            serializer.save()
+            return Response(serializer.data, status=status.HTTP_201_CREATED)
+        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+    
+    def delete(self, request, pk):
+        instace = self.get_object(pk)
+        instace.delete()
+        return Response(status=status.HTTP_204_NO_CONTENT)
+
+
+class BookingApiView(generics.ListCreateAPIView):
+    """
+    EndPoints Return list of booking and create new one
+    """
+
+    queryset = Booking.objects.all()
+    serializer_class = BookingSerializer
+    
+    def perform_create(self, serializer):
+        query = serializer.validated_data['appointments']
+        serializer.save(start_time=query.start_time, 
+                        end_time=query.end_time,
+                        stato='WAIT')
+
+
+class BookingUpdateDeleteApiView(APIView):
+    """
+    EndPoints Return update and delete sigle booking
+    """
+
+
+    def get_object(self, pk):
+        query = get_object_or_404(Booking, pk=pk)
+        return query
+    
+    def get(self, request, pk):
+        instace = self.get_object(pk)
+        if instace.abilitato:
+            serializer = BookingSerializer(instace)
+            return Response(serializer.data)  
+        return Response(status=status.HTTP_204_NO_CONTENT)          
+
+    def patch(self, request, pk):
+        instace = self.get_object(pk)
+        serializer = BookingSerializer(instace, data=request.data, partial=True)
+        if serializer.is_valid():
+            serializer.save()
+            return Response(serializer.data, status=status.HTTP_201_CREATED)
+
+    def put(self, request, pk):
+        instace = self.get_object(pk)
+        serializer = BookingSerializer(instace, data=request.data)
+        if serializer.is_valid():
+            serializer.save()
+            return Response(serializer.data, status=status.HTTP_201_CREATED)
+        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+    
+    def delete(self, request, pk):
+        instace = self.get_object(pk)
+        instace.delete()
+        return Response(status=status.HTTP_204_NO_CONTENT)
