@@ -1,6 +1,7 @@
 <template>
   <div class="home">
     <Calendar-main/>
+  </div>
 </template>
 
 <script setup>

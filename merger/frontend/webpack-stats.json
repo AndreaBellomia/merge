@@ -1,5 +1,5 @@
 {
-  "status": "error",
+  "status": "done",
   "assets": {
     "app.177ddcfc87ecc585.hot-update.js": {
       "name": "app.177ddcfc87ecc585.hot-update.js",
@@ -361,6 +361,16 @@
       "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.dcefb9e77efa7735.hot-update.json",
       "publicPath": "http://127.0.0.1:8080/app.dcefb9e77efa7735.hot-update.json"
     },
+    "app.e0e70bce8a4358e2.hot-update.js": {
+      "name": "app.e0e70bce8a4358e2.hot-update.js",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.e0e70bce8a4358e2.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/app.e0e70bce8a4358e2.hot-update.js"
+    },
+    "app.e0e70bce8a4358e2.hot-update.json": {
+      "name": "app.e0e70bce8a4358e2.hot-update.json",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.e0e70bce8a4358e2.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/app.e0e70bce8a4358e2.hot-update.json"
+    },
     "app.e4562937484a10a2.hot-update.js": {
       "name": "app.e4562937484a10a2.hot-update.js",
       "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.e4562937484a10a2.hot-update.js",
@@ -440,10 +450,10 @@
   "chunks": {
     "app": [
       "bundle.js",
-      "app.4979c40457e3d9f1.hot-update.js"
+      "app.e0e70bce8a4358e2.hot-update.js"
     ]
   },
   "publicPath": "http://127.0.0.1:8080/",
   "error": "ModuleError",
-  "message": "Module Error (from ./node_modules/vue-loader/dist/index.js):\n\nVueCompilerError: Element is missing end tag.\nat C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\src\\views\\BookingView.vue:2:3\n1  |  <template>\n2  |    <div class=\"home\">\n   |    ^\n3  |      <Calendar-main/>\n4  |  </template>\n"
+  "message": "Module Error (from ./node_modules/vue-loader/dist/index.js):\n\nVueCompilerError: \nVueCompilerError: Element is missing end tag.\nat C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\src\\views\\BookingView.vue:2:3\n1  |  <template>\n2  |    <div class=\"home\">\n   |    ^\n3  |      <Calendar-main/>\n4  |  </template>\n\nat C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\src\\views\\BookingView.vue:2:3\n1  |  <template>\n2  |    <div class=\"home\">\n   |    ^\n3  |      <Calendar-main/>\n4  |  </template>\n"
 }
