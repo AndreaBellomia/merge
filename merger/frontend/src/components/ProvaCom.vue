@@ -9,7 +9,7 @@
 
 import { getAPI } from '../axios';
 
-import { ref, onMounted } from "vue";
+import {  ref, onMounted } from "vue";
 console.log()
 const info = ref(null)
 onMounted(async () => {
