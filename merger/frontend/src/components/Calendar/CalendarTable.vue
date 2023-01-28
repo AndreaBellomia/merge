@@ -1,6 +1,16 @@
 <template>
-  <div class="flex-column max-h-max max-w-max text-slate-100 text-start">
-    <div class="flex grid grid-cols-3 py-3 bg-violet-600">
+  <div class="flex-column max-h-max max-w-max text-slate-800 text-start m-2">
+    <div
+      class="
+        flex
+        grid grid-cols-3
+        py-3
+        bg-sky-50
+        rounded-lg
+        border border-sky-100
+        mb-3
+      "
+    >
       <h1 class="px-3 text-4xl font-bold">{{ this.DateTime["year"] }}</h1>
 
       <div class="flex items-center col-span-2 justify-between px-4">
@@ -22,14 +32,22 @@
         </span>
       </div>
     </div>
-    <div class="bg-neutral-100 text-slate-500 px-10">
-      <div class="grid grid-cols-7 py-2 px-1 text-center">
+    <div
+      class="
+        bg-sky-50
+        rounded-lg
+        px-10
+        border border-sky-100
+      "
+    >
+      <div class="grid grid-cols-7 py-3 px-1 text-center">
         <div v-for="(item, index) in this.dayName" :key="index">
           <!-- item.slice(0, 3) -->
           <p class="font-semibold custom-text">{{ item }}</p>
         </div>
       </div>
-      <div class="grid grid-cols-7 text-center px-1 text-black pb-1 pt-1">
+      <hr />
+      <div class="grid grid-cols-7 text-center px-1 text-black pb-1">
         <div
           v-for="(day, index) in getDaysInMonth()"
           :style="`
@@ -80,21 +98,27 @@ export default {
       required: true,
     },
   },
-  components:{
-    TableGridDay
+  components: {
+    TableGridDay,
   },
   methods: {
     getDaysInMonth: function () {
-        "Return a Nuber of day in a Month"
-        return new Date(this.DateTime['year'], this.DateTime['month'] + 1, 0).getDate()
+      "Return a Nuber of day in a Month";
+      return new Date(
+        this.DateTime["year"],
+        this.DateTime["month"] + 1,
+        0
+      ).getDate();
     },
 
     getFirstDayInMonth: function () {
-        "Calculate a col of start"
-        return new Date(this.DateTime['year'], this.DateTime['month'], 1).getUTCDay()+1
+      "Calculate a col of start";
+      return (
+        new Date(this.DateTime["year"], this.DateTime["month"], 1).getUTCDay() +
+        1
+      );
     },
-
-  }
+  },
 };
 </script>
 

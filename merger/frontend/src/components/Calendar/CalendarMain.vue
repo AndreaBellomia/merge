@@ -1,15 +1,10 @@
 <template>
   <div class="flex-row max-w-max">
-    <div v-if="prenotationProgress == 0" class="transition ease-in-out">
+    <div v-if="prenotationProgress == 0" class="">
       <div
         class="
-          flex flex-col
-          bg-neutral-100
-          max-w-max
-          md:flex-row
+          custom-grid-org
           prevent-select
-          transition
-          ease-in-out
         "
       >
         <CalendarTable
@@ -25,21 +20,64 @@
         />
 
         <calendarDay
-          class="transition ease-in-out"
+          class=""
           :DateTime="DateTime"
           :QueryInsace="QueryInsace"
           :monthName="monthName"
           :dayName="dayName"
+          @day-query="(qury) => (QuerrySelected = qury.id)"
         />
       </div>
-      <CalendarConfirm @next-page="prenotationProgress ++"/>
+      <div class="custom-btn-container">
+        
+        <CalendarConfirm @next-page="prenotationProgress ++" :QuerrySelected="QuerrySelected" />
+      </div>
+      
     </div>
     <div v-else-if="prenotationProgress == 1">
-      <FormBooking/>
+      <FormBooking
+      :QueryInsace="QueryInsace"
+      :QuerrySelected="QuerrySelected"
+      :monthName="monthName"
+      :dayName="dayName"
+      />
+      <div class="custom-btn-container">
+        <CalendarConfirm @next-page="prenotationProgress ++"/>
+      </div>
     </div>
     
   </div>
 </template>
+
+<style lang="scss" scoped>
+.custom-btn-container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.custom-grid-org {
+  display: flex;
+  flex-direction: row;
+}
+
+.prevent-select {
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+}
+
+@media only screen and (max-width: 885px) {
+  .custom-btn-container {
+    justify-content: center;
+  }
+  .custom-grid-org {
+    display: flex;
+    flex-direction: column;
+  }
+}
+</style>
+
+
     
 <script>
 import { getAPI } from "../../axios";
@@ -72,6 +110,8 @@ export default {
 
       QueryInsace: [],
 
+      QuerrySelected: undefined,
+
       monthName: [
         "Gennaio",
         "Febbraio",
@@ -101,6 +141,7 @@ export default {
         { day: 25, month: 11 },
         { day: 31, month: 9 },
         { day: 15, month: 7 },
+        { day: 1, month: 0 },
       ],
 
       prenotationProgress: 0,
@@ -142,18 +183,8 @@ export default {
     },
   },
 
-  created() {
+  mounted() {
     this.getHTTP_appointment();
   },
 };
 </script>
-
-
-<style>
-.prevent-select {
-  -webkit-user-select: none; /* Safari */
-  -ms-user-select: none; /* IE 10 and IE 11 */
-  user-select: none; /* Standard syntax */
-}
-</style>
-

@@ -1,12 +1,22 @@
 <template>
-  <div class="flex-row md:border-l border-slate-300 max-w-max justify-center">
-    <div class="bg-violet-600 px-12">
+  <div
+    class="
+      flex-row
+      max-w-max
+      justify-center
+      m-2
+      bg-sky-50
+      rounded-lg
+      border border-sky-100
+    "
+  >
+    <div class="px-12">
       <div
         class="
           flex
           justify-center
           items-center
-          text-slate-100
+          text-slate-800
           font-bold
           w-80
           px-2
@@ -26,6 +36,7 @@
         </div>
       </div>
     </div>
+    <hr class="mx-3" />
     <div class="flex flex-row justify-center max-w-full">
       <div class="flex flex-col max-w-max">
         <h2 class="justify-self-center font-semibold text-slate-500 py-1">
@@ -40,6 +51,7 @@
           :DateTime="DateTime"
           :monthName="monthName"
           :dayName="dayName"
+          @day-query="(qury) => ($emit('dayQuery', qury))"
         />
       </div>
     </div>
@@ -88,6 +100,10 @@ export default {
       ).getUTCDay();
       return this.propsdayName[number_of_day];
     },
+    prova(ciao){
+      console.log(ciao)
+      // $emit('queryDay', qury)
+    }
   },
 };
 </script>

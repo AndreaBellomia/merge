@@ -1,15 +1,18 @@
 <template>
-   
-  <div
+  <div>
+    <div
+    
     v-if="ceckData(this.item['start_time'])"
+    @click="$emit('dayQuery', this.item)"
     class="
       flex
-      bg-neutral-200
+      bg-sky-100
+      border border-sky-200
       max-w-full
       mt-2
       mx-2
       rounded-lg
-      hover:cursor-pointer hover:bg-indigo-100
+      hover:cursor-pointer hover:bg-sky-200
     "
   >
     <div class="flex-row">
@@ -28,6 +31,8 @@
       </p>
     </div>
   </div>
+  </div>
+  
 </template>
 
 <script>
@@ -67,11 +72,15 @@ export default {
     },
 
     ceckData: function (date_time) {
-        const date = new Date(date_time);
-        if (this.DateTime.day == date.getDate() && this.DateTime.month == date.getMonth() && this.DateTime.year == date.getFullYear()) {
-            return true
-        }
-    }
+      const date = new Date(date_time);
+      if (
+        this.DateTime.day == date.getDate() &&
+        this.DateTime.month == date.getMonth() &&
+        this.DateTime.year == date.getFullYear()
+      ) {
+        return true;
+      }
+    },
   },
 };
 </script>

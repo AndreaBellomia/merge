@@ -9,18 +9,18 @@
       h-10
       border border-transparent
       text-center
-      hover:cursor-pointer hover:bg-indigo-100
+      hover:cursor-pointer hover:bg-slate-200
       border
     "
     :class="`
         ${
           styleCurrentDay(cursor)
-            ? 'ring-2 ring-offset-2 ring-indigo-500'
+            ? 'ring-2 ring-offset-2 ring-sky-500'
             : null
         }
         ${
           styleSelectedDay(cursor)
-            ? 'bg-indigo-200 border border-indigo-300'
+            ? 'bg-sky-200 border border-sky-300 hover:bg-sky-300'
             : null
         }`"
     @click="$emit('daySelected', cursor)"
