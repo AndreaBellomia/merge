@@ -1,12 +1,7 @@
 <template>
   <div class="flex-row max-w-max">
     <div v-if="prenotationProgress == 0" class="">
-      <div
-        class="
-          custom-grid-org
-          prevent-select
-        "
-      >
+      <div class="custom-grid-org prevent-select">
         <CalendarTable
           class=""
           :DateTime="DateTime"
@@ -25,27 +20,50 @@
           :QueryInsace="QueryInsace"
           :monthName="monthName"
           :dayName="dayName"
-          @day-query="(qury) => (QuerrySelected = qury.id)"
+          @day-query="(qury) => (QuerrySelected = qury)"
         />
       </div>
       <div class="custom-btn-container">
-        
-        <CalendarConfirm @next-page="prenotationProgress ++" :QuerrySelected="QuerrySelected" />
+        <CalendarConfirm
+          @next-page="prenotationProgress++"
+          :nextPageBool="nextPageCeck()"
+          :btnMsg="'Conferma'"
+          :errorMsg="'Seleziona una data'"
+        />
       </div>
-      
     </div>
     <div v-else-if="prenotationProgress == 1">
       <FormBooking
-      :QueryInsace="QueryInsace"
-      :QuerrySelected="QuerrySelected"
-      :monthName="monthName"
-      :dayName="dayName"
+        :QuerrySelected="QuerrySelected"
+        :monthName="monthName"
+        :dayName="dayName"
+        @form-is-valid="(formValid) => (formValidated = formValid)"
       />
       <div class="custom-btn-container">
-        <CalendarConfirm @next-page="prenotationProgress ++"/>
+        <CalendarConfirm
+          @next-page="confirmPrenotation(formValidated)"
+          :nextPageBool="formValidated.status"
+          :btnMsg="'Prenota'"
+          :errorMsg="'Inserisci le informazioni richieste'"
+        />
       </div>
     </div>
-    
+    <div v-else-if="prenotationProgress == 2">
+      <FormBooking
+        :QuerrySelected="QuerrySelected"
+        :monthName="monthName"
+        :dayName="dayName"
+        @form-is-valid="(formValid) => (formValidated = formValid)"
+      />
+      <div class="custom-btn-container">
+        <CalendarConfirm
+          @next-page="confirmPrenotation(formValidated)"
+          :nextPageBool="formValidated.status"
+          :btnMsg="'Prenota'"
+          :errorMsg="'Inserisci le informazioni richieste'"
+        />
+      </div>
+    </div>
   </div>
 </template>
 
@@ -80,7 +98,7 @@
 
     
 <script>
-import { getAPI } from "../../axios";
+import axios from "axios";
 
 import CalendarDay from "./CalendarDay.vue";
 import CalendarTable from "./CalendarTable.vue";
@@ -111,6 +129,8 @@ export default {
       QueryInsace: [],
 
       QuerrySelected: undefined,
+
+      formValidated: Object,
 
       monthName: [
         "Gennaio",
@@ -148,6 +168,10 @@ export default {
     };
   },
 
+  mounted() {
+    this.getHTTP_appointment();
+  },
+
   methods: {
     updateData: function () {
       const formatte = new Date(
@@ -176,15 +200,47 @@ export default {
       this.updateData();
     },
 
-    getHTTP_appointment: function () {
-      getAPI("appointments/?format=json").then((response) => {
-        this.QueryInsace = response.data;
-      });
+    nextPageCeck: function () {
+      try {
+        if (this.QuerrySelected.id) {
+          return false;
+        }
+        return true;
+      } catch (error) {
+        return undefined;
+      }
     },
-  },
 
-  mounted() {
-    this.getHTTP_appointment();
+    confirmPrenotation: function (form) {
+      this.prenotationProgress++;
+      this.postHTTP_appointment(form.body, form.title, this.QuerrySelected.id);
+    },
+
+    postHTTP_appointment: function (val_desc, val_type, val_app) {
+      axios
+        .post("/api/booking/", {
+          description: val_desc,
+          type: val_type,
+          appointments: val_app,
+        })
+        .then((response) => {
+          console.log(response);
+        })
+        .catch((error) => {
+          console.log(error);
+        });
+    },
+
+    getHTTP_appointment: function () {
+      axios
+        .get("api/appointments/?format=json")
+        .then((response) => {
+          this.QueryInsace = response.data;
+        })
+        .catch((error) => {
+          console.log(error);
+        });
+    },
   },
 };
 </script>

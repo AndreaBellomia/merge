@@ -4,9 +4,10 @@
     
     v-if="ceckData(this.item['start_time'])"
     @click="$emit('dayQuery', this.item)"
+    :class="`${selected ? 'ring-2 ring-blue-500 bg-sky-200' : 'bg-sky-100'}`"
     class="
       flex
-      bg-sky-100
+      
       border border-sky-200
       max-w-full
       mt-2
@@ -54,7 +55,12 @@ export default {
       type: Array,
       required: true,
     },
+    selected: {
+      default: false,
+    }
+
   },
+  
   methods: {
     dataFormattTime: function (date_time) {
       const date = new Date(date_time);

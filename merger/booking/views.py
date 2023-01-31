@@ -1,9 +1,11 @@
 # Application Import 
 from booking.models             import Appointments, Booking
 from booking.api.serializers    import AppointmentsSerializer, BookingSerializer
+from booking.api.validators     import BookingValidator
 
 # Django Import 
 from django.shortcuts           import get_object_or_404
+from django.utils               import timezone
 
 # Rest Frameword import
 from rest_framework             import generics, status
@@ -23,13 +25,13 @@ class AppointmentsListApiView(APIView):
     """
 
     def get(self, request):
-        preboking = Appointments.objects.all()
-        serializer = AppointmentsSerializer(preboking, many=True)
+        query_instace = Appointments.objects.filter(start_time__gte=timezone.now(), state='FREE')
+        serializer = AppointmentsSerializer(query_instace, many=True)
         return Response(serializer.data)
     
     def post(self, request):
         serializer = AppointmentsSerializer(data=request.data)
-        if serializer.is_valid() and serializer.validate(data=request.data):
+        if serializer.is_valid() and serializer.validate_data(request.data):
             serializer.save()
             return Response(serializer.data, status=status.HTTP_201_CREATED)
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
@@ -73,9 +75,14 @@ class BookingApiView(generics.ListCreateAPIView):
     
     def perform_create(self, serializer):
         query = serializer.validated_data['appointments']
-        serializer.save(start_time=query.start_time, 
-                        end_time=query.end_time,
-                        stato='WAIT')
+        instace = Appointments.objects.get(pk=self.request.data['appointments'])
+        if BookingValidator(instace).ValidateAppBooking():
+            instace.state='WAIT'
+            instace.save()
+            serializer.save(start_time=query.start_time, 
+                            end_time=query.end_time,
+                            stato='WAIT',
+                            commiter=self.request.user)
 
 
 class BookingUpdateDeleteApiView(APIView):

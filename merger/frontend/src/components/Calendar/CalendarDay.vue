@@ -25,13 +25,13 @@
       >
         <div class="grid grid-cols-2 justify-center items-center py-1">
           <p class="row-span-2 text-5xl pb-1 justify-self-end prevent-select">
-            {{ this.propsDateTime.day }}
+            {{ this.DateTime.day }}
           </p>
           <p class="pt-1 pl-1 prevent-select">
-            {{ this.propsmonthName[this.DateTime.month] }}
+            {{ this.monthName[this.DateTime.month] }}
           </p>
           <p class="pb-1 pl-1 prevent-select">
-            {{ getWeekDey(this.propsDateTime.day) }}
+            {{ getWeekDey(this.DateTime.day) }}
           </p>
         </div>
       </div>
@@ -45,13 +45,16 @@
       </div>
     </div>
     <div class="overflow-auto custom-height mb-2">
-      <div v-for="(item, index) in this.QueryInsace" :key="index">
+      <div v-for="(item, index) in this.QueryInsace" :key="index" class="mb-2">
+
         <Appointment
+          
           :item="item"
           :DateTime="DateTime"
           :monthName="monthName"
           :dayName="dayName"
-          @day-query="(qury) => ($emit('dayQuery', qury))"
+          :selected="currentSelected(item)"
+          @day-query="(qury) => ($emit('dayQuery', qury), this.current_select = qury)"
         />
       </div>
     </div>
@@ -80,30 +83,32 @@ export default {
       required: true,
     },
   },
+  data(){
+    return {
+      current_select: Number
+    }
+  },
   components: {
     Appointment,
-  },
-  data(props) {
-    return {
-      propsDateTime: props.DateTime,
-      propsQueryInsace: props.QueryInsace,
-      propsmonthName: props.monthName,
-      propsdayName: props.dayName,
-    };
   },
   methods: {
     getWeekDey: function (day) {
       const number_of_day = new Date(
-        this.propsDateTime["year"],
-        this.propsDateTime["month"],
+        this.DateTime["year"],
+        this.QueryInsace["month"],
         day
       ).getUTCDay();
-      return this.propsdayName[number_of_day];
+      return this.dayName[number_of_day];
     },
-    prova(ciao){
-      console.log(ciao)
-      // $emit('queryDay', qury)
+
+    currentSelected: function (item) {
+      if (item.id == this.current_select.id) {
+        return true
+      }
+      return false
     }
+
+    
   },
 };
 </script>
@@ -116,15 +121,16 @@ export default {
 }
 
 ::-webkit-scrollbar {
-  width: 10px;
+  width: 8px;
+  height: 8px;
 }
 
 ::-webkit-scrollbar-track {
-  background: rgba(0, 0, 0, 0);
+  background: rgba(59, 57, 201, 0);
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #7c3aed;
+  background-color: #4b48ff;
   border-radius: 20px;
 }
 </style>
