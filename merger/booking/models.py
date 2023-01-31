@@ -9,10 +9,18 @@ class Appointments(models.Model):
     """
     Models di database: Contiene le fasce orario messe a disposizione dell'utenza da una signola utenza
     """
+    STATO = [
+        ('FREE', 'Available'),
+        ('WAIT', 'Wait'),
+        ('BLOCK', 'Booked')
+
+    ]
+    
     owner = models.ForeignKey(User, on_delete=models.CASCADE)
     start_time = models.DateTimeField()
     end_time = models.DateTimeField()
-    stato = models.BooleanField(default=True)
+    active = models.BooleanField(default=True)
+    state = models.CharField(choices=STATO, max_length=5)
 
     def __str__(self):
         return self.owner.username + ' ' + str(self.start_time)
