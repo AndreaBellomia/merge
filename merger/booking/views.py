@@ -85,6 +85,7 @@ class BookingApiView(generics.ListCreateAPIView):
                             commiter=self.request.user)
 
 
+
 class BookingUpdateDeleteApiView(APIView):
     """
     EndPoints Return update and delete sigle booking

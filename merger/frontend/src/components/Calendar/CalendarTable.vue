@@ -15,11 +15,14 @@
 
       <div class="flex items-center col-span-2 justify-between px-4">
         <span
+          v-if="buttonPrevMonth()"
           class="material-icons cursor-pointer prevent-select text-3xl pt-1"
           @click="$emit('prevMonth')"
         >
           chevron_left
         </span>
+        <div v-else class="w-5">
+        </div>
         <h1 class="text-xl px-3 justify-self-center font-semibold">
           {{ this.monthName[this.DateTime["month"]] }}
         </h1>
@@ -106,7 +109,7 @@ export default {
       "Return a Nuber of day in a Month";
       return new Date(
         this.DateTime["year"],
-        this.DateTime["month"] + 1,
+        this.DateTime["year"] + 1,
         0
       ).getDate();
     },
@@ -118,6 +121,13 @@ export default {
         1
       );
     },
+
+    buttonPrevMonth: function () {
+      if (this.DateTime["year"] == this.DateTime["current_year"] && this.DateTime["month"] == this.DateTime["current_month"]){
+        return false
+      }
+      return true
+    }
   },
 };
 </script>

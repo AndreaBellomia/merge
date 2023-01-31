@@ -42,27 +42,21 @@
       <div class="custom-btn-container">
         <CalendarConfirm
           @next-page="confirmPrenotation(formValidated)"
+          @back-page="prenotationProgress--"
           :nextPageBool="formValidated.status"
           :btnMsg="'Prenota'"
           :errorMsg="'Inserisci le informazioni richieste'"
+          :backActive="true"
         />
       </div>
     </div>
-    <div v-else-if="prenotationProgress == 2">
-      <FormBooking
-        :QuerrySelected="QuerrySelected"
-        :monthName="monthName"
-        :dayName="dayName"
-        @form-is-valid="(formValid) => (formValidated = formValid)"
+    <div v-else-if="prenotationProgress == 3">
+      <ConfirmPage
+      :prenotation="QuerrySelected"
+      :monthName="monthName"
+      :dayName="dayName"
+      @back-home="prenotationProgress = 0"
       />
-      <div class="custom-btn-container">
-        <CalendarConfirm
-          @next-page="confirmPrenotation(formValidated)"
-          :nextPageBool="formValidated.status"
-          :btnMsg="'Prenota'"
-          :errorMsg="'Inserisci le informazioni richieste'"
-        />
-      </div>
     </div>
   </div>
 </template>
@@ -82,6 +76,11 @@
   -webkit-user-select: none; /* Safari */
   -ms-user-select: none; /* IE 10 and IE 11 */
   user-select: none; /* Standard syntax */
+}
+.centered {
+  position: fixed; /* or absolute */
+  top: 25%;
+  left: 25%;
 }
 
 @media only screen and (max-width: 885px) {
@@ -104,6 +103,7 @@ import CalendarDay from "./CalendarDay.vue";
 import CalendarTable from "./CalendarTable.vue";
 import CalendarConfirm from "./CalendarConfirm.vue";
 import FormBooking from "./FormBooking.vue";
+import ConfirmPage from "./ConfirmPage.vue"
 
 const date = new Date();
 
@@ -113,6 +113,7 @@ export default {
     CalendarTable,
     CalendarConfirm,
     FormBooking,
+    ConfirmPage,
   },
   data() {
     return {
@@ -207,7 +208,7 @@ export default {
         }
         return true;
       } catch (error) {
-        return undefined;
+        return true;
       }
     },
 
@@ -224,7 +225,10 @@ export default {
           appointments: val_app,
         })
         .then((response) => {
-          console.log(response);
+          if (response.status == 201) {
+            this.prenotationProgress++
+            console.log(response)
+          }
         })
         .catch((error) => {
           console.log(error);
