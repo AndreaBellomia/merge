@@ -1,92 +1,52 @@
 <template>
-  <div class="flex-row m-2">
+  <div class="main-container">
     <div
       class="
-        flex
-        bg-gradient-to-br
-        from-teal-500
-        via-cyan-500
-        to-indigo-500
-        text-slate-50
-        justify-center
-        px-5
-        align-middle
-        py-4
-        text-2xl
-        font-bold
+        bg-sky-50
+        text-slate-700
         rounded-lg
-        border border-sky-400
+        border border-sky-100
         mb-3
+        contaner-headers
       "
     >
-      <p>Crea Prenotazione</p>
+      <div class="text-2xl font-bold">
+        <p>Crea Prenotazione</p>
+      </div>
+      <div class="headers-information">
+        <p class="text-2xl font-semibold">
+          {{ this.dataFormatted.starttime }} -
+          {{ this.dataFormatted.endtime }}
+        </p>
+        <p>
+          {{ this.dataFormatted.dayname }} {{ this.dataFormatted.day }}
+          {{ this.dataFormatted.month }}
+        </p>
+        <p class="text-sm">{{ this.dataFormatted.year }}</p>
+      </div>
     </div>
 
     <div class="custom-grid-form">
-      <div class="custom-form-header">
-        <div
-          class="
-            p-3
-            bg-sky-50
-            rounded-lg
-            border border-sky-100
-            custom-container-booking
-          "
-        >
-          <div class="">
-            <p class="text-2xl font-semibold">
-              {{ this.dataFormatted.starttime }} -
-              {{ this.dataFormatted.endtime }}
-            </p>
-            <p>
-              {{ this.dataFormatted.dayname }} {{ this.dataFormatted.day }}
-              {{ this.dataFormatted.month }}
-            </p>
-            <p class="text-sm">{{ this.dataFormatted.year }}</p>
-          </div>
-        </div>
-        <div
-          class="
-            bg-sky-50
-            rounded-lg
-            border border-sky-100
-            custom-container-lablel
-          "
-        >
-          <label for="header" class="block mb-2 text-gray-900 font-semibold"
-            >Titolo</label
-          >
-          <input
-            @keyup="formValidateTitle()"
-            :class="`${
-              title.status || title.status == undefined
-                ? ''
-                : 'ring ring-red-500'
-            }`"
-            type="text"
-            name=""
-            id="header"
-            class="w-full text-sm rounded-lg p-2 border border-gray-200"
-            placeholder="Inserisci un titilo ..."
-            v-model="title.content"
-          />
-          <p
-            :class="`${
-              title.status || title.status == undefined
-                ? 'invisible'
-                : 'visible'
-            }`"
-            class="text-red-500 font-semibold pt-1 text-sm"
-          >
-            *Inserisci un titolo maggiore 15 caratteri
-          </p>
-        </div>
-      </div>
-
       <div class="bg-sky-50 rounded-lg p-2 border border-sky-100 mb-2">
-        <label for="message" class="block mb-2 font-semibold text-gray-900"
-          >Descrizione</label
-        >
+        <label for="header" class="block mb-2 text-gray-900 font-semibold">Titolo</label>
+        <input
+          @keyup="formValidateTitle()"
+          :class="`${
+            title.status || title.status == undefined ? '' : 'ring ring-red-500'
+          }`"
+          type="text"
+          name=""
+          id="header"
+          class="w-full text-sm rounded-lg p-2 border border-gray-200"
+          placeholder="Inserisci un titilo ..."
+          v-model="title.content"
+        />
+        <p :class="`${title.status || title.status == undefined ? 'invisible' : 'visible'}`"
+        class="text-red-500 font-semibold pt-1 text-sm">
+          *Inserisci un titolo maggiore 15 caratteri
+        </p>
+
+        <label for="message" class="block mb-2 font-semibold text-gray-900">Descrizione</label>
         <textarea
           @keyup="formValidateText()"
           :class="`${
@@ -127,46 +87,53 @@
 
 
 <style lang="scss" scoped>
-.custom-grid-form {
-  display: flex;
-  flex-direction: column;
 
-  .custom-form-header {
+.main-container{
+  width: 100vw;
+  max-width: 814px;
+
+  .contaner-headers {
     display: flex;
-  }
-}
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.25rem 1rem;
 
-.custom-container-lablel {
-  width: 100%;
-  padding: 0.75rem;
-  margin-bottom: 0.75rem;
-}
-
-.custom-container-booking {
-  display: flex;
-  min-width: 32%;
-  margin-bottom: 0.75rem;
-  margin-right: 0.75rem;
-}
-
-.prevent-select {
-  -webkit-user-select: none; /* Safari */
-  -ms-user-select: none; /* IE 10 and IE 11 */
-  user-select: none; /* Standard syntax */
-}
-
-@media only screen and (max-width: 885px) {
-  .custom-grid-form {
-    .custom-form-header {
+    .headers-information {
+      display: flex;
       flex-direction: column;
-      .custom-container-booking {
-        display: flex;
-        margin-bottom: 0.75rem;
-        margin-right: 0rem;
-      }
+      align-items: flex-end;
     }
   }
+
+  .custom-grid-form {
+    display: flex;
+    flex-direction: column;
+
+    .custom-form-header {
+      display: flex;
+    }
+  }
+
+  .custom-container-lablel {
+    width: 100%;
+    padding: 0.75rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .custom-container-booking {
+    display: flex;
+    min-width: 32%;
+    margin-bottom: 0.75rem;
+    margin-right: 0.75rem;
+  }
+
+  .prevent-select {
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+  }
 }
+
 </style>
 
 <script>

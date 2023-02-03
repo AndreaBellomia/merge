@@ -1,11 +1,13 @@
 <template>
-  <div class="home">
-    <Calendar-main/>
-
+  <div class="home" >
+    <CalendarContainer/>
   </div>
 </template>
 
+
 <script setup>
-import CalendarMain from '@/components/Calendar/CalendarMain.vue'
+
+import CalendarContainer from '@/components/Booking/MainComponent.vue'
+// import CalendarContainer from '@/components/Booking/BookingList/BookingMain.vue'
 
 </script>

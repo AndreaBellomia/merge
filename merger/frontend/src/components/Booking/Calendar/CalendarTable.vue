@@ -1,5 +1,7 @@
 <template>
-  <div class="flex-column max-h-max max-w-max text-slate-800 text-start m-2">
+
+  
+  <div class="flex-column text-slate-800 text-start main-container">
     <div
       class="
         flex
@@ -35,22 +37,24 @@
         </span>
       </div>
     </div>
+
+
     <div
       class="
         bg-sky-50
         rounded-lg
-        px-10
         border border-sky-100
+        container-calendar
       "
     >
-      <div class="grid grid-cols-7 py-3 px-1 text-center">
+      <div class="grid-calendar-container py-3 px-1 text-center">
         <div v-for="(item, index) in this.dayName" :key="index">
           <!-- item.slice(0, 3) -->
           <p class="font-semibold custom-text">{{ item }}</p>
         </div>
       </div>
       <hr />
-      <div class="grid grid-cols-7 text-center px-1 text-black pb-1">
+      <div class="grid-calendar-container text-center px-1 text-black pb-1">
         <div
           v-for="(day, index) in getDaysInMonth()"
           :style="`
@@ -74,6 +78,37 @@
     </div>
   </div>
 </template>
+
+<style lang="scss" scoped>
+
+
+
+.main-container {
+  width: 100%;
+  min-width: 400px;
+  .container-calendar{
+    display: flex;
+    flex-direction: column;
+    padding: 0rem 2rem;
+    padding-bottom: 1rem;
+
+    .grid-calendar-container{
+      padding-top: 1rem;
+      display: grid;
+      grid-template-columns: repeat(7, auto);
+    }
+  }
+}
+
+.custom-text {
+  font-size: 0;
+}
+.custom-text::first-letter {
+  font-size: 1rem !important;
+}
+
+
+</style>
 
 
 <script>
@@ -132,13 +167,4 @@ export default {
 };
 </script>
 
-
-<style lang="scss" scoped>
-.custom-text {
-  font-size: 0;
-}
-.custom-text::first-letter {
-  font-size: 1rem !important;
-}
-</style>
 

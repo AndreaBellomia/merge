@@ -1,30 +1,22 @@
 <template>
   <div
     class="
-      flex-row
-      max-w-max
-      justify-center
-      m-2
       bg-sky-50
       rounded-lg
       border border-sky-100
+      main-container
     "
   >
     <div class="px-12">
       <div
         class="
-          flex
-          justify-center
-          items-center
+          container-header
           text-slate-800
           font-bold
-          w-80
-          px-2
-          mx-1
         "
       >
-        <div class="grid grid-cols-2 justify-center items-center py-1">
-          <p class="row-span-2 text-5xl pb-1 justify-self-end prevent-select">
+        <div class="header">
+          <p class="text-5xl pb-1 justify-self-end prevent-select">
             {{ this.DateTime.day }}
           </p>
           <p class="pt-1 pl-1 prevent-select">
@@ -35,20 +27,21 @@
           </p>
         </div>
       </div>
+      
     </div>
-    <hr class="mx-3" />
-    <div class="flex flex-row justify-center max-w-full">
-      <div class="flex flex-col max-w-max">
-        <h2 class="justify-self-center font-semibold text-slate-500 py-1">
+    <hr class="mx-5">
+    
+    <div class="custom-container-title">
+        
+        <h2 class="font-semibold text-slate-500">
           Appuntamenti
         </h2>
-      </div>
+    
     </div>
-    <div class="overflow-auto custom-height mb-2">
-      <div v-for="(item, index) in this.QueryInsace" :key="index" class="mb-2">
+    <div class="overflow-auto custom-container-body mb-2">
+      <div v-for="(item, index) in this.QueryInsace" :key="index" class="mb-2 custom-card-app">
 
         <Appointment
-          
           :item="item"
           :DateTime="DateTime"
           :monthName="monthName"
@@ -58,8 +51,79 @@
         />
       </div>
     </div>
+    
   </div>
 </template>
+
+
+<style lang="scss" scoped>
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #c6c6c6;
+  border-radius: 20px;
+}
+
+
+
+.main-container{
+  width: 100%;
+  min-width: 400px;
+
+  margin-top: 0rem;
+  margin-left: 0.75rem;
+  display: flex;
+  flex-direction: column;
+
+  
+  .container-header{
+    display: flex;
+    justify-content: center;
+
+    .header{
+      display: flex;
+      align-items: center;
+    }
+
+
+  }
+
+  .custom-container-title{
+    display: flex;
+    justify-content: center;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+
+  .custom-container-body{
+    max-height: 20rem;
+  }
+
+}
+
+@media only screen and (max-width: 768px) {
+  .main-container{
+    margin-top: 0.75rem;
+    margin-left: 0rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .container-header{
+      display: flex;
+
+    }
+  }
+}
+
+</style>
 
 <script>
 import Appointment from "./DayAppointment.vue";
@@ -116,21 +180,7 @@ export default {
 
 
 <style scoped>
-.custom-height {
-  max-height: 20rem;
-}
 
-::-webkit-scrollbar {
-  width: 8px;
-  height: 8px;
-}
 
-::-webkit-scrollbar-track {
-  background: rgba(59, 57, 201, 0);
-}
 
-::-webkit-scrollbar-thumb {
-  background-color: #4b48ff;
-  border-radius: 20px;
-}
 </style>

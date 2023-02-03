@@ -1,6 +1,6 @@
 <template>
   <div class="flex flex-col">
-    <div class="flex flex-row-reverse mr-2">
+    <div class="flex flex-row-reverse">
       <button
         @click="$emit('nextPage')"
         :disabled="ceckDataSelected()"

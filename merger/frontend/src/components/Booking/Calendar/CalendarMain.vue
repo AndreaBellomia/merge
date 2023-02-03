@@ -1,7 +1,7 @@
 <template>
   <div class="flex-row max-w-max">
     <div v-if="prenotationProgress == 0" class="">
-      <div class="custom-grid-org prevent-select">
+      <div class="custom-grid-org prevent-select ">
         <CalendarTable
           class=""
           :DateTime="DateTime"
@@ -28,7 +28,7 @@
           @next-page="prenotationProgress++"
           :nextPageBool="nextPageCeck()"
           :btnMsg="'Conferma'"
-          :errorMsg="'Seleziona una data'"
+          :errorMsg="'Seleziona un appuntamento'"
         />
       </div>
     </div>
@@ -49,13 +49,12 @@
           :backActive="true"
         />
       </div>
-    </div>
-    <div v-else-if="prenotationProgress == 3">
-      <ConfirmPage
+      <ModalConfirm
+      :popUp="PopUp"
       :prenotation="QuerrySelected"
       :monthName="monthName"
       :dayName="dayName"
-      @back-home="prenotationProgress = 0"
+      @close-modal="closePopUpModify()"
       />
     </div>
   </div>
@@ -78,18 +77,18 @@
   user-select: none; /* Standard syntax */
 }
 .centered {
-  position: fixed; /* or absolute */
+  position: PopUp; /* or absolute */
   top: 25%;
   left: 25%;
 }
 
-@media only screen and (max-width: 885px) {
+@media only screen and (max-width: 768px) {
   .custom-btn-container {
     justify-content: center;
   }
+
   .custom-grid-org {
-    display: flex;
-    flex-direction: column;
+    display: block;
   }
 }
 </style>
@@ -103,7 +102,7 @@ import CalendarDay from "./CalendarDay.vue";
 import CalendarTable from "./CalendarTable.vue";
 import CalendarConfirm from "./CalendarConfirm.vue";
 import FormBooking from "./FormBooking.vue";
-import ConfirmPage from "./ConfirmPage.vue"
+import ModalConfirm from "./ConfirmModal.vue"
 
 const date = new Date();
 
@@ -113,7 +112,7 @@ export default {
     CalendarTable,
     CalendarConfirm,
     FormBooking,
-    ConfirmPage,
+    ModalConfirm,
   },
   data() {
     return {
@@ -132,6 +131,8 @@ export default {
       QuerrySelected: undefined,
 
       formValidated: Object,
+
+      PopUp: false,
 
       monthName: [
         "Gennaio",
@@ -212,8 +213,17 @@ export default {
       }
     },
 
+    openPopUpModify: function() {
+        this.PopUp = true
+    },
+
+    closePopUpModify: function() {
+        this.prenotationProgress--
+        this.PopUp = false
+        window.location.reload()
+    },
+
     confirmPrenotation: function (form) {
-      this.prenotationProgress++;
       this.postHTTP_appointment(form.body, form.title, this.QuerrySelected.id);
     },
 
@@ -226,8 +236,8 @@ export default {
         })
         .then((response) => {
           if (response.status == 201) {
-            this.prenotationProgress++
-            console.log(response)
+            this.openPopUpModify()
+            this.getHTTP_appointment()
           }
         })
         .catch((error) => {
