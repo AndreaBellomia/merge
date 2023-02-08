@@ -1,12 +1,18 @@
 <template>
-  <div class="home">
-    <Calendar-main/>
-    <Prova/>
+  <div>
+      <Prova/>
   </div>
 </template>
 
+<style lang="scss" scoped>
+
+
+
+</style>
+
+
 <script setup>
-import CalendarMain from '@/components/Calendar/CalendarMain.vue'
+import Prova from '@/components/ProvaCom.vue'
 
 
 
