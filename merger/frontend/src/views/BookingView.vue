@@ -1,13 +1,12 @@
 <template>
-  <div class="home" >
-    <CalendarContainer/>
-  </div>
+  <CalendarMain />
 </template>
 
-
-<script setup>
-
-import CalendarContainer from '@/components/Booking/MainComponent.vue'
-// import CalendarContainer from '@/components/Booking/BookingList/BookingMain.vue'
-
+<script>
+import CalendarMain from '../components/Booking/Calendar/CalendarMain.vue'
+export default {
+  components: {
+    CalendarMain
+  }
+}
 </script>

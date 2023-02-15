@@ -1,0 +1,5 @@
+venv/
+.vscode/
+/merger/.vscode/
+/merger.code-workspace
+/merger/frontend/webpack-stats.json
