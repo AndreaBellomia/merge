@@ -1,35 +1,17 @@
 <template>
-    <div>
-        <div ref="ciao"></div>
-        {{ info }}
-    </div>
+  <div>
+    <Dash/>
+  </div>
 </template>
 
-<script setup>
 
-import { getAPI } from '../axios';
+<script>
 
-import {  ref, onMounted } from "vue";
-console.log()
-const info = ref(null)
-onMounted(async () => {
-    await getAPI
-        .get('appointments/?format=json')
-        .then(response => {
-            info.value = response.data
-    
-    })
+import Dash from './Dashboard/DashBooking/MainCalendarDash.vue'
 
-    console.log(info.value)
-
-})
-
-
-
-
-
-
-
-
-
+export default {
+  components: {
+    Dash
+  }
+};
 </script>

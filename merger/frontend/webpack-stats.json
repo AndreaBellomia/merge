@@ -1,625 +1,2405 @@
 {
   "status": "done",
   "assets": {
-    "app.026a4be1268ec051.hot-update.js": {
-      "name": "app.026a4be1268ec051.hot-update.js",
-      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.026a4be1268ec051.hot-update.js",
-      "publicPath": "http://127.0.0.1:8080/app.026a4be1268ec051.hot-update.js"
-    },
-    "app.026a4be1268ec051.hot-update.json": {
-      "name": "app.026a4be1268ec051.hot-update.json",
-      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.026a4be1268ec051.hot-update.json",
-      "publicPath": "http://127.0.0.1:8080/app.026a4be1268ec051.hot-update.json"
-    },
-    "app.02b6f3e6b88a9f2f.hot-update.js": {
-      "name": "app.02b6f3e6b88a9f2f.hot-update.js",
-      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.02b6f3e6b88a9f2f.hot-update.js",
-      "publicPath": "http://127.0.0.1:8080/app.02b6f3e6b88a9f2f.hot-update.js"
-    },
-    "app.02b6f3e6b88a9f2f.hot-update.json": {
-      "name": "app.02b6f3e6b88a9f2f.hot-update.json",
-      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.02b6f3e6b88a9f2f.hot-update.json",
-      "publicPath": "http://127.0.0.1:8080/app.02b6f3e6b88a9f2f.hot-update.json"
-    },
-    "app.0bb82f46d679847a.hot-update.js": {
-      "name": "app.0bb82f46d679847a.hot-update.js",
-      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.0bb82f46d679847a.hot-update.js",
-      "publicPath": "http://127.0.0.1:8080/app.0bb82f46d679847a.hot-update.js"
-    },
-    "app.0bb82f46d679847a.hot-update.json": {
-      "name": "app.0bb82f46d679847a.hot-update.json",
-      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.0bb82f46d679847a.hot-update.json",
-      "publicPath": "http://127.0.0.1:8080/app.0bb82f46d679847a.hot-update.json"
-    },
-    "app.0f4ebecc5378d6fe.hot-update.js": {
-      "name": "app.0f4ebecc5378d6fe.hot-update.js",
-      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.0f4ebecc5378d6fe.hot-update.js",
-      "publicPath": "http://127.0.0.1:8080/app.0f4ebecc5378d6fe.hot-update.js"
-    },
-    "app.0f4ebecc5378d6fe.hot-update.json": {
-      "name": "app.0f4ebecc5378d6fe.hot-update.json",
-      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.0f4ebecc5378d6fe.hot-update.json",
-      "publicPath": "http://127.0.0.1:8080/app.0f4ebecc5378d6fe.hot-update.json"
-    },
-    "app.13bf3b387eb23f22.hot-update.js": {
-      "name": "app.13bf3b387eb23f22.hot-update.js",
-      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.13bf3b387eb23f22.hot-update.js",
-      "publicPath": "http://127.0.0.1:8080/app.13bf3b387eb23f22.hot-update.js"
-    },
-    "app.13bf3b387eb23f22.hot-update.json": {
-      "name": "app.13bf3b387eb23f22.hot-update.json",
-      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.13bf3b387eb23f22.hot-update.json",
-      "publicPath": "http://127.0.0.1:8080/app.13bf3b387eb23f22.hot-update.json"
-    },
-    "app.190d3ff7633bd227.hot-update.js": {
-      "name": "app.190d3ff7633bd227.hot-update.js",
-      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.190d3ff7633bd227.hot-update.js",
-      "publicPath": "http://127.0.0.1:8080/app.190d3ff7633bd227.hot-update.js"
-    },
-    "app.190d3ff7633bd227.hot-update.json": {
-      "name": "app.190d3ff7633bd227.hot-update.json",
-      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.190d3ff7633bd227.hot-update.json",
-      "publicPath": "http://127.0.0.1:8080/app.190d3ff7633bd227.hot-update.json"
-    },
-    "app.1ff8a558c0c1a145.hot-update.js": {
-      "name": "app.1ff8a558c0c1a145.hot-update.js",
-      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.1ff8a558c0c1a145.hot-update.js",
-      "publicPath": "http://127.0.0.1:8080/app.1ff8a558c0c1a145.hot-update.js"
-    },
-    "app.1ff8a558c0c1a145.hot-update.json": {
-      "name": "app.1ff8a558c0c1a145.hot-update.json",
-      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.1ff8a558c0c1a145.hot-update.json",
-      "publicPath": "http://127.0.0.1:8080/app.1ff8a558c0c1a145.hot-update.json"
-    },
-    "app.2078369f052b36bd.hot-update.js": {
-      "name": "app.2078369f052b36bd.hot-update.js",
-      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.2078369f052b36bd.hot-update.js",
-      "publicPath": "http://127.0.0.1:8080/app.2078369f052b36bd.hot-update.js"
-    },
-    "app.2078369f052b36bd.hot-update.json": {
-      "name": "app.2078369f052b36bd.hot-update.json",
-      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.2078369f052b36bd.hot-update.json",
-      "publicPath": "http://127.0.0.1:8080/app.2078369f052b36bd.hot-update.json"
-    },
-    "app.281f681e5fa53635.hot-update.js": {
-      "name": "app.281f681e5fa53635.hot-update.js",
-      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.281f681e5fa53635.hot-update.js",
-      "publicPath": "http://127.0.0.1:8080/app.281f681e5fa53635.hot-update.js"
-    },
-    "app.281f681e5fa53635.hot-update.json": {
-      "name": "app.281f681e5fa53635.hot-update.json",
-      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.281f681e5fa53635.hot-update.json",
-      "publicPath": "http://127.0.0.1:8080/app.281f681e5fa53635.hot-update.json"
-    },
-    "app.291afe5958cd27b2.hot-update.js": {
-      "name": "app.291afe5958cd27b2.hot-update.js",
-      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.291afe5958cd27b2.hot-update.js",
-      "publicPath": "http://127.0.0.1:8080/app.291afe5958cd27b2.hot-update.js"
-    },
-    "app.291afe5958cd27b2.hot-update.json": {
-      "name": "app.291afe5958cd27b2.hot-update.json",
-      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.291afe5958cd27b2.hot-update.json",
-      "publicPath": "http://127.0.0.1:8080/app.291afe5958cd27b2.hot-update.json"
-    },
-    "app.2c2db01d05021201.hot-update.js": {
-      "name": "app.2c2db01d05021201.hot-update.js",
-      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.2c2db01d05021201.hot-update.js",
-      "publicPath": "http://127.0.0.1:8080/app.2c2db01d05021201.hot-update.js"
-    },
-    "app.2c2db01d05021201.hot-update.json": {
-      "name": "app.2c2db01d05021201.hot-update.json",
-      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.2c2db01d05021201.hot-update.json",
-      "publicPath": "http://127.0.0.1:8080/app.2c2db01d05021201.hot-update.json"
-    },
-    "app.321f53f5e49a218b.hot-update.js": {
-      "name": "app.321f53f5e49a218b.hot-update.js",
-      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.321f53f5e49a218b.hot-update.js",
-      "publicPath": "http://127.0.0.1:8080/app.321f53f5e49a218b.hot-update.js"
-    },
-    "app.321f53f5e49a218b.hot-update.json": {
-      "name": "app.321f53f5e49a218b.hot-update.json",
-      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.321f53f5e49a218b.hot-update.json",
-      "publicPath": "http://127.0.0.1:8080/app.321f53f5e49a218b.hot-update.json"
-    },
-    "app.3cdecc083d68cead.hot-update.js": {
-      "name": "app.3cdecc083d68cead.hot-update.js",
-      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.3cdecc083d68cead.hot-update.js",
-      "publicPath": "http://127.0.0.1:8080/app.3cdecc083d68cead.hot-update.js"
-    },
-    "app.3cdecc083d68cead.hot-update.json": {
-      "name": "app.3cdecc083d68cead.hot-update.json",
-      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.3cdecc083d68cead.hot-update.json",
-      "publicPath": "http://127.0.0.1:8080/app.3cdecc083d68cead.hot-update.json"
-    },
-    "app.4622afe0f6e6806d.hot-update.js": {
-      "name": "app.4622afe0f6e6806d.hot-update.js",
-      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.4622afe0f6e6806d.hot-update.js",
-      "publicPath": "http://127.0.0.1:8080/app.4622afe0f6e6806d.hot-update.js"
-    },
-    "app.4622afe0f6e6806d.hot-update.json": {
-      "name": "app.4622afe0f6e6806d.hot-update.json",
-      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.4622afe0f6e6806d.hot-update.json",
-      "publicPath": "http://127.0.0.1:8080/app.4622afe0f6e6806d.hot-update.json"
-    },
-    "app.4b471c559f072dd8.hot-update.js": {
-      "name": "app.4b471c559f072dd8.hot-update.js",
-      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.4b471c559f072dd8.hot-update.js",
-      "publicPath": "http://127.0.0.1:8080/app.4b471c559f072dd8.hot-update.js"
-    },
-    "app.4b471c559f072dd8.hot-update.json": {
-      "name": "app.4b471c559f072dd8.hot-update.json",
-      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.4b471c559f072dd8.hot-update.json",
-      "publicPath": "http://127.0.0.1:8080/app.4b471c559f072dd8.hot-update.json"
-    },
-    "app.4dfc0b328c28af0b.hot-update.js": {
-      "name": "app.4dfc0b328c28af0b.hot-update.js",
-      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.4dfc0b328c28af0b.hot-update.js",
-      "publicPath": "http://127.0.0.1:8080/app.4dfc0b328c28af0b.hot-update.js"
-    },
-    "app.4dfc0b328c28af0b.hot-update.json": {
-      "name": "app.4dfc0b328c28af0b.hot-update.json",
-      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.4dfc0b328c28af0b.hot-update.json",
-      "publicPath": "http://127.0.0.1:8080/app.4dfc0b328c28af0b.hot-update.json"
-    },
-    "app.5751f4b105268811.hot-update.js": {
-      "name": "app.5751f4b105268811.hot-update.js",
-      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.5751f4b105268811.hot-update.js",
-      "publicPath": "http://127.0.0.1:8080/app.5751f4b105268811.hot-update.js"
-    },
-    "app.5751f4b105268811.hot-update.json": {
-      "name": "app.5751f4b105268811.hot-update.json",
-      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.5751f4b105268811.hot-update.json",
-      "publicPath": "http://127.0.0.1:8080/app.5751f4b105268811.hot-update.json"
-    },
-    "app.59590c13cf797708.hot-update.js": {
-      "name": "app.59590c13cf797708.hot-update.js",
-      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.59590c13cf797708.hot-update.js",
-      "publicPath": "http://127.0.0.1:8080/app.59590c13cf797708.hot-update.js"
-    },
-    "app.59590c13cf797708.hot-update.json": {
-      "name": "app.59590c13cf797708.hot-update.json",
-      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.59590c13cf797708.hot-update.json",
-      "publicPath": "http://127.0.0.1:8080/app.59590c13cf797708.hot-update.json"
-    },
-    "app.5b7fcd8e9ae0ec84.hot-update.js": {
-      "name": "app.5b7fcd8e9ae0ec84.hot-update.js",
-      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.5b7fcd8e9ae0ec84.hot-update.js",
-      "publicPath": "http://127.0.0.1:8080/app.5b7fcd8e9ae0ec84.hot-update.js"
-    },
-    "app.5b7fcd8e9ae0ec84.hot-update.json": {
-      "name": "app.5b7fcd8e9ae0ec84.hot-update.json",
-      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.5b7fcd8e9ae0ec84.hot-update.json",
-      "publicPath": "http://127.0.0.1:8080/app.5b7fcd8e9ae0ec84.hot-update.json"
-    },
-    "app.624900cadf76abe7.hot-update.js": {
-      "name": "app.624900cadf76abe7.hot-update.js",
-      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.624900cadf76abe7.hot-update.js",
-      "publicPath": "http://127.0.0.1:8080/app.624900cadf76abe7.hot-update.js"
-    },
-    "app.624900cadf76abe7.hot-update.json": {
-      "name": "app.624900cadf76abe7.hot-update.json",
-      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.624900cadf76abe7.hot-update.json",
-      "publicPath": "http://127.0.0.1:8080/app.624900cadf76abe7.hot-update.json"
-    },
-    "app.67b67c832aa82f32.hot-update.js": {
-      "name": "app.67b67c832aa82f32.hot-update.js",
-      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.67b67c832aa82f32.hot-update.js",
-      "publicPath": "http://127.0.0.1:8080/app.67b67c832aa82f32.hot-update.js"
-    },
-    "app.67b67c832aa82f32.hot-update.json": {
-      "name": "app.67b67c832aa82f32.hot-update.json",
-      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.67b67c832aa82f32.hot-update.json",
-      "publicPath": "http://127.0.0.1:8080/app.67b67c832aa82f32.hot-update.json"
-    },
-    "app.69b71b87193655f6.hot-update.js": {
-      "name": "app.69b71b87193655f6.hot-update.js",
-      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.69b71b87193655f6.hot-update.js",
-      "publicPath": "http://127.0.0.1:8080/app.69b71b87193655f6.hot-update.js"
-    },
-    "app.69b71b87193655f6.hot-update.json": {
-      "name": "app.69b71b87193655f6.hot-update.json",
-      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.69b71b87193655f6.hot-update.json",
-      "publicPath": "http://127.0.0.1:8080/app.69b71b87193655f6.hot-update.json"
-    },
-    "app.6b6a98ca7982d424.hot-update.js": {
-      "name": "app.6b6a98ca7982d424.hot-update.js",
-      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.6b6a98ca7982d424.hot-update.js",
-      "publicPath": "http://127.0.0.1:8080/app.6b6a98ca7982d424.hot-update.js"
-    },
-    "app.6b6a98ca7982d424.hot-update.json": {
-      "name": "app.6b6a98ca7982d424.hot-update.json",
-      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.6b6a98ca7982d424.hot-update.json",
-      "publicPath": "http://127.0.0.1:8080/app.6b6a98ca7982d424.hot-update.json"
-    },
-    "app.6d3478ed8d360d6d.hot-update.js": {
-      "name": "app.6d3478ed8d360d6d.hot-update.js",
-      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.6d3478ed8d360d6d.hot-update.js",
-      "publicPath": "http://127.0.0.1:8080/app.6d3478ed8d360d6d.hot-update.js"
-    },
-    "app.6d3478ed8d360d6d.hot-update.json": {
-      "name": "app.6d3478ed8d360d6d.hot-update.json",
-      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.6d3478ed8d360d6d.hot-update.json",
-      "publicPath": "http://127.0.0.1:8080/app.6d3478ed8d360d6d.hot-update.json"
-    },
-    "app.6ea108e7810fe8eb.hot-update.js": {
-      "name": "app.6ea108e7810fe8eb.hot-update.js",
-      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.6ea108e7810fe8eb.hot-update.js",
-      "publicPath": "http://127.0.0.1:8080/app.6ea108e7810fe8eb.hot-update.js"
-    },
-    "app.6ea108e7810fe8eb.hot-update.json": {
-      "name": "app.6ea108e7810fe8eb.hot-update.json",
-      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.6ea108e7810fe8eb.hot-update.json",
-      "publicPath": "http://127.0.0.1:8080/app.6ea108e7810fe8eb.hot-update.json"
-    },
-    "app.7a27f0b16d485de2.hot-update.js": {
-      "name": "app.7a27f0b16d485de2.hot-update.js",
-      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.7a27f0b16d485de2.hot-update.js",
-      "publicPath": "http://127.0.0.1:8080/app.7a27f0b16d485de2.hot-update.js"
-    },
-    "app.7a27f0b16d485de2.hot-update.json": {
-      "name": "app.7a27f0b16d485de2.hot-update.json",
-      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.7a27f0b16d485de2.hot-update.json",
-      "publicPath": "http://127.0.0.1:8080/app.7a27f0b16d485de2.hot-update.json"
-    },
-    "app.7d32d1b8baf6d74f.hot-update.js": {
-      "name": "app.7d32d1b8baf6d74f.hot-update.js",
-      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.7d32d1b8baf6d74f.hot-update.js",
-      "publicPath": "http://127.0.0.1:8080/app.7d32d1b8baf6d74f.hot-update.js"
-    },
-    "app.7d32d1b8baf6d74f.hot-update.json": {
-      "name": "app.7d32d1b8baf6d74f.hot-update.json",
-      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.7d32d1b8baf6d74f.hot-update.json",
-      "publicPath": "http://127.0.0.1:8080/app.7d32d1b8baf6d74f.hot-update.json"
-    },
-    "app.7e7fe8b8e65afb11.hot-update.js": {
-      "name": "app.7e7fe8b8e65afb11.hot-update.js",
-      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.7e7fe8b8e65afb11.hot-update.js",
-      "publicPath": "http://127.0.0.1:8080/app.7e7fe8b8e65afb11.hot-update.js"
-    },
-    "app.7e7fe8b8e65afb11.hot-update.json": {
-      "name": "app.7e7fe8b8e65afb11.hot-update.json",
-      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.7e7fe8b8e65afb11.hot-update.json",
-      "publicPath": "http://127.0.0.1:8080/app.7e7fe8b8e65afb11.hot-update.json"
-    },
-    "app.864097a7e539fbb4.hot-update.js": {
-      "name": "app.864097a7e539fbb4.hot-update.js",
-      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.864097a7e539fbb4.hot-update.js",
-      "publicPath": "http://127.0.0.1:8080/app.864097a7e539fbb4.hot-update.js"
-    },
-    "app.864097a7e539fbb4.hot-update.json": {
-      "name": "app.864097a7e539fbb4.hot-update.json",
-      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.864097a7e539fbb4.hot-update.json",
-      "publicPath": "http://127.0.0.1:8080/app.864097a7e539fbb4.hot-update.json"
-    },
-    "app.87ad252ef0c2ca30.hot-update.js": {
-      "name": "app.87ad252ef0c2ca30.hot-update.js",
-      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.87ad252ef0c2ca30.hot-update.js",
-      "publicPath": "http://127.0.0.1:8080/app.87ad252ef0c2ca30.hot-update.js"
-    },
-    "app.87ad252ef0c2ca30.hot-update.json": {
-      "name": "app.87ad252ef0c2ca30.hot-update.json",
-      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.87ad252ef0c2ca30.hot-update.json",
-      "publicPath": "http://127.0.0.1:8080/app.87ad252ef0c2ca30.hot-update.json"
-    },
-    "app.88518936952dc30d.hot-update.js": {
-      "name": "app.88518936952dc30d.hot-update.js",
-      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.88518936952dc30d.hot-update.js",
-      "publicPath": "http://127.0.0.1:8080/app.88518936952dc30d.hot-update.js"
-    },
-    "app.88518936952dc30d.hot-update.json": {
-      "name": "app.88518936952dc30d.hot-update.json",
-      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.88518936952dc30d.hot-update.json",
-      "publicPath": "http://127.0.0.1:8080/app.88518936952dc30d.hot-update.json"
-    },
-    "app.8b3ba63a11707da4.hot-update.js": {
-      "name": "app.8b3ba63a11707da4.hot-update.js",
-      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.8b3ba63a11707da4.hot-update.js",
-      "publicPath": "http://127.0.0.1:8080/app.8b3ba63a11707da4.hot-update.js"
-    },
-    "app.8b3ba63a11707da4.hot-update.json": {
-      "name": "app.8b3ba63a11707da4.hot-update.json",
-      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.8b3ba63a11707da4.hot-update.json",
-      "publicPath": "http://127.0.0.1:8080/app.8b3ba63a11707da4.hot-update.json"
-    },
-    "app.8c74098eb7e7c901.hot-update.js": {
-      "name": "app.8c74098eb7e7c901.hot-update.js",
-      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.8c74098eb7e7c901.hot-update.js",
-      "publicPath": "http://127.0.0.1:8080/app.8c74098eb7e7c901.hot-update.js"
-    },
-    "app.8c74098eb7e7c901.hot-update.json": {
-      "name": "app.8c74098eb7e7c901.hot-update.json",
-      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.8c74098eb7e7c901.hot-update.json",
-      "publicPath": "http://127.0.0.1:8080/app.8c74098eb7e7c901.hot-update.json"
-    },
-    "app.915907faad7621b8.hot-update.js": {
-      "name": "app.915907faad7621b8.hot-update.js",
-      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.915907faad7621b8.hot-update.js",
-      "publicPath": "http://127.0.0.1:8080/app.915907faad7621b8.hot-update.js"
-    },
-    "app.915907faad7621b8.hot-update.json": {
-      "name": "app.915907faad7621b8.hot-update.json",
-      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.915907faad7621b8.hot-update.json",
-      "publicPath": "http://127.0.0.1:8080/app.915907faad7621b8.hot-update.json"
-    },
-    "app.972fa7eaa8c814eb.hot-update.js": {
-      "name": "app.972fa7eaa8c814eb.hot-update.js",
-      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.972fa7eaa8c814eb.hot-update.js",
-      "publicPath": "http://127.0.0.1:8080/app.972fa7eaa8c814eb.hot-update.js"
-    },
-    "app.972fa7eaa8c814eb.hot-update.json": {
-      "name": "app.972fa7eaa8c814eb.hot-update.json",
-      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.972fa7eaa8c814eb.hot-update.json",
-      "publicPath": "http://127.0.0.1:8080/app.972fa7eaa8c814eb.hot-update.json"
-    },
-    "app.97c32d3f81916512.hot-update.js": {
-      "name": "app.97c32d3f81916512.hot-update.js",
-      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.97c32d3f81916512.hot-update.js",
-      "publicPath": "http://127.0.0.1:8080/app.97c32d3f81916512.hot-update.js"
-    },
-    "app.97c32d3f81916512.hot-update.json": {
-      "name": "app.97c32d3f81916512.hot-update.json",
-      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.97c32d3f81916512.hot-update.json",
-      "publicPath": "http://127.0.0.1:8080/app.97c32d3f81916512.hot-update.json"
-    },
-    "app.9f8c771640d04699.hot-update.js": {
-      "name": "app.9f8c771640d04699.hot-update.js",
-      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.9f8c771640d04699.hot-update.js",
-      "publicPath": "http://127.0.0.1:8080/app.9f8c771640d04699.hot-update.js"
-    },
-    "app.9f8c771640d04699.hot-update.json": {
-      "name": "app.9f8c771640d04699.hot-update.json",
-      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.9f8c771640d04699.hot-update.json",
-      "publicPath": "http://127.0.0.1:8080/app.9f8c771640d04699.hot-update.json"
-    },
-    "app.a8963a7fdaf29e78.hot-update.js": {
-      "name": "app.a8963a7fdaf29e78.hot-update.js",
-      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.a8963a7fdaf29e78.hot-update.js",
-      "publicPath": "http://127.0.0.1:8080/app.a8963a7fdaf29e78.hot-update.js"
-    },
-    "app.a8963a7fdaf29e78.hot-update.json": {
-      "name": "app.a8963a7fdaf29e78.hot-update.json",
-      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.a8963a7fdaf29e78.hot-update.json",
-      "publicPath": "http://127.0.0.1:8080/app.a8963a7fdaf29e78.hot-update.json"
-    },
-    "app.a98d24a322753b01.hot-update.js": {
-      "name": "app.a98d24a322753b01.hot-update.js",
-      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.a98d24a322753b01.hot-update.js",
-      "publicPath": "http://127.0.0.1:8080/app.a98d24a322753b01.hot-update.js"
-    },
-    "app.a98d24a322753b01.hot-update.json": {
-      "name": "app.a98d24a322753b01.hot-update.json",
-      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.a98d24a322753b01.hot-update.json",
-      "publicPath": "http://127.0.0.1:8080/app.a98d24a322753b01.hot-update.json"
-    },
-    "app.aaa5a9e48c3aae9c.hot-update.js": {
-      "name": "app.aaa5a9e48c3aae9c.hot-update.js",
-      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.aaa5a9e48c3aae9c.hot-update.js",
-      "publicPath": "http://127.0.0.1:8080/app.aaa5a9e48c3aae9c.hot-update.js"
-    },
-    "app.aaa5a9e48c3aae9c.hot-update.json": {
-      "name": "app.aaa5a9e48c3aae9c.hot-update.json",
-      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.aaa5a9e48c3aae9c.hot-update.json",
-      "publicPath": "http://127.0.0.1:8080/app.aaa5a9e48c3aae9c.hot-update.json"
-    },
-    "app.b54d5b84e7e98e9a.hot-update.js": {
-      "name": "app.b54d5b84e7e98e9a.hot-update.js",
-      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.b54d5b84e7e98e9a.hot-update.js",
-      "publicPath": "http://127.0.0.1:8080/app.b54d5b84e7e98e9a.hot-update.js"
-    },
-    "app.b54d5b84e7e98e9a.hot-update.json": {
-      "name": "app.b54d5b84e7e98e9a.hot-update.json",
-      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.b54d5b84e7e98e9a.hot-update.json",
-      "publicPath": "http://127.0.0.1:8080/app.b54d5b84e7e98e9a.hot-update.json"
-    },
-    "app.ba849744b3055ead.hot-update.js": {
-      "name": "app.ba849744b3055ead.hot-update.js",
-      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.ba849744b3055ead.hot-update.js",
-      "publicPath": "http://127.0.0.1:8080/app.ba849744b3055ead.hot-update.js"
-    },
-    "app.ba849744b3055ead.hot-update.json": {
-      "name": "app.ba849744b3055ead.hot-update.json",
-      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.ba849744b3055ead.hot-update.json",
-      "publicPath": "http://127.0.0.1:8080/app.ba849744b3055ead.hot-update.json"
-    },
-    "app.bd8b8e0ab6fff4d8.hot-update.js": {
-      "name": "app.bd8b8e0ab6fff4d8.hot-update.js",
-      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.bd8b8e0ab6fff4d8.hot-update.js",
-      "publicPath": "http://127.0.0.1:8080/app.bd8b8e0ab6fff4d8.hot-update.js"
-    },
-    "app.bd8b8e0ab6fff4d8.hot-update.json": {
-      "name": "app.bd8b8e0ab6fff4d8.hot-update.json",
-      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.bd8b8e0ab6fff4d8.hot-update.json",
-      "publicPath": "http://127.0.0.1:8080/app.bd8b8e0ab6fff4d8.hot-update.json"
-    },
-    "app.c4caa266880137e7.hot-update.js": {
-      "name": "app.c4caa266880137e7.hot-update.js",
-      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.c4caa266880137e7.hot-update.js",
-      "publicPath": "http://127.0.0.1:8080/app.c4caa266880137e7.hot-update.js"
-    },
-    "app.c4caa266880137e7.hot-update.json": {
-      "name": "app.c4caa266880137e7.hot-update.json",
-      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.c4caa266880137e7.hot-update.json",
-      "publicPath": "http://127.0.0.1:8080/app.c4caa266880137e7.hot-update.json"
-    },
-    "app.c50dd43ac5cc5528.hot-update.js": {
-      "name": "app.c50dd43ac5cc5528.hot-update.js",
-      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.c50dd43ac5cc5528.hot-update.js",
-      "publicPath": "http://127.0.0.1:8080/app.c50dd43ac5cc5528.hot-update.js"
-    },
-    "app.c50dd43ac5cc5528.hot-update.json": {
-      "name": "app.c50dd43ac5cc5528.hot-update.json",
-      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.c50dd43ac5cc5528.hot-update.json",
-      "publicPath": "http://127.0.0.1:8080/app.c50dd43ac5cc5528.hot-update.json"
-    },
-    "app.cf657d4b7b0a429f.hot-update.js": {
-      "name": "app.cf657d4b7b0a429f.hot-update.js",
-      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.cf657d4b7b0a429f.hot-update.js",
-      "publicPath": "http://127.0.0.1:8080/app.cf657d4b7b0a429f.hot-update.js"
-    },
-    "app.cf657d4b7b0a429f.hot-update.json": {
-      "name": "app.cf657d4b7b0a429f.hot-update.json",
-      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.cf657d4b7b0a429f.hot-update.json",
-      "publicPath": "http://127.0.0.1:8080/app.cf657d4b7b0a429f.hot-update.json"
-    },
-    "app.d4596f2f02944fee.hot-update.js": {
-      "name": "app.d4596f2f02944fee.hot-update.js",
-      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.d4596f2f02944fee.hot-update.js",
-      "publicPath": "http://127.0.0.1:8080/app.d4596f2f02944fee.hot-update.js"
-    },
-    "app.d4596f2f02944fee.hot-update.json": {
-      "name": "app.d4596f2f02944fee.hot-update.json",
-      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.d4596f2f02944fee.hot-update.json",
-      "publicPath": "http://127.0.0.1:8080/app.d4596f2f02944fee.hot-update.json"
-    },
-    "app.d6764204056be975.hot-update.js": {
-      "name": "app.d6764204056be975.hot-update.js",
-      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.d6764204056be975.hot-update.js",
-      "publicPath": "http://127.0.0.1:8080/app.d6764204056be975.hot-update.js"
-    },
-    "app.d6764204056be975.hot-update.json": {
-      "name": "app.d6764204056be975.hot-update.json",
-      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.d6764204056be975.hot-update.json",
-      "publicPath": "http://127.0.0.1:8080/app.d6764204056be975.hot-update.json"
-    },
-    "app.d6e08c543ca39573.hot-update.js": {
-      "name": "app.d6e08c543ca39573.hot-update.js",
-      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.d6e08c543ca39573.hot-update.js",
-      "publicPath": "http://127.0.0.1:8080/app.d6e08c543ca39573.hot-update.js"
-    },
-    "app.d6e08c543ca39573.hot-update.json": {
-      "name": "app.d6e08c543ca39573.hot-update.json",
-      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.d6e08c543ca39573.hot-update.json",
-      "publicPath": "http://127.0.0.1:8080/app.d6e08c543ca39573.hot-update.json"
-    },
-    "app.d70034f71b0a8557.hot-update.js": {
-      "name": "app.d70034f71b0a8557.hot-update.js",
-      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.d70034f71b0a8557.hot-update.js",
-      "publicPath": "http://127.0.0.1:8080/app.d70034f71b0a8557.hot-update.js"
-    },
-    "app.d70034f71b0a8557.hot-update.json": {
-      "name": "app.d70034f71b0a8557.hot-update.json",
-      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.d70034f71b0a8557.hot-update.json",
-      "publicPath": "http://127.0.0.1:8080/app.d70034f71b0a8557.hot-update.json"
-    },
-    "app.dbb8bd9a6c0132f6.hot-update.js": {
-      "name": "app.dbb8bd9a6c0132f6.hot-update.js",
-      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.dbb8bd9a6c0132f6.hot-update.js",
-      "publicPath": "http://127.0.0.1:8080/app.dbb8bd9a6c0132f6.hot-update.js"
-    },
-    "app.dbb8bd9a6c0132f6.hot-update.json": {
-      "name": "app.dbb8bd9a6c0132f6.hot-update.json",
-      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.dbb8bd9a6c0132f6.hot-update.json",
-      "publicPath": "http://127.0.0.1:8080/app.dbb8bd9a6c0132f6.hot-update.json"
-    },
-    "app.e09fd1c7745ee172.hot-update.js": {
-      "name": "app.e09fd1c7745ee172.hot-update.js",
-      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.e09fd1c7745ee172.hot-update.js",
-      "publicPath": "http://127.0.0.1:8080/app.e09fd1c7745ee172.hot-update.js"
-    },
-    "app.e09fd1c7745ee172.hot-update.json": {
-      "name": "app.e09fd1c7745ee172.hot-update.json",
-      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.e09fd1c7745ee172.hot-update.json",
-      "publicPath": "http://127.0.0.1:8080/app.e09fd1c7745ee172.hot-update.json"
-    },
-    "app.e16964065e148d9b.hot-update.js": {
-      "name": "app.e16964065e148d9b.hot-update.js",
-      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.e16964065e148d9b.hot-update.js",
-      "publicPath": "http://127.0.0.1:8080/app.e16964065e148d9b.hot-update.js"
-    },
-    "app.e16964065e148d9b.hot-update.json": {
-      "name": "app.e16964065e148d9b.hot-update.json",
-      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.e16964065e148d9b.hot-update.json",
-      "publicPath": "http://127.0.0.1:8080/app.e16964065e148d9b.hot-update.json"
-    },
-    "app.e6ebae8dfdb45a46.hot-update.js": {
-      "name": "app.e6ebae8dfdb45a46.hot-update.js",
-      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.e6ebae8dfdb45a46.hot-update.js",
-      "publicPath": "http://127.0.0.1:8080/app.e6ebae8dfdb45a46.hot-update.js"
-    },
-    "app.e6ebae8dfdb45a46.hot-update.json": {
-      "name": "app.e6ebae8dfdb45a46.hot-update.json",
-      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.e6ebae8dfdb45a46.hot-update.json",
-      "publicPath": "http://127.0.0.1:8080/app.e6ebae8dfdb45a46.hot-update.json"
-    },
-    "app.f13723ebc425d169.hot-update.js": {
-      "name": "app.f13723ebc425d169.hot-update.js",
-      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.f13723ebc425d169.hot-update.js",
-      "publicPath": "http://127.0.0.1:8080/app.f13723ebc425d169.hot-update.js"
-    },
-    "app.f13723ebc425d169.hot-update.json": {
-      "name": "app.f13723ebc425d169.hot-update.json",
-      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.f13723ebc425d169.hot-update.json",
-      "publicPath": "http://127.0.0.1:8080/app.f13723ebc425d169.hot-update.json"
-    },
-    "app.f3b1027ce2c6a382.hot-update.js": {
-      "name": "app.f3b1027ce2c6a382.hot-update.js",
-      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.f3b1027ce2c6a382.hot-update.js",
-      "publicPath": "http://127.0.0.1:8080/app.f3b1027ce2c6a382.hot-update.js"
-    },
-    "app.f3b1027ce2c6a382.hot-update.json": {
-      "name": "app.f3b1027ce2c6a382.hot-update.json",
-      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.f3b1027ce2c6a382.hot-update.json",
-      "publicPath": "http://127.0.0.1:8080/app.f3b1027ce2c6a382.hot-update.json"
-    },
-    "app.f888a8949a5e3fe1.hot-update.js": {
-      "name": "app.f888a8949a5e3fe1.hot-update.js",
-      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.f888a8949a5e3fe1.hot-update.js",
-      "publicPath": "http://127.0.0.1:8080/app.f888a8949a5e3fe1.hot-update.js"
-    },
-    "app.f888a8949a5e3fe1.hot-update.json": {
-      "name": "app.f888a8949a5e3fe1.hot-update.json",
-      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.f888a8949a5e3fe1.hot-update.json",
-      "publicPath": "http://127.0.0.1:8080/app.f888a8949a5e3fe1.hot-update.json"
-    },
-    "app.f9241ca484be19f4.hot-update.js": {
-      "name": "app.f9241ca484be19f4.hot-update.js",
-      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.f9241ca484be19f4.hot-update.js",
-      "publicPath": "http://127.0.0.1:8080/app.f9241ca484be19f4.hot-update.js"
-    },
-    "app.f9241ca484be19f4.hot-update.json": {
-      "name": "app.f9241ca484be19f4.hot-update.json",
-      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.f9241ca484be19f4.hot-update.json",
-      "publicPath": "http://127.0.0.1:8080/app.f9241ca484be19f4.hot-update.json"
-    },
-    "app.fc5e9723daa69377.hot-update.js": {
-      "name": "app.fc5e9723daa69377.hot-update.js",
-      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.fc5e9723daa69377.hot-update.js",
-      "publicPath": "http://127.0.0.1:8080/app.fc5e9723daa69377.hot-update.js"
-    },
-    "app.fc5e9723daa69377.hot-update.json": {
-      "name": "app.fc5e9723daa69377.hot-update.json",
-      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.fc5e9723daa69377.hot-update.json",
-      "publicPath": "http://127.0.0.1:8080/app.fc5e9723daa69377.hot-update.json"
-    },
-    "app.fcf2461149c41884.hot-update.js": {
-      "name": "app.fcf2461149c41884.hot-update.js",
-      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.fcf2461149c41884.hot-update.js",
-      "publicPath": "http://127.0.0.1:8080/app.fcf2461149c41884.hot-update.js"
-    },
-    "app.fcf2461149c41884.hot-update.json": {
-      "name": "app.fcf2461149c41884.hot-update.json",
-      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.fcf2461149c41884.hot-update.json",
-      "publicPath": "http://127.0.0.1:8080/app.fcf2461149c41884.hot-update.json"
-    },
-    "app.fdf9931d268d9675.hot-update.js": {
-      "name": "app.fdf9931d268d9675.hot-update.js",
-      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.fdf9931d268d9675.hot-update.js",
-      "publicPath": "http://127.0.0.1:8080/app.fdf9931d268d9675.hot-update.js"
-    },
-    "app.fdf9931d268d9675.hot-update.json": {
-      "name": "app.fdf9931d268d9675.hot-update.json",
-      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.fdf9931d268d9675.hot-update.json",
-      "publicPath": "http://127.0.0.1:8080/app.fdf9931d268d9675.hot-update.json"
-    },
-    "app.ffe2371d75f81733.hot-update.js": {
-      "name": "app.ffe2371d75f81733.hot-update.js",
-      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.ffe2371d75f81733.hot-update.js",
-      "publicPath": "http://127.0.0.1:8080/app.ffe2371d75f81733.hot-update.js"
-    },
-    "app.ffe2371d75f81733.hot-update.json": {
-      "name": "app.ffe2371d75f81733.hot-update.json",
-      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.ffe2371d75f81733.hot-update.json",
-      "publicPath": "http://127.0.0.1:8080/app.ffe2371d75f81733.hot-update.json"
+    "app.02de2105ffdc6aaf.hot-update.js": {
+      "name": "app.02de2105ffdc6aaf.hot-update.js",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.02de2105ffdc6aaf.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/app.02de2105ffdc6aaf.hot-update.js"
+    },
+    "app.02de2105ffdc6aaf.hot-update.json": {
+      "name": "app.02de2105ffdc6aaf.hot-update.json",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.02de2105ffdc6aaf.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/app.02de2105ffdc6aaf.hot-update.json"
+    },
+    "app.0665791c88391c03.hot-update.js": {
+      "name": "app.0665791c88391c03.hot-update.js",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.0665791c88391c03.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/app.0665791c88391c03.hot-update.js"
+    },
+    "app.0665791c88391c03.hot-update.json": {
+      "name": "app.0665791c88391c03.hot-update.json",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.0665791c88391c03.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/app.0665791c88391c03.hot-update.json"
+    },
+    "app.09b91defeaf40f9b.hot-update.js": {
+      "name": "app.09b91defeaf40f9b.hot-update.js",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.09b91defeaf40f9b.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/app.09b91defeaf40f9b.hot-update.js"
+    },
+    "app.09b91defeaf40f9b.hot-update.json": {
+      "name": "app.09b91defeaf40f9b.hot-update.json",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.09b91defeaf40f9b.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/app.09b91defeaf40f9b.hot-update.json"
+    },
+    "app.0c431590ea0199ee.hot-update.js": {
+      "name": "app.0c431590ea0199ee.hot-update.js",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.0c431590ea0199ee.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/app.0c431590ea0199ee.hot-update.js"
+    },
+    "app.0c431590ea0199ee.hot-update.json": {
+      "name": "app.0c431590ea0199ee.hot-update.json",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.0c431590ea0199ee.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/app.0c431590ea0199ee.hot-update.json"
+    },
+    "app.0dd458efcaef68b6.hot-update.js": {
+      "name": "app.0dd458efcaef68b6.hot-update.js",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.0dd458efcaef68b6.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/app.0dd458efcaef68b6.hot-update.js"
+    },
+    "app.0dd458efcaef68b6.hot-update.json": {
+      "name": "app.0dd458efcaef68b6.hot-update.json",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.0dd458efcaef68b6.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/app.0dd458efcaef68b6.hot-update.json"
+    },
+    "app.0ea9d6bf9ef4cf40.hot-update.js": {
+      "name": "app.0ea9d6bf9ef4cf40.hot-update.js",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.0ea9d6bf9ef4cf40.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/app.0ea9d6bf9ef4cf40.hot-update.js"
+    },
+    "app.0ea9d6bf9ef4cf40.hot-update.json": {
+      "name": "app.0ea9d6bf9ef4cf40.hot-update.json",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.0ea9d6bf9ef4cf40.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/app.0ea9d6bf9ef4cf40.hot-update.json"
+    },
+    "app.103211b824452e83.hot-update.js": {
+      "name": "app.103211b824452e83.hot-update.js",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.103211b824452e83.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/app.103211b824452e83.hot-update.js"
+    },
+    "app.103211b824452e83.hot-update.json": {
+      "name": "app.103211b824452e83.hot-update.json",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.103211b824452e83.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/app.103211b824452e83.hot-update.json"
+    },
+    "app.1096650197064bdc.hot-update.js": {
+      "name": "app.1096650197064bdc.hot-update.js",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.1096650197064bdc.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/app.1096650197064bdc.hot-update.js"
+    },
+    "app.1096650197064bdc.hot-update.json": {
+      "name": "app.1096650197064bdc.hot-update.json",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.1096650197064bdc.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/app.1096650197064bdc.hot-update.json"
+    },
+    "app.120baacf5d47b47a.hot-update.js": {
+      "name": "app.120baacf5d47b47a.hot-update.js",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.120baacf5d47b47a.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/app.120baacf5d47b47a.hot-update.js"
+    },
+    "app.120baacf5d47b47a.hot-update.json": {
+      "name": "app.120baacf5d47b47a.hot-update.json",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.120baacf5d47b47a.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/app.120baacf5d47b47a.hot-update.json"
+    },
+    "app.1269c329f660422e.hot-update.js": {
+      "name": "app.1269c329f660422e.hot-update.js",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.1269c329f660422e.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/app.1269c329f660422e.hot-update.js"
+    },
+    "app.1269c329f660422e.hot-update.json": {
+      "name": "app.1269c329f660422e.hot-update.json",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.1269c329f660422e.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/app.1269c329f660422e.hot-update.json"
+    },
+    "app.15f436dc94a34ee4.hot-update.js": {
+      "name": "app.15f436dc94a34ee4.hot-update.js",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.15f436dc94a34ee4.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/app.15f436dc94a34ee4.hot-update.js"
+    },
+    "app.15f436dc94a34ee4.hot-update.json": {
+      "name": "app.15f436dc94a34ee4.hot-update.json",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.15f436dc94a34ee4.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/app.15f436dc94a34ee4.hot-update.json"
+    },
+    "app.16c9bf7974bc1c42.hot-update.js": {
+      "name": "app.16c9bf7974bc1c42.hot-update.js",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.16c9bf7974bc1c42.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/app.16c9bf7974bc1c42.hot-update.js"
+    },
+    "app.16c9bf7974bc1c42.hot-update.json": {
+      "name": "app.16c9bf7974bc1c42.hot-update.json",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.16c9bf7974bc1c42.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/app.16c9bf7974bc1c42.hot-update.json"
+    },
+    "app.18480d8c9e5ca854.hot-update.js": {
+      "name": "app.18480d8c9e5ca854.hot-update.js",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.18480d8c9e5ca854.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/app.18480d8c9e5ca854.hot-update.js"
+    },
+    "app.18480d8c9e5ca854.hot-update.json": {
+      "name": "app.18480d8c9e5ca854.hot-update.json",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.18480d8c9e5ca854.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/app.18480d8c9e5ca854.hot-update.json"
+    },
+    "app.1a3b99824dd0f468.hot-update.js": {
+      "name": "app.1a3b99824dd0f468.hot-update.js",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.1a3b99824dd0f468.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/app.1a3b99824dd0f468.hot-update.js"
+    },
+    "app.1a3b99824dd0f468.hot-update.json": {
+      "name": "app.1a3b99824dd0f468.hot-update.json",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.1a3b99824dd0f468.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/app.1a3b99824dd0f468.hot-update.json"
+    },
+    "app.1b3a85b37f34b102.hot-update.js": {
+      "name": "app.1b3a85b37f34b102.hot-update.js",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.1b3a85b37f34b102.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/app.1b3a85b37f34b102.hot-update.js"
+    },
+    "app.1b3a85b37f34b102.hot-update.json": {
+      "name": "app.1b3a85b37f34b102.hot-update.json",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.1b3a85b37f34b102.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/app.1b3a85b37f34b102.hot-update.json"
+    },
+    "app.1d4c03b5278b7d15.hot-update.js": {
+      "name": "app.1d4c03b5278b7d15.hot-update.js",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.1d4c03b5278b7d15.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/app.1d4c03b5278b7d15.hot-update.js"
+    },
+    "app.1d4c03b5278b7d15.hot-update.json": {
+      "name": "app.1d4c03b5278b7d15.hot-update.json",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.1d4c03b5278b7d15.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/app.1d4c03b5278b7d15.hot-update.json"
+    },
+    "app.1df2c678a33f24aa.hot-update.js": {
+      "name": "app.1df2c678a33f24aa.hot-update.js",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.1df2c678a33f24aa.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/app.1df2c678a33f24aa.hot-update.js"
+    },
+    "app.1df2c678a33f24aa.hot-update.json": {
+      "name": "app.1df2c678a33f24aa.hot-update.json",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.1df2c678a33f24aa.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/app.1df2c678a33f24aa.hot-update.json"
+    },
+    "app.1e6e4c45a4963bd4.hot-update.js": {
+      "name": "app.1e6e4c45a4963bd4.hot-update.js",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.1e6e4c45a4963bd4.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/app.1e6e4c45a4963bd4.hot-update.js"
+    },
+    "app.1e6e4c45a4963bd4.hot-update.json": {
+      "name": "app.1e6e4c45a4963bd4.hot-update.json",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.1e6e4c45a4963bd4.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/app.1e6e4c45a4963bd4.hot-update.json"
+    },
+    "app.1e8644d79dcf507b.hot-update.js": {
+      "name": "app.1e8644d79dcf507b.hot-update.js",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.1e8644d79dcf507b.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/app.1e8644d79dcf507b.hot-update.js"
+    },
+    "app.1e8644d79dcf507b.hot-update.json": {
+      "name": "app.1e8644d79dcf507b.hot-update.json",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.1e8644d79dcf507b.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/app.1e8644d79dcf507b.hot-update.json"
+    },
+    "app.204780fbc0556bcf.hot-update.js": {
+      "name": "app.204780fbc0556bcf.hot-update.js",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.204780fbc0556bcf.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/app.204780fbc0556bcf.hot-update.js"
+    },
+    "app.204780fbc0556bcf.hot-update.json": {
+      "name": "app.204780fbc0556bcf.hot-update.json",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.204780fbc0556bcf.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/app.204780fbc0556bcf.hot-update.json"
+    },
+    "app.218f6f4fe8366ba5.hot-update.js": {
+      "name": "app.218f6f4fe8366ba5.hot-update.js",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.218f6f4fe8366ba5.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/app.218f6f4fe8366ba5.hot-update.js"
+    },
+    "app.218f6f4fe8366ba5.hot-update.json": {
+      "name": "app.218f6f4fe8366ba5.hot-update.json",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.218f6f4fe8366ba5.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/app.218f6f4fe8366ba5.hot-update.json"
+    },
+    "app.22a02e9a84eff1fe.hot-update.js": {
+      "name": "app.22a02e9a84eff1fe.hot-update.js",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.22a02e9a84eff1fe.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/app.22a02e9a84eff1fe.hot-update.js"
+    },
+    "app.22a02e9a84eff1fe.hot-update.json": {
+      "name": "app.22a02e9a84eff1fe.hot-update.json",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.22a02e9a84eff1fe.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/app.22a02e9a84eff1fe.hot-update.json"
+    },
+    "app.2322b918a266a3ab.hot-update.js": {
+      "name": "app.2322b918a266a3ab.hot-update.js",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.2322b918a266a3ab.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/app.2322b918a266a3ab.hot-update.js"
+    },
+    "app.2322b918a266a3ab.hot-update.json": {
+      "name": "app.2322b918a266a3ab.hot-update.json",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.2322b918a266a3ab.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/app.2322b918a266a3ab.hot-update.json"
+    },
+    "app.23b880fdcdeb91d3.hot-update.js": {
+      "name": "app.23b880fdcdeb91d3.hot-update.js",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.23b880fdcdeb91d3.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/app.23b880fdcdeb91d3.hot-update.js"
+    },
+    "app.23b880fdcdeb91d3.hot-update.json": {
+      "name": "app.23b880fdcdeb91d3.hot-update.json",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.23b880fdcdeb91d3.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/app.23b880fdcdeb91d3.hot-update.json"
+    },
+    "app.255725ff226c818d.hot-update.js": {
+      "name": "app.255725ff226c818d.hot-update.js",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.255725ff226c818d.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/app.255725ff226c818d.hot-update.js"
+    },
+    "app.255725ff226c818d.hot-update.json": {
+      "name": "app.255725ff226c818d.hot-update.json",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.255725ff226c818d.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/app.255725ff226c818d.hot-update.json"
+    },
+    "app.2648a94b419102d4.hot-update.js": {
+      "name": "app.2648a94b419102d4.hot-update.js",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.2648a94b419102d4.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/app.2648a94b419102d4.hot-update.js"
+    },
+    "app.2648a94b419102d4.hot-update.json": {
+      "name": "app.2648a94b419102d4.hot-update.json",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.2648a94b419102d4.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/app.2648a94b419102d4.hot-update.json"
+    },
+    "app.27a5c32fc1426771.hot-update.js": {
+      "name": "app.27a5c32fc1426771.hot-update.js",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.27a5c32fc1426771.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/app.27a5c32fc1426771.hot-update.js"
+    },
+    "app.27a5c32fc1426771.hot-update.json": {
+      "name": "app.27a5c32fc1426771.hot-update.json",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.27a5c32fc1426771.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/app.27a5c32fc1426771.hot-update.json"
+    },
+    "app.28869a1723f785d0.hot-update.js": {
+      "name": "app.28869a1723f785d0.hot-update.js",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.28869a1723f785d0.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/app.28869a1723f785d0.hot-update.js"
+    },
+    "app.28869a1723f785d0.hot-update.json": {
+      "name": "app.28869a1723f785d0.hot-update.json",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.28869a1723f785d0.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/app.28869a1723f785d0.hot-update.json"
+    },
+    "app.2d0a306da2ad39bc.hot-update.js": {
+      "name": "app.2d0a306da2ad39bc.hot-update.js",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.2d0a306da2ad39bc.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/app.2d0a306da2ad39bc.hot-update.js"
+    },
+    "app.2d0a306da2ad39bc.hot-update.json": {
+      "name": "app.2d0a306da2ad39bc.hot-update.json",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.2d0a306da2ad39bc.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/app.2d0a306da2ad39bc.hot-update.json"
+    },
+    "app.2d2ae447f9961d61.hot-update.js": {
+      "name": "app.2d2ae447f9961d61.hot-update.js",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.2d2ae447f9961d61.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/app.2d2ae447f9961d61.hot-update.js"
+    },
+    "app.2d2ae447f9961d61.hot-update.json": {
+      "name": "app.2d2ae447f9961d61.hot-update.json",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.2d2ae447f9961d61.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/app.2d2ae447f9961d61.hot-update.json"
+    },
+    "app.2eee8759396a68af.hot-update.js": {
+      "name": "app.2eee8759396a68af.hot-update.js",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.2eee8759396a68af.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/app.2eee8759396a68af.hot-update.js"
+    },
+    "app.2eee8759396a68af.hot-update.json": {
+      "name": "app.2eee8759396a68af.hot-update.json",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.2eee8759396a68af.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/app.2eee8759396a68af.hot-update.json"
+    },
+    "app.2f3c3e4b47a965ce.hot-update.js": {
+      "name": "app.2f3c3e4b47a965ce.hot-update.js",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.2f3c3e4b47a965ce.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/app.2f3c3e4b47a965ce.hot-update.js"
+    },
+    "app.2f3c3e4b47a965ce.hot-update.json": {
+      "name": "app.2f3c3e4b47a965ce.hot-update.json",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.2f3c3e4b47a965ce.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/app.2f3c3e4b47a965ce.hot-update.json"
+    },
+    "app.2fac2c5f7519c45c.hot-update.js": {
+      "name": "app.2fac2c5f7519c45c.hot-update.js",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.2fac2c5f7519c45c.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/app.2fac2c5f7519c45c.hot-update.js"
+    },
+    "app.2fac2c5f7519c45c.hot-update.json": {
+      "name": "app.2fac2c5f7519c45c.hot-update.json",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.2fac2c5f7519c45c.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/app.2fac2c5f7519c45c.hot-update.json"
+    },
+    "app.320fe4e292920ad2.hot-update.js": {
+      "name": "app.320fe4e292920ad2.hot-update.js",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.320fe4e292920ad2.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/app.320fe4e292920ad2.hot-update.js"
+    },
+    "app.320fe4e292920ad2.hot-update.json": {
+      "name": "app.320fe4e292920ad2.hot-update.json",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.320fe4e292920ad2.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/app.320fe4e292920ad2.hot-update.json"
+    },
+    "app.3250746d46ce8709.hot-update.js": {
+      "name": "app.3250746d46ce8709.hot-update.js",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.3250746d46ce8709.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/app.3250746d46ce8709.hot-update.js"
+    },
+    "app.3250746d46ce8709.hot-update.json": {
+      "name": "app.3250746d46ce8709.hot-update.json",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.3250746d46ce8709.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/app.3250746d46ce8709.hot-update.json"
+    },
+    "app.3280aec5e6d1918d.hot-update.js": {
+      "name": "app.3280aec5e6d1918d.hot-update.js",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.3280aec5e6d1918d.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/app.3280aec5e6d1918d.hot-update.js"
+    },
+    "app.3280aec5e6d1918d.hot-update.json": {
+      "name": "app.3280aec5e6d1918d.hot-update.json",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.3280aec5e6d1918d.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/app.3280aec5e6d1918d.hot-update.json"
+    },
+    "app.32cc595680eb8b18.hot-update.js": {
+      "name": "app.32cc595680eb8b18.hot-update.js",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.32cc595680eb8b18.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/app.32cc595680eb8b18.hot-update.js"
+    },
+    "app.32cc595680eb8b18.hot-update.json": {
+      "name": "app.32cc595680eb8b18.hot-update.json",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.32cc595680eb8b18.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/app.32cc595680eb8b18.hot-update.json"
+    },
+    "app.35e47c8fa83e6709.hot-update.js": {
+      "name": "app.35e47c8fa83e6709.hot-update.js",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.35e47c8fa83e6709.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/app.35e47c8fa83e6709.hot-update.js"
+    },
+    "app.35e47c8fa83e6709.hot-update.json": {
+      "name": "app.35e47c8fa83e6709.hot-update.json",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.35e47c8fa83e6709.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/app.35e47c8fa83e6709.hot-update.json"
+    },
+    "app.36884ade7cb0d1b0.hot-update.js": {
+      "name": "app.36884ade7cb0d1b0.hot-update.js",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.36884ade7cb0d1b0.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/app.36884ade7cb0d1b0.hot-update.js"
+    },
+    "app.36884ade7cb0d1b0.hot-update.json": {
+      "name": "app.36884ade7cb0d1b0.hot-update.json",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.36884ade7cb0d1b0.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/app.36884ade7cb0d1b0.hot-update.json"
+    },
+    "app.39a0461d54f08d02.hot-update.js": {
+      "name": "app.39a0461d54f08d02.hot-update.js",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.39a0461d54f08d02.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/app.39a0461d54f08d02.hot-update.js"
+    },
+    "app.39a0461d54f08d02.hot-update.json": {
+      "name": "app.39a0461d54f08d02.hot-update.json",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.39a0461d54f08d02.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/app.39a0461d54f08d02.hot-update.json"
+    },
+    "app.3abb6faef0b2f8e2.hot-update.js": {
+      "name": "app.3abb6faef0b2f8e2.hot-update.js",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.3abb6faef0b2f8e2.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/app.3abb6faef0b2f8e2.hot-update.js"
+    },
+    "app.3abb6faef0b2f8e2.hot-update.json": {
+      "name": "app.3abb6faef0b2f8e2.hot-update.json",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.3abb6faef0b2f8e2.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/app.3abb6faef0b2f8e2.hot-update.json"
+    },
+    "app.3b113ad69725b92c.hot-update.js": {
+      "name": "app.3b113ad69725b92c.hot-update.js",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.3b113ad69725b92c.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/app.3b113ad69725b92c.hot-update.js"
+    },
+    "app.3b113ad69725b92c.hot-update.json": {
+      "name": "app.3b113ad69725b92c.hot-update.json",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.3b113ad69725b92c.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/app.3b113ad69725b92c.hot-update.json"
+    },
+    "app.3b4df97efaafac53.hot-update.js": {
+      "name": "app.3b4df97efaafac53.hot-update.js",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.3b4df97efaafac53.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/app.3b4df97efaafac53.hot-update.js"
+    },
+    "app.3b4df97efaafac53.hot-update.json": {
+      "name": "app.3b4df97efaafac53.hot-update.json",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.3b4df97efaafac53.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/app.3b4df97efaafac53.hot-update.json"
+    },
+    "app.3c88a467099bfc9a.hot-update.js": {
+      "name": "app.3c88a467099bfc9a.hot-update.js",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.3c88a467099bfc9a.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/app.3c88a467099bfc9a.hot-update.js"
+    },
+    "app.3c88a467099bfc9a.hot-update.json": {
+      "name": "app.3c88a467099bfc9a.hot-update.json",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.3c88a467099bfc9a.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/app.3c88a467099bfc9a.hot-update.json"
+    },
+    "app.3cec0fc4d14d0715.hot-update.js": {
+      "name": "app.3cec0fc4d14d0715.hot-update.js",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.3cec0fc4d14d0715.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/app.3cec0fc4d14d0715.hot-update.js"
+    },
+    "app.3cec0fc4d14d0715.hot-update.json": {
+      "name": "app.3cec0fc4d14d0715.hot-update.json",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.3cec0fc4d14d0715.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/app.3cec0fc4d14d0715.hot-update.json"
+    },
+    "app.3ef82eaea966afa0.hot-update.js": {
+      "name": "app.3ef82eaea966afa0.hot-update.js",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.3ef82eaea966afa0.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/app.3ef82eaea966afa0.hot-update.js"
+    },
+    "app.3ef82eaea966afa0.hot-update.json": {
+      "name": "app.3ef82eaea966afa0.hot-update.json",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.3ef82eaea966afa0.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/app.3ef82eaea966afa0.hot-update.json"
+    },
+    "app.3f0250bf33a273b0.hot-update.js": {
+      "name": "app.3f0250bf33a273b0.hot-update.js",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.3f0250bf33a273b0.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/app.3f0250bf33a273b0.hot-update.js"
+    },
+    "app.3f0250bf33a273b0.hot-update.json": {
+      "name": "app.3f0250bf33a273b0.hot-update.json",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.3f0250bf33a273b0.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/app.3f0250bf33a273b0.hot-update.json"
+    },
+    "app.3f8d034fd355caa8.hot-update.js": {
+      "name": "app.3f8d034fd355caa8.hot-update.js",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.3f8d034fd355caa8.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/app.3f8d034fd355caa8.hot-update.js"
+    },
+    "app.3f8d034fd355caa8.hot-update.json": {
+      "name": "app.3f8d034fd355caa8.hot-update.json",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.3f8d034fd355caa8.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/app.3f8d034fd355caa8.hot-update.json"
+    },
+    "app.3fa5f6f6634529b9.hot-update.js": {
+      "name": "app.3fa5f6f6634529b9.hot-update.js",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.3fa5f6f6634529b9.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/app.3fa5f6f6634529b9.hot-update.js"
+    },
+    "app.3fa5f6f6634529b9.hot-update.json": {
+      "name": "app.3fa5f6f6634529b9.hot-update.json",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.3fa5f6f6634529b9.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/app.3fa5f6f6634529b9.hot-update.json"
+    },
+    "app.417f49026d040f8b.hot-update.js": {
+      "name": "app.417f49026d040f8b.hot-update.js",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.417f49026d040f8b.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/app.417f49026d040f8b.hot-update.js"
+    },
+    "app.417f49026d040f8b.hot-update.json": {
+      "name": "app.417f49026d040f8b.hot-update.json",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.417f49026d040f8b.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/app.417f49026d040f8b.hot-update.json"
+    },
+    "app.42c1cad3e3eacb37.hot-update.js": {
+      "name": "app.42c1cad3e3eacb37.hot-update.js",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.42c1cad3e3eacb37.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/app.42c1cad3e3eacb37.hot-update.js"
+    },
+    "app.42c1cad3e3eacb37.hot-update.json": {
+      "name": "app.42c1cad3e3eacb37.hot-update.json",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.42c1cad3e3eacb37.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/app.42c1cad3e3eacb37.hot-update.json"
+    },
+    "app.43468f513cee8907.hot-update.js": {
+      "name": "app.43468f513cee8907.hot-update.js",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.43468f513cee8907.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/app.43468f513cee8907.hot-update.js"
+    },
+    "app.43468f513cee8907.hot-update.json": {
+      "name": "app.43468f513cee8907.hot-update.json",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.43468f513cee8907.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/app.43468f513cee8907.hot-update.json"
+    },
+    "app.435b1fec2b338ed2.hot-update.js": {
+      "name": "app.435b1fec2b338ed2.hot-update.js",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.435b1fec2b338ed2.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/app.435b1fec2b338ed2.hot-update.js"
+    },
+    "app.435b1fec2b338ed2.hot-update.json": {
+      "name": "app.435b1fec2b338ed2.hot-update.json",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.435b1fec2b338ed2.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/app.435b1fec2b338ed2.hot-update.json"
+    },
+    "app.44ca9c6ee1d288ba.hot-update.js": {
+      "name": "app.44ca9c6ee1d288ba.hot-update.js",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.44ca9c6ee1d288ba.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/app.44ca9c6ee1d288ba.hot-update.js"
+    },
+    "app.44ca9c6ee1d288ba.hot-update.json": {
+      "name": "app.44ca9c6ee1d288ba.hot-update.json",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.44ca9c6ee1d288ba.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/app.44ca9c6ee1d288ba.hot-update.json"
+    },
+    "app.45354053267d2cd4.hot-update.js": {
+      "name": "app.45354053267d2cd4.hot-update.js",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.45354053267d2cd4.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/app.45354053267d2cd4.hot-update.js"
+    },
+    "app.45354053267d2cd4.hot-update.json": {
+      "name": "app.45354053267d2cd4.hot-update.json",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.45354053267d2cd4.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/app.45354053267d2cd4.hot-update.json"
+    },
+    "app.46831278eb7cf917.hot-update.js": {
+      "name": "app.46831278eb7cf917.hot-update.js",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.46831278eb7cf917.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/app.46831278eb7cf917.hot-update.js"
+    },
+    "app.46831278eb7cf917.hot-update.json": {
+      "name": "app.46831278eb7cf917.hot-update.json",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.46831278eb7cf917.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/app.46831278eb7cf917.hot-update.json"
+    },
+    "app.474c6eceb22ab5b8.hot-update.js": {
+      "name": "app.474c6eceb22ab5b8.hot-update.js",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.474c6eceb22ab5b8.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/app.474c6eceb22ab5b8.hot-update.js"
+    },
+    "app.474c6eceb22ab5b8.hot-update.json": {
+      "name": "app.474c6eceb22ab5b8.hot-update.json",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.474c6eceb22ab5b8.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/app.474c6eceb22ab5b8.hot-update.json"
+    },
+    "app.48304c3e02111f17.hot-update.js": {
+      "name": "app.48304c3e02111f17.hot-update.js",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.48304c3e02111f17.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/app.48304c3e02111f17.hot-update.js"
+    },
+    "app.48304c3e02111f17.hot-update.json": {
+      "name": "app.48304c3e02111f17.hot-update.json",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.48304c3e02111f17.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/app.48304c3e02111f17.hot-update.json"
+    },
+    "app.496c6136fb8f9cd8.hot-update.js": {
+      "name": "app.496c6136fb8f9cd8.hot-update.js",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.496c6136fb8f9cd8.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/app.496c6136fb8f9cd8.hot-update.js"
+    },
+    "app.496c6136fb8f9cd8.hot-update.json": {
+      "name": "app.496c6136fb8f9cd8.hot-update.json",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.496c6136fb8f9cd8.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/app.496c6136fb8f9cd8.hot-update.json"
+    },
+    "app.4a34c6a606264cd7.hot-update.js": {
+      "name": "app.4a34c6a606264cd7.hot-update.js",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.4a34c6a606264cd7.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/app.4a34c6a606264cd7.hot-update.js"
+    },
+    "app.4a34c6a606264cd7.hot-update.json": {
+      "name": "app.4a34c6a606264cd7.hot-update.json",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.4a34c6a606264cd7.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/app.4a34c6a606264cd7.hot-update.json"
+    },
+    "app.4ac7fda7cfd2955a.hot-update.js": {
+      "name": "app.4ac7fda7cfd2955a.hot-update.js",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.4ac7fda7cfd2955a.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/app.4ac7fda7cfd2955a.hot-update.js"
+    },
+    "app.4ac7fda7cfd2955a.hot-update.json": {
+      "name": "app.4ac7fda7cfd2955a.hot-update.json",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.4ac7fda7cfd2955a.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/app.4ac7fda7cfd2955a.hot-update.json"
+    },
+    "app.4b375a0526c1fa80.hot-update.js": {
+      "name": "app.4b375a0526c1fa80.hot-update.js",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.4b375a0526c1fa80.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/app.4b375a0526c1fa80.hot-update.js"
+    },
+    "app.4b375a0526c1fa80.hot-update.json": {
+      "name": "app.4b375a0526c1fa80.hot-update.json",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.4b375a0526c1fa80.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/app.4b375a0526c1fa80.hot-update.json"
+    },
+    "app.4c5f74c4938efb71.hot-update.js": {
+      "name": "app.4c5f74c4938efb71.hot-update.js",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.4c5f74c4938efb71.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/app.4c5f74c4938efb71.hot-update.js"
+    },
+    "app.4c5f74c4938efb71.hot-update.json": {
+      "name": "app.4c5f74c4938efb71.hot-update.json",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.4c5f74c4938efb71.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/app.4c5f74c4938efb71.hot-update.json"
+    },
+    "app.4c759faa559f6ed1.hot-update.js": {
+      "name": "app.4c759faa559f6ed1.hot-update.js",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.4c759faa559f6ed1.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/app.4c759faa559f6ed1.hot-update.js"
+    },
+    "app.4c759faa559f6ed1.hot-update.json": {
+      "name": "app.4c759faa559f6ed1.hot-update.json",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.4c759faa559f6ed1.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/app.4c759faa559f6ed1.hot-update.json"
+    },
+    "app.4d760fd5ceeec4ff.hot-update.js": {
+      "name": "app.4d760fd5ceeec4ff.hot-update.js",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.4d760fd5ceeec4ff.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/app.4d760fd5ceeec4ff.hot-update.js"
+    },
+    "app.4d760fd5ceeec4ff.hot-update.json": {
+      "name": "app.4d760fd5ceeec4ff.hot-update.json",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.4d760fd5ceeec4ff.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/app.4d760fd5ceeec4ff.hot-update.json"
+    },
+    "app.4ed04eafe20d9c50.hot-update.js": {
+      "name": "app.4ed04eafe20d9c50.hot-update.js",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.4ed04eafe20d9c50.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/app.4ed04eafe20d9c50.hot-update.js"
+    },
+    "app.4ed04eafe20d9c50.hot-update.json": {
+      "name": "app.4ed04eafe20d9c50.hot-update.json",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.4ed04eafe20d9c50.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/app.4ed04eafe20d9c50.hot-update.json"
+    },
+    "app.4f4eb649349179e5.hot-update.js": {
+      "name": "app.4f4eb649349179e5.hot-update.js",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.4f4eb649349179e5.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/app.4f4eb649349179e5.hot-update.js"
+    },
+    "app.4f4eb649349179e5.hot-update.json": {
+      "name": "app.4f4eb649349179e5.hot-update.json",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.4f4eb649349179e5.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/app.4f4eb649349179e5.hot-update.json"
+    },
+    "app.515079e5a613fbf1.hot-update.js": {
+      "name": "app.515079e5a613fbf1.hot-update.js",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.515079e5a613fbf1.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/app.515079e5a613fbf1.hot-update.js"
+    },
+    "app.515079e5a613fbf1.hot-update.json": {
+      "name": "app.515079e5a613fbf1.hot-update.json",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.515079e5a613fbf1.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/app.515079e5a613fbf1.hot-update.json"
+    },
+    "app.51a970b856149801.hot-update.js": {
+      "name": "app.51a970b856149801.hot-update.js",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.51a970b856149801.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/app.51a970b856149801.hot-update.js"
+    },
+    "app.51a970b856149801.hot-update.json": {
+      "name": "app.51a970b856149801.hot-update.json",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.51a970b856149801.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/app.51a970b856149801.hot-update.json"
+    },
+    "app.53143173c12e1b21.hot-update.js": {
+      "name": "app.53143173c12e1b21.hot-update.js",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.53143173c12e1b21.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/app.53143173c12e1b21.hot-update.js"
+    },
+    "app.53143173c12e1b21.hot-update.json": {
+      "name": "app.53143173c12e1b21.hot-update.json",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.53143173c12e1b21.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/app.53143173c12e1b21.hot-update.json"
+    },
+    "app.5450d4956e179fd1.hot-update.js": {
+      "name": "app.5450d4956e179fd1.hot-update.js",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.5450d4956e179fd1.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/app.5450d4956e179fd1.hot-update.js"
+    },
+    "app.5450d4956e179fd1.hot-update.json": {
+      "name": "app.5450d4956e179fd1.hot-update.json",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.5450d4956e179fd1.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/app.5450d4956e179fd1.hot-update.json"
+    },
+    "app.547d77889d218f90.hot-update.js": {
+      "name": "app.547d77889d218f90.hot-update.js",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.547d77889d218f90.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/app.547d77889d218f90.hot-update.js"
+    },
+    "app.547d77889d218f90.hot-update.json": {
+      "name": "app.547d77889d218f90.hot-update.json",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.547d77889d218f90.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/app.547d77889d218f90.hot-update.json"
+    },
+    "app.55e2445538d7c509.hot-update.js": {
+      "name": "app.55e2445538d7c509.hot-update.js",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.55e2445538d7c509.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/app.55e2445538d7c509.hot-update.js"
+    },
+    "app.55e2445538d7c509.hot-update.json": {
+      "name": "app.55e2445538d7c509.hot-update.json",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.55e2445538d7c509.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/app.55e2445538d7c509.hot-update.json"
+    },
+    "app.57e5db872fe9371f.hot-update.js": {
+      "name": "app.57e5db872fe9371f.hot-update.js",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.57e5db872fe9371f.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/app.57e5db872fe9371f.hot-update.js"
+    },
+    "app.57e5db872fe9371f.hot-update.json": {
+      "name": "app.57e5db872fe9371f.hot-update.json",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.57e5db872fe9371f.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/app.57e5db872fe9371f.hot-update.json"
+    },
+    "app.58a9af0b8f26daab.hot-update.js": {
+      "name": "app.58a9af0b8f26daab.hot-update.js",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.58a9af0b8f26daab.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/app.58a9af0b8f26daab.hot-update.js"
+    },
+    "app.58a9af0b8f26daab.hot-update.json": {
+      "name": "app.58a9af0b8f26daab.hot-update.json",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.58a9af0b8f26daab.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/app.58a9af0b8f26daab.hot-update.json"
+    },
+    "app.5a2241ea72e63a87.hot-update.js": {
+      "name": "app.5a2241ea72e63a87.hot-update.js",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.5a2241ea72e63a87.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/app.5a2241ea72e63a87.hot-update.js"
+    },
+    "app.5a2241ea72e63a87.hot-update.json": {
+      "name": "app.5a2241ea72e63a87.hot-update.json",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.5a2241ea72e63a87.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/app.5a2241ea72e63a87.hot-update.json"
+    },
+    "app.5a2c48b01f999668.hot-update.js": {
+      "name": "app.5a2c48b01f999668.hot-update.js",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.5a2c48b01f999668.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/app.5a2c48b01f999668.hot-update.js"
+    },
+    "app.5a2c48b01f999668.hot-update.json": {
+      "name": "app.5a2c48b01f999668.hot-update.json",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.5a2c48b01f999668.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/app.5a2c48b01f999668.hot-update.json"
+    },
+    "app.5a65ce32f008da99.hot-update.js": {
+      "name": "app.5a65ce32f008da99.hot-update.js",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.5a65ce32f008da99.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/app.5a65ce32f008da99.hot-update.js"
+    },
+    "app.5a65ce32f008da99.hot-update.json": {
+      "name": "app.5a65ce32f008da99.hot-update.json",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.5a65ce32f008da99.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/app.5a65ce32f008da99.hot-update.json"
+    },
+    "app.5b0f4fe02dc594fa.hot-update.js": {
+      "name": "app.5b0f4fe02dc594fa.hot-update.js",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.5b0f4fe02dc594fa.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/app.5b0f4fe02dc594fa.hot-update.js"
+    },
+    "app.5b0f4fe02dc594fa.hot-update.json": {
+      "name": "app.5b0f4fe02dc594fa.hot-update.json",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.5b0f4fe02dc594fa.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/app.5b0f4fe02dc594fa.hot-update.json"
+    },
+    "app.5d544f77c18c646c.hot-update.js": {
+      "name": "app.5d544f77c18c646c.hot-update.js",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.5d544f77c18c646c.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/app.5d544f77c18c646c.hot-update.js"
+    },
+    "app.5d544f77c18c646c.hot-update.json": {
+      "name": "app.5d544f77c18c646c.hot-update.json",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.5d544f77c18c646c.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/app.5d544f77c18c646c.hot-update.json"
+    },
+    "app.5da64e3dd1123509.hot-update.js": {
+      "name": "app.5da64e3dd1123509.hot-update.js",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.5da64e3dd1123509.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/app.5da64e3dd1123509.hot-update.js"
+    },
+    "app.5da64e3dd1123509.hot-update.json": {
+      "name": "app.5da64e3dd1123509.hot-update.json",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.5da64e3dd1123509.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/app.5da64e3dd1123509.hot-update.json"
+    },
+    "app.5e1524ffd4eefb82.hot-update.js": {
+      "name": "app.5e1524ffd4eefb82.hot-update.js",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.5e1524ffd4eefb82.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/app.5e1524ffd4eefb82.hot-update.js"
+    },
+    "app.5e1524ffd4eefb82.hot-update.json": {
+      "name": "app.5e1524ffd4eefb82.hot-update.json",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.5e1524ffd4eefb82.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/app.5e1524ffd4eefb82.hot-update.json"
+    },
+    "app.5fc575a00c38368e.hot-update.js": {
+      "name": "app.5fc575a00c38368e.hot-update.js",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.5fc575a00c38368e.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/app.5fc575a00c38368e.hot-update.js"
+    },
+    "app.5fc575a00c38368e.hot-update.json": {
+      "name": "app.5fc575a00c38368e.hot-update.json",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.5fc575a00c38368e.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/app.5fc575a00c38368e.hot-update.json"
+    },
+    "app.5fdd329081fb2316.hot-update.js": {
+      "name": "app.5fdd329081fb2316.hot-update.js",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.5fdd329081fb2316.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/app.5fdd329081fb2316.hot-update.js"
+    },
+    "app.5fdd329081fb2316.hot-update.json": {
+      "name": "app.5fdd329081fb2316.hot-update.json",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.5fdd329081fb2316.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/app.5fdd329081fb2316.hot-update.json"
+    },
+    "app.60beb9122ca86e1d.hot-update.js": {
+      "name": "app.60beb9122ca86e1d.hot-update.js",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.60beb9122ca86e1d.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/app.60beb9122ca86e1d.hot-update.js"
+    },
+    "app.60beb9122ca86e1d.hot-update.json": {
+      "name": "app.60beb9122ca86e1d.hot-update.json",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.60beb9122ca86e1d.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/app.60beb9122ca86e1d.hot-update.json"
+    },
+    "app.6106d23cc9957365.hot-update.js": {
+      "name": "app.6106d23cc9957365.hot-update.js",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.6106d23cc9957365.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/app.6106d23cc9957365.hot-update.js"
+    },
+    "app.6106d23cc9957365.hot-update.json": {
+      "name": "app.6106d23cc9957365.hot-update.json",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.6106d23cc9957365.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/app.6106d23cc9957365.hot-update.json"
+    },
+    "app.615ab21efd7736cd.hot-update.js": {
+      "name": "app.615ab21efd7736cd.hot-update.js",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.615ab21efd7736cd.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/app.615ab21efd7736cd.hot-update.js"
+    },
+    "app.615ab21efd7736cd.hot-update.json": {
+      "name": "app.615ab21efd7736cd.hot-update.json",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.615ab21efd7736cd.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/app.615ab21efd7736cd.hot-update.json"
+    },
+    "app.61a48695c2f992b8.hot-update.js": {
+      "name": "app.61a48695c2f992b8.hot-update.js",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.61a48695c2f992b8.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/app.61a48695c2f992b8.hot-update.js"
+    },
+    "app.61a48695c2f992b8.hot-update.json": {
+      "name": "app.61a48695c2f992b8.hot-update.json",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.61a48695c2f992b8.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/app.61a48695c2f992b8.hot-update.json"
+    },
+    "app.630682004b0ba7ae.hot-update.js": {
+      "name": "app.630682004b0ba7ae.hot-update.js",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.630682004b0ba7ae.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/app.630682004b0ba7ae.hot-update.js"
+    },
+    "app.630682004b0ba7ae.hot-update.json": {
+      "name": "app.630682004b0ba7ae.hot-update.json",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.630682004b0ba7ae.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/app.630682004b0ba7ae.hot-update.json"
+    },
+    "app.63f30dca172a501b.hot-update.js": {
+      "name": "app.63f30dca172a501b.hot-update.js",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.63f30dca172a501b.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/app.63f30dca172a501b.hot-update.js"
+    },
+    "app.63f30dca172a501b.hot-update.json": {
+      "name": "app.63f30dca172a501b.hot-update.json",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.63f30dca172a501b.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/app.63f30dca172a501b.hot-update.json"
+    },
+    "app.6458685c403353ea.hot-update.js": {
+      "name": "app.6458685c403353ea.hot-update.js",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.6458685c403353ea.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/app.6458685c403353ea.hot-update.js"
+    },
+    "app.6458685c403353ea.hot-update.json": {
+      "name": "app.6458685c403353ea.hot-update.json",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.6458685c403353ea.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/app.6458685c403353ea.hot-update.json"
+    },
+    "app.661f180458c9dd67.hot-update.js": {
+      "name": "app.661f180458c9dd67.hot-update.js",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.661f180458c9dd67.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/app.661f180458c9dd67.hot-update.js"
+    },
+    "app.661f180458c9dd67.hot-update.json": {
+      "name": "app.661f180458c9dd67.hot-update.json",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.661f180458c9dd67.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/app.661f180458c9dd67.hot-update.json"
+    },
+    "app.66ec3fb7f6518b32.hot-update.js": {
+      "name": "app.66ec3fb7f6518b32.hot-update.js",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.66ec3fb7f6518b32.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/app.66ec3fb7f6518b32.hot-update.js"
+    },
+    "app.66ec3fb7f6518b32.hot-update.json": {
+      "name": "app.66ec3fb7f6518b32.hot-update.json",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.66ec3fb7f6518b32.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/app.66ec3fb7f6518b32.hot-update.json"
+    },
+    "app.66fd103a9f9ff9b7.hot-update.js": {
+      "name": "app.66fd103a9f9ff9b7.hot-update.js",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.66fd103a9f9ff9b7.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/app.66fd103a9f9ff9b7.hot-update.js"
+    },
+    "app.66fd103a9f9ff9b7.hot-update.json": {
+      "name": "app.66fd103a9f9ff9b7.hot-update.json",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.66fd103a9f9ff9b7.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/app.66fd103a9f9ff9b7.hot-update.json"
+    },
+    "app.6709cd77884da58e.hot-update.js": {
+      "name": "app.6709cd77884da58e.hot-update.js",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.6709cd77884da58e.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/app.6709cd77884da58e.hot-update.js"
+    },
+    "app.6709cd77884da58e.hot-update.json": {
+      "name": "app.6709cd77884da58e.hot-update.json",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.6709cd77884da58e.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/app.6709cd77884da58e.hot-update.json"
+    },
+    "app.67d472e36ac69b1c.hot-update.js": {
+      "name": "app.67d472e36ac69b1c.hot-update.js",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.67d472e36ac69b1c.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/app.67d472e36ac69b1c.hot-update.js"
+    },
+    "app.67d472e36ac69b1c.hot-update.json": {
+      "name": "app.67d472e36ac69b1c.hot-update.json",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.67d472e36ac69b1c.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/app.67d472e36ac69b1c.hot-update.json"
+    },
+    "app.688aedf8c5b002a4.hot-update.js": {
+      "name": "app.688aedf8c5b002a4.hot-update.js",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.688aedf8c5b002a4.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/app.688aedf8c5b002a4.hot-update.js"
+    },
+    "app.688aedf8c5b002a4.hot-update.json": {
+      "name": "app.688aedf8c5b002a4.hot-update.json",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.688aedf8c5b002a4.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/app.688aedf8c5b002a4.hot-update.json"
+    },
+    "app.68dcbca0d74a08e8.hot-update.js": {
+      "name": "app.68dcbca0d74a08e8.hot-update.js",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.68dcbca0d74a08e8.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/app.68dcbca0d74a08e8.hot-update.js"
+    },
+    "app.68dcbca0d74a08e8.hot-update.json": {
+      "name": "app.68dcbca0d74a08e8.hot-update.json",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.68dcbca0d74a08e8.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/app.68dcbca0d74a08e8.hot-update.json"
+    },
+    "app.68f1edcb98d2bf0f.hot-update.js": {
+      "name": "app.68f1edcb98d2bf0f.hot-update.js",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.68f1edcb98d2bf0f.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/app.68f1edcb98d2bf0f.hot-update.js"
+    },
+    "app.68f1edcb98d2bf0f.hot-update.json": {
+      "name": "app.68f1edcb98d2bf0f.hot-update.json",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.68f1edcb98d2bf0f.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/app.68f1edcb98d2bf0f.hot-update.json"
+    },
+    "app.6a90695de14747bd.hot-update.js": {
+      "name": "app.6a90695de14747bd.hot-update.js",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.6a90695de14747bd.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/app.6a90695de14747bd.hot-update.js"
+    },
+    "app.6a90695de14747bd.hot-update.json": {
+      "name": "app.6a90695de14747bd.hot-update.json",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.6a90695de14747bd.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/app.6a90695de14747bd.hot-update.json"
+    },
+    "app.6ecf0b8bcc6088ce.hot-update.js": {
+      "name": "app.6ecf0b8bcc6088ce.hot-update.js",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.6ecf0b8bcc6088ce.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/app.6ecf0b8bcc6088ce.hot-update.js"
+    },
+    "app.6ecf0b8bcc6088ce.hot-update.json": {
+      "name": "app.6ecf0b8bcc6088ce.hot-update.json",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.6ecf0b8bcc6088ce.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/app.6ecf0b8bcc6088ce.hot-update.json"
+    },
+    "app.6f3ee0e5283452d4.hot-update.js": {
+      "name": "app.6f3ee0e5283452d4.hot-update.js",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.6f3ee0e5283452d4.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/app.6f3ee0e5283452d4.hot-update.js"
+    },
+    "app.6f3ee0e5283452d4.hot-update.json": {
+      "name": "app.6f3ee0e5283452d4.hot-update.json",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.6f3ee0e5283452d4.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/app.6f3ee0e5283452d4.hot-update.json"
+    },
+    "app.70a1ac919a1bef68.hot-update.js": {
+      "name": "app.70a1ac919a1bef68.hot-update.js",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.70a1ac919a1bef68.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/app.70a1ac919a1bef68.hot-update.js"
+    },
+    "app.70a1ac919a1bef68.hot-update.json": {
+      "name": "app.70a1ac919a1bef68.hot-update.json",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.70a1ac919a1bef68.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/app.70a1ac919a1bef68.hot-update.json"
+    },
+    "app.753ac5ef72c477ee.hot-update.js": {
+      "name": "app.753ac5ef72c477ee.hot-update.js",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.753ac5ef72c477ee.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/app.753ac5ef72c477ee.hot-update.js"
+    },
+    "app.753ac5ef72c477ee.hot-update.json": {
+      "name": "app.753ac5ef72c477ee.hot-update.json",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.753ac5ef72c477ee.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/app.753ac5ef72c477ee.hot-update.json"
+    },
+    "app.7567b00c627af621.hot-update.js": {
+      "name": "app.7567b00c627af621.hot-update.js",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.7567b00c627af621.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/app.7567b00c627af621.hot-update.js"
+    },
+    "app.7567b00c627af621.hot-update.json": {
+      "name": "app.7567b00c627af621.hot-update.json",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.7567b00c627af621.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/app.7567b00c627af621.hot-update.json"
+    },
+    "app.76299942408e788c.hot-update.js": {
+      "name": "app.76299942408e788c.hot-update.js",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.76299942408e788c.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/app.76299942408e788c.hot-update.js"
+    },
+    "app.76299942408e788c.hot-update.json": {
+      "name": "app.76299942408e788c.hot-update.json",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.76299942408e788c.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/app.76299942408e788c.hot-update.json"
+    },
+    "app.76c7c984d8afb32a.hot-update.js": {
+      "name": "app.76c7c984d8afb32a.hot-update.js",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.76c7c984d8afb32a.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/app.76c7c984d8afb32a.hot-update.js"
+    },
+    "app.76c7c984d8afb32a.hot-update.json": {
+      "name": "app.76c7c984d8afb32a.hot-update.json",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.76c7c984d8afb32a.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/app.76c7c984d8afb32a.hot-update.json"
+    },
+    "app.778b2cd684d28716.hot-update.js": {
+      "name": "app.778b2cd684d28716.hot-update.js",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.778b2cd684d28716.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/app.778b2cd684d28716.hot-update.js"
+    },
+    "app.778b2cd684d28716.hot-update.json": {
+      "name": "app.778b2cd684d28716.hot-update.json",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.778b2cd684d28716.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/app.778b2cd684d28716.hot-update.json"
+    },
+    "app.7a9cfbeb1236f7c2.hot-update.js": {
+      "name": "app.7a9cfbeb1236f7c2.hot-update.js",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.7a9cfbeb1236f7c2.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/app.7a9cfbeb1236f7c2.hot-update.js"
+    },
+    "app.7a9cfbeb1236f7c2.hot-update.json": {
+      "name": "app.7a9cfbeb1236f7c2.hot-update.json",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.7a9cfbeb1236f7c2.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/app.7a9cfbeb1236f7c2.hot-update.json"
+    },
+    "app.7cfa52b2ddad2a7e.hot-update.js": {
+      "name": "app.7cfa52b2ddad2a7e.hot-update.js",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.7cfa52b2ddad2a7e.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/app.7cfa52b2ddad2a7e.hot-update.js"
+    },
+    "app.7cfa52b2ddad2a7e.hot-update.json": {
+      "name": "app.7cfa52b2ddad2a7e.hot-update.json",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.7cfa52b2ddad2a7e.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/app.7cfa52b2ddad2a7e.hot-update.json"
+    },
+    "app.7d1a0eb1ad6a60ab.hot-update.js": {
+      "name": "app.7d1a0eb1ad6a60ab.hot-update.js",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.7d1a0eb1ad6a60ab.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/app.7d1a0eb1ad6a60ab.hot-update.js"
+    },
+    "app.7d1a0eb1ad6a60ab.hot-update.json": {
+      "name": "app.7d1a0eb1ad6a60ab.hot-update.json",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.7d1a0eb1ad6a60ab.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/app.7d1a0eb1ad6a60ab.hot-update.json"
+    },
+    "app.7d6ec90ca6fc3136.hot-update.js": {
+      "name": "app.7d6ec90ca6fc3136.hot-update.js",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.7d6ec90ca6fc3136.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/app.7d6ec90ca6fc3136.hot-update.js"
+    },
+    "app.7d6ec90ca6fc3136.hot-update.json": {
+      "name": "app.7d6ec90ca6fc3136.hot-update.json",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.7d6ec90ca6fc3136.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/app.7d6ec90ca6fc3136.hot-update.json"
+    },
+    "app.7dac76a363343165.hot-update.js": {
+      "name": "app.7dac76a363343165.hot-update.js",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.7dac76a363343165.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/app.7dac76a363343165.hot-update.js"
+    },
+    "app.7dac76a363343165.hot-update.json": {
+      "name": "app.7dac76a363343165.hot-update.json",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.7dac76a363343165.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/app.7dac76a363343165.hot-update.json"
+    },
+    "app.7dd2a93984b420a3.hot-update.js": {
+      "name": "app.7dd2a93984b420a3.hot-update.js",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.7dd2a93984b420a3.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/app.7dd2a93984b420a3.hot-update.js"
+    },
+    "app.7dd2a93984b420a3.hot-update.json": {
+      "name": "app.7dd2a93984b420a3.hot-update.json",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.7dd2a93984b420a3.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/app.7dd2a93984b420a3.hot-update.json"
+    },
+    "app.7df039fb88780d47.hot-update.js": {
+      "name": "app.7df039fb88780d47.hot-update.js",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.7df039fb88780d47.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/app.7df039fb88780d47.hot-update.js"
+    },
+    "app.7df039fb88780d47.hot-update.json": {
+      "name": "app.7df039fb88780d47.hot-update.json",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.7df039fb88780d47.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/app.7df039fb88780d47.hot-update.json"
+    },
+    "app.7e29ce97927f5659.hot-update.js": {
+      "name": "app.7e29ce97927f5659.hot-update.js",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.7e29ce97927f5659.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/app.7e29ce97927f5659.hot-update.js"
+    },
+    "app.7e29ce97927f5659.hot-update.json": {
+      "name": "app.7e29ce97927f5659.hot-update.json",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.7e29ce97927f5659.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/app.7e29ce97927f5659.hot-update.json"
+    },
+    "app.7e9c5f0143db3d27.hot-update.js": {
+      "name": "app.7e9c5f0143db3d27.hot-update.js",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.7e9c5f0143db3d27.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/app.7e9c5f0143db3d27.hot-update.js"
+    },
+    "app.7e9c5f0143db3d27.hot-update.json": {
+      "name": "app.7e9c5f0143db3d27.hot-update.json",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.7e9c5f0143db3d27.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/app.7e9c5f0143db3d27.hot-update.json"
+    },
+    "app.80f6bfa1b9c50434.hot-update.js": {
+      "name": "app.80f6bfa1b9c50434.hot-update.js",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.80f6bfa1b9c50434.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/app.80f6bfa1b9c50434.hot-update.js"
+    },
+    "app.80f6bfa1b9c50434.hot-update.json": {
+      "name": "app.80f6bfa1b9c50434.hot-update.json",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.80f6bfa1b9c50434.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/app.80f6bfa1b9c50434.hot-update.json"
+    },
+    "app.81c31f5bb1308a32.hot-update.js": {
+      "name": "app.81c31f5bb1308a32.hot-update.js",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.81c31f5bb1308a32.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/app.81c31f5bb1308a32.hot-update.js"
+    },
+    "app.81c31f5bb1308a32.hot-update.json": {
+      "name": "app.81c31f5bb1308a32.hot-update.json",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.81c31f5bb1308a32.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/app.81c31f5bb1308a32.hot-update.json"
+    },
+    "app.81d584a4a18f8595.hot-update.js": {
+      "name": "app.81d584a4a18f8595.hot-update.js",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.81d584a4a18f8595.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/app.81d584a4a18f8595.hot-update.js"
+    },
+    "app.81d584a4a18f8595.hot-update.json": {
+      "name": "app.81d584a4a18f8595.hot-update.json",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.81d584a4a18f8595.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/app.81d584a4a18f8595.hot-update.json"
+    },
+    "app.83fe5da4f3c7b44b.hot-update.js": {
+      "name": "app.83fe5da4f3c7b44b.hot-update.js",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.83fe5da4f3c7b44b.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/app.83fe5da4f3c7b44b.hot-update.js"
+    },
+    "app.83fe5da4f3c7b44b.hot-update.json": {
+      "name": "app.83fe5da4f3c7b44b.hot-update.json",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.83fe5da4f3c7b44b.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/app.83fe5da4f3c7b44b.hot-update.json"
+    },
+    "app.86bc79a6160ee793.hot-update.js": {
+      "name": "app.86bc79a6160ee793.hot-update.js",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.86bc79a6160ee793.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/app.86bc79a6160ee793.hot-update.js"
+    },
+    "app.86bc79a6160ee793.hot-update.json": {
+      "name": "app.86bc79a6160ee793.hot-update.json",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.86bc79a6160ee793.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/app.86bc79a6160ee793.hot-update.json"
+    },
+    "app.872db14756c5e814.hot-update.js": {
+      "name": "app.872db14756c5e814.hot-update.js",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.872db14756c5e814.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/app.872db14756c5e814.hot-update.js"
+    },
+    "app.872db14756c5e814.hot-update.json": {
+      "name": "app.872db14756c5e814.hot-update.json",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.872db14756c5e814.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/app.872db14756c5e814.hot-update.json"
+    },
+    "app.8737c702694f44ab.hot-update.js": {
+      "name": "app.8737c702694f44ab.hot-update.js",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.8737c702694f44ab.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/app.8737c702694f44ab.hot-update.js"
+    },
+    "app.8737c702694f44ab.hot-update.json": {
+      "name": "app.8737c702694f44ab.hot-update.json",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.8737c702694f44ab.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/app.8737c702694f44ab.hot-update.json"
+    },
+    "app.8788c25bb50a5c3f.hot-update.js": {
+      "name": "app.8788c25bb50a5c3f.hot-update.js",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.8788c25bb50a5c3f.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/app.8788c25bb50a5c3f.hot-update.js"
+    },
+    "app.8788c25bb50a5c3f.hot-update.json": {
+      "name": "app.8788c25bb50a5c3f.hot-update.json",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.8788c25bb50a5c3f.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/app.8788c25bb50a5c3f.hot-update.json"
+    },
+    "app.878b4d73a6c4a5db.hot-update.js": {
+      "name": "app.878b4d73a6c4a5db.hot-update.js",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.878b4d73a6c4a5db.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/app.878b4d73a6c4a5db.hot-update.js"
+    },
+    "app.878b4d73a6c4a5db.hot-update.json": {
+      "name": "app.878b4d73a6c4a5db.hot-update.json",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.878b4d73a6c4a5db.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/app.878b4d73a6c4a5db.hot-update.json"
+    },
+    "app.883ed89ad016d954.hot-update.js": {
+      "name": "app.883ed89ad016d954.hot-update.js",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.883ed89ad016d954.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/app.883ed89ad016d954.hot-update.js"
+    },
+    "app.883ed89ad016d954.hot-update.json": {
+      "name": "app.883ed89ad016d954.hot-update.json",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.883ed89ad016d954.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/app.883ed89ad016d954.hot-update.json"
+    },
+    "app.895dadcbd7f5abcc.hot-update.js": {
+      "name": "app.895dadcbd7f5abcc.hot-update.js",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.895dadcbd7f5abcc.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/app.895dadcbd7f5abcc.hot-update.js"
+    },
+    "app.895dadcbd7f5abcc.hot-update.json": {
+      "name": "app.895dadcbd7f5abcc.hot-update.json",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.895dadcbd7f5abcc.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/app.895dadcbd7f5abcc.hot-update.json"
+    },
+    "app.8c932402b62f4c36.hot-update.js": {
+      "name": "app.8c932402b62f4c36.hot-update.js",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.8c932402b62f4c36.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/app.8c932402b62f4c36.hot-update.js"
+    },
+    "app.8c932402b62f4c36.hot-update.json": {
+      "name": "app.8c932402b62f4c36.hot-update.json",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.8c932402b62f4c36.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/app.8c932402b62f4c36.hot-update.json"
+    },
+    "app.8dc5a1883c5d826b.hot-update.js": {
+      "name": "app.8dc5a1883c5d826b.hot-update.js",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.8dc5a1883c5d826b.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/app.8dc5a1883c5d826b.hot-update.js"
+    },
+    "app.8dc5a1883c5d826b.hot-update.json": {
+      "name": "app.8dc5a1883c5d826b.hot-update.json",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.8dc5a1883c5d826b.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/app.8dc5a1883c5d826b.hot-update.json"
+    },
+    "app.8e86d9d4dae581ed.hot-update.js": {
+      "name": "app.8e86d9d4dae581ed.hot-update.js",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.8e86d9d4dae581ed.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/app.8e86d9d4dae581ed.hot-update.js"
+    },
+    "app.8e86d9d4dae581ed.hot-update.json": {
+      "name": "app.8e86d9d4dae581ed.hot-update.json",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.8e86d9d4dae581ed.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/app.8e86d9d4dae581ed.hot-update.json"
+    },
+    "app.900791c949256277.hot-update.js": {
+      "name": "app.900791c949256277.hot-update.js",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.900791c949256277.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/app.900791c949256277.hot-update.js"
+    },
+    "app.900791c949256277.hot-update.json": {
+      "name": "app.900791c949256277.hot-update.json",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.900791c949256277.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/app.900791c949256277.hot-update.json"
+    },
+    "app.9193f848fb80a61d.hot-update.js": {
+      "name": "app.9193f848fb80a61d.hot-update.js",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.9193f848fb80a61d.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/app.9193f848fb80a61d.hot-update.js"
+    },
+    "app.9193f848fb80a61d.hot-update.json": {
+      "name": "app.9193f848fb80a61d.hot-update.json",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.9193f848fb80a61d.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/app.9193f848fb80a61d.hot-update.json"
+    },
+    "app.91a484ad6822dfac.hot-update.js": {
+      "name": "app.91a484ad6822dfac.hot-update.js",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.91a484ad6822dfac.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/app.91a484ad6822dfac.hot-update.js"
+    },
+    "app.91a484ad6822dfac.hot-update.json": {
+      "name": "app.91a484ad6822dfac.hot-update.json",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.91a484ad6822dfac.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/app.91a484ad6822dfac.hot-update.json"
+    },
+    "app.92afef8cf745bdac.hot-update.js": {
+      "name": "app.92afef8cf745bdac.hot-update.js",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.92afef8cf745bdac.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/app.92afef8cf745bdac.hot-update.js"
+    },
+    "app.92afef8cf745bdac.hot-update.json": {
+      "name": "app.92afef8cf745bdac.hot-update.json",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.92afef8cf745bdac.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/app.92afef8cf745bdac.hot-update.json"
+    },
+    "app.94a23e9bb349926b.hot-update.js": {
+      "name": "app.94a23e9bb349926b.hot-update.js",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.94a23e9bb349926b.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/app.94a23e9bb349926b.hot-update.js"
+    },
+    "app.94a23e9bb349926b.hot-update.json": {
+      "name": "app.94a23e9bb349926b.hot-update.json",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.94a23e9bb349926b.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/app.94a23e9bb349926b.hot-update.json"
+    },
+    "app.953eb5564a0e81e1.hot-update.js": {
+      "name": "app.953eb5564a0e81e1.hot-update.js",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.953eb5564a0e81e1.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/app.953eb5564a0e81e1.hot-update.js"
+    },
+    "app.953eb5564a0e81e1.hot-update.json": {
+      "name": "app.953eb5564a0e81e1.hot-update.json",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.953eb5564a0e81e1.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/app.953eb5564a0e81e1.hot-update.json"
+    },
+    "app.9727ce3122c44850.hot-update.js": {
+      "name": "app.9727ce3122c44850.hot-update.js",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.9727ce3122c44850.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/app.9727ce3122c44850.hot-update.js"
+    },
+    "app.9727ce3122c44850.hot-update.json": {
+      "name": "app.9727ce3122c44850.hot-update.json",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.9727ce3122c44850.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/app.9727ce3122c44850.hot-update.json"
+    },
+    "app.97bc62cde7281577.hot-update.js": {
+      "name": "app.97bc62cde7281577.hot-update.js",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.97bc62cde7281577.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/app.97bc62cde7281577.hot-update.js"
+    },
+    "app.97bc62cde7281577.hot-update.json": {
+      "name": "app.97bc62cde7281577.hot-update.json",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.97bc62cde7281577.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/app.97bc62cde7281577.hot-update.json"
+    },
+    "app.97cf68867469a73b.hot-update.js": {
+      "name": "app.97cf68867469a73b.hot-update.js",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.97cf68867469a73b.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/app.97cf68867469a73b.hot-update.js"
+    },
+    "app.97cf68867469a73b.hot-update.json": {
+      "name": "app.97cf68867469a73b.hot-update.json",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.97cf68867469a73b.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/app.97cf68867469a73b.hot-update.json"
+    },
+    "app.981be74f697f9c00.hot-update.js": {
+      "name": "app.981be74f697f9c00.hot-update.js",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.981be74f697f9c00.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/app.981be74f697f9c00.hot-update.js"
+    },
+    "app.981be74f697f9c00.hot-update.json": {
+      "name": "app.981be74f697f9c00.hot-update.json",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.981be74f697f9c00.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/app.981be74f697f9c00.hot-update.json"
+    },
+    "app.9902256640785410.hot-update.js": {
+      "name": "app.9902256640785410.hot-update.js",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.9902256640785410.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/app.9902256640785410.hot-update.js"
+    },
+    "app.9902256640785410.hot-update.json": {
+      "name": "app.9902256640785410.hot-update.json",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.9902256640785410.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/app.9902256640785410.hot-update.json"
+    },
+    "app.99dd17d5cd5e354a.hot-update.js": {
+      "name": "app.99dd17d5cd5e354a.hot-update.js",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.99dd17d5cd5e354a.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/app.99dd17d5cd5e354a.hot-update.js"
+    },
+    "app.99dd17d5cd5e354a.hot-update.json": {
+      "name": "app.99dd17d5cd5e354a.hot-update.json",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.99dd17d5cd5e354a.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/app.99dd17d5cd5e354a.hot-update.json"
+    },
+    "app.99df9a040f7507c1.hot-update.js": {
+      "name": "app.99df9a040f7507c1.hot-update.js",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.99df9a040f7507c1.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/app.99df9a040f7507c1.hot-update.js"
+    },
+    "app.99df9a040f7507c1.hot-update.json": {
+      "name": "app.99df9a040f7507c1.hot-update.json",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.99df9a040f7507c1.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/app.99df9a040f7507c1.hot-update.json"
+    },
+    "app.9a062fb0a0c197e5.hot-update.js": {
+      "name": "app.9a062fb0a0c197e5.hot-update.js",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.9a062fb0a0c197e5.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/app.9a062fb0a0c197e5.hot-update.js"
+    },
+    "app.9a062fb0a0c197e5.hot-update.json": {
+      "name": "app.9a062fb0a0c197e5.hot-update.json",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.9a062fb0a0c197e5.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/app.9a062fb0a0c197e5.hot-update.json"
+    },
+    "app.9a4ceb74b80b79e5.hot-update.js": {
+      "name": "app.9a4ceb74b80b79e5.hot-update.js",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.9a4ceb74b80b79e5.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/app.9a4ceb74b80b79e5.hot-update.js"
+    },
+    "app.9a4ceb74b80b79e5.hot-update.json": {
+      "name": "app.9a4ceb74b80b79e5.hot-update.json",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.9a4ceb74b80b79e5.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/app.9a4ceb74b80b79e5.hot-update.json"
+    },
+    "app.9a5dd7da33e31084.hot-update.js": {
+      "name": "app.9a5dd7da33e31084.hot-update.js",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.9a5dd7da33e31084.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/app.9a5dd7da33e31084.hot-update.js"
+    },
+    "app.9a5dd7da33e31084.hot-update.json": {
+      "name": "app.9a5dd7da33e31084.hot-update.json",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.9a5dd7da33e31084.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/app.9a5dd7da33e31084.hot-update.json"
+    },
+    "app.9b183c26ac21559e.hot-update.js": {
+      "name": "app.9b183c26ac21559e.hot-update.js",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.9b183c26ac21559e.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/app.9b183c26ac21559e.hot-update.js"
+    },
+    "app.9b183c26ac21559e.hot-update.json": {
+      "name": "app.9b183c26ac21559e.hot-update.json",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.9b183c26ac21559e.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/app.9b183c26ac21559e.hot-update.json"
+    },
+    "app.9d29fb1c5952197f.hot-update.js": {
+      "name": "app.9d29fb1c5952197f.hot-update.js",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.9d29fb1c5952197f.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/app.9d29fb1c5952197f.hot-update.js"
+    },
+    "app.9d29fb1c5952197f.hot-update.json": {
+      "name": "app.9d29fb1c5952197f.hot-update.json",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.9d29fb1c5952197f.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/app.9d29fb1c5952197f.hot-update.json"
+    },
+    "app.9e32d9b29822603a.hot-update.js": {
+      "name": "app.9e32d9b29822603a.hot-update.js",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.9e32d9b29822603a.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/app.9e32d9b29822603a.hot-update.js"
+    },
+    "app.9e32d9b29822603a.hot-update.json": {
+      "name": "app.9e32d9b29822603a.hot-update.json",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.9e32d9b29822603a.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/app.9e32d9b29822603a.hot-update.json"
+    },
+    "app.9f453245178ab872.hot-update.js": {
+      "name": "app.9f453245178ab872.hot-update.js",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.9f453245178ab872.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/app.9f453245178ab872.hot-update.js"
+    },
+    "app.9f453245178ab872.hot-update.json": {
+      "name": "app.9f453245178ab872.hot-update.json",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.9f453245178ab872.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/app.9f453245178ab872.hot-update.json"
+    },
+    "app.a05d899c911357ea.hot-update.js": {
+      "name": "app.a05d899c911357ea.hot-update.js",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.a05d899c911357ea.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/app.a05d899c911357ea.hot-update.js"
+    },
+    "app.a05d899c911357ea.hot-update.json": {
+      "name": "app.a05d899c911357ea.hot-update.json",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.a05d899c911357ea.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/app.a05d899c911357ea.hot-update.json"
+    },
+    "app.a094741dd395af59.hot-update.js": {
+      "name": "app.a094741dd395af59.hot-update.js",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.a094741dd395af59.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/app.a094741dd395af59.hot-update.js"
+    },
+    "app.a094741dd395af59.hot-update.json": {
+      "name": "app.a094741dd395af59.hot-update.json",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.a094741dd395af59.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/app.a094741dd395af59.hot-update.json"
+    },
+    "app.a1832b0ca44b4d4e.hot-update.js": {
+      "name": "app.a1832b0ca44b4d4e.hot-update.js",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.a1832b0ca44b4d4e.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/app.a1832b0ca44b4d4e.hot-update.js"
+    },
+    "app.a1832b0ca44b4d4e.hot-update.json": {
+      "name": "app.a1832b0ca44b4d4e.hot-update.json",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.a1832b0ca44b4d4e.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/app.a1832b0ca44b4d4e.hot-update.json"
+    },
+    "app.a308df8dda0a89d3.hot-update.js": {
+      "name": "app.a308df8dda0a89d3.hot-update.js",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.a308df8dda0a89d3.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/app.a308df8dda0a89d3.hot-update.js"
+    },
+    "app.a308df8dda0a89d3.hot-update.json": {
+      "name": "app.a308df8dda0a89d3.hot-update.json",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.a308df8dda0a89d3.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/app.a308df8dda0a89d3.hot-update.json"
+    },
+    "app.a37e0b473d3a065f.hot-update.js": {
+      "name": "app.a37e0b473d3a065f.hot-update.js",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.a37e0b473d3a065f.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/app.a37e0b473d3a065f.hot-update.js"
+    },
+    "app.a37e0b473d3a065f.hot-update.json": {
+      "name": "app.a37e0b473d3a065f.hot-update.json",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.a37e0b473d3a065f.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/app.a37e0b473d3a065f.hot-update.json"
+    },
+    "app.a61ebe87728e477f.hot-update.js": {
+      "name": "app.a61ebe87728e477f.hot-update.js",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.a61ebe87728e477f.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/app.a61ebe87728e477f.hot-update.js"
+    },
+    "app.a61ebe87728e477f.hot-update.json": {
+      "name": "app.a61ebe87728e477f.hot-update.json",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.a61ebe87728e477f.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/app.a61ebe87728e477f.hot-update.json"
+    },
+    "app.a6fb42ed7e6b1647.hot-update.js": {
+      "name": "app.a6fb42ed7e6b1647.hot-update.js",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.a6fb42ed7e6b1647.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/app.a6fb42ed7e6b1647.hot-update.js"
+    },
+    "app.a6fb42ed7e6b1647.hot-update.json": {
+      "name": "app.a6fb42ed7e6b1647.hot-update.json",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.a6fb42ed7e6b1647.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/app.a6fb42ed7e6b1647.hot-update.json"
+    },
+    "app.a7c7a55dd926e779.hot-update.js": {
+      "name": "app.a7c7a55dd926e779.hot-update.js",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.a7c7a55dd926e779.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/app.a7c7a55dd926e779.hot-update.js"
+    },
+    "app.a7c7a55dd926e779.hot-update.json": {
+      "name": "app.a7c7a55dd926e779.hot-update.json",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.a7c7a55dd926e779.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/app.a7c7a55dd926e779.hot-update.json"
+    },
+    "app.a89465aa32a02a65.hot-update.js": {
+      "name": "app.a89465aa32a02a65.hot-update.js",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.a89465aa32a02a65.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/app.a89465aa32a02a65.hot-update.js"
+    },
+    "app.a89465aa32a02a65.hot-update.json": {
+      "name": "app.a89465aa32a02a65.hot-update.json",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.a89465aa32a02a65.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/app.a89465aa32a02a65.hot-update.json"
+    },
+    "app.a8bd6e338312e7d8.hot-update.js": {
+      "name": "app.a8bd6e338312e7d8.hot-update.js",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.a8bd6e338312e7d8.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/app.a8bd6e338312e7d8.hot-update.js"
+    },
+    "app.a8bd6e338312e7d8.hot-update.json": {
+      "name": "app.a8bd6e338312e7d8.hot-update.json",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.a8bd6e338312e7d8.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/app.a8bd6e338312e7d8.hot-update.json"
+    },
+    "app.aa88ea9e4a315d55.hot-update.js": {
+      "name": "app.aa88ea9e4a315d55.hot-update.js",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.aa88ea9e4a315d55.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/app.aa88ea9e4a315d55.hot-update.js"
+    },
+    "app.aa88ea9e4a315d55.hot-update.json": {
+      "name": "app.aa88ea9e4a315d55.hot-update.json",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.aa88ea9e4a315d55.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/app.aa88ea9e4a315d55.hot-update.json"
+    },
+    "app.ac1ae5f388f696cf.hot-update.js": {
+      "name": "app.ac1ae5f388f696cf.hot-update.js",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.ac1ae5f388f696cf.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/app.ac1ae5f388f696cf.hot-update.js"
+    },
+    "app.ac1ae5f388f696cf.hot-update.json": {
+      "name": "app.ac1ae5f388f696cf.hot-update.json",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.ac1ae5f388f696cf.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/app.ac1ae5f388f696cf.hot-update.json"
+    },
+    "app.ac3582930508ec40.hot-update.js": {
+      "name": "app.ac3582930508ec40.hot-update.js",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.ac3582930508ec40.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/app.ac3582930508ec40.hot-update.js"
+    },
+    "app.ac3582930508ec40.hot-update.json": {
+      "name": "app.ac3582930508ec40.hot-update.json",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.ac3582930508ec40.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/app.ac3582930508ec40.hot-update.json"
+    },
+    "app.ad804c397f2eb4f3.hot-update.js": {
+      "name": "app.ad804c397f2eb4f3.hot-update.js",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.ad804c397f2eb4f3.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/app.ad804c397f2eb4f3.hot-update.js"
+    },
+    "app.ad804c397f2eb4f3.hot-update.json": {
+      "name": "app.ad804c397f2eb4f3.hot-update.json",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.ad804c397f2eb4f3.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/app.ad804c397f2eb4f3.hot-update.json"
+    },
+    "app.ad9711453e3c1956.hot-update.js": {
+      "name": "app.ad9711453e3c1956.hot-update.js",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.ad9711453e3c1956.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/app.ad9711453e3c1956.hot-update.js"
+    },
+    "app.ad9711453e3c1956.hot-update.json": {
+      "name": "app.ad9711453e3c1956.hot-update.json",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.ad9711453e3c1956.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/app.ad9711453e3c1956.hot-update.json"
+    },
+    "app.ae4db8f5d6cad812.hot-update.js": {
+      "name": "app.ae4db8f5d6cad812.hot-update.js",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.ae4db8f5d6cad812.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/app.ae4db8f5d6cad812.hot-update.js"
+    },
+    "app.ae4db8f5d6cad812.hot-update.json": {
+      "name": "app.ae4db8f5d6cad812.hot-update.json",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.ae4db8f5d6cad812.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/app.ae4db8f5d6cad812.hot-update.json"
+    },
+    "app.b10e8edb9a4c365b.hot-update.js": {
+      "name": "app.b10e8edb9a4c365b.hot-update.js",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.b10e8edb9a4c365b.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/app.b10e8edb9a4c365b.hot-update.js"
+    },
+    "app.b10e8edb9a4c365b.hot-update.json": {
+      "name": "app.b10e8edb9a4c365b.hot-update.json",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.b10e8edb9a4c365b.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/app.b10e8edb9a4c365b.hot-update.json"
+    },
+    "app.b1d6888ea42f1614.hot-update.js": {
+      "name": "app.b1d6888ea42f1614.hot-update.js",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.b1d6888ea42f1614.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/app.b1d6888ea42f1614.hot-update.js"
+    },
+    "app.b1d6888ea42f1614.hot-update.json": {
+      "name": "app.b1d6888ea42f1614.hot-update.json",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.b1d6888ea42f1614.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/app.b1d6888ea42f1614.hot-update.json"
+    },
+    "app.b30abcf667433f5b.hot-update.js": {
+      "name": "app.b30abcf667433f5b.hot-update.js",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.b30abcf667433f5b.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/app.b30abcf667433f5b.hot-update.js"
+    },
+    "app.b30abcf667433f5b.hot-update.json": {
+      "name": "app.b30abcf667433f5b.hot-update.json",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.b30abcf667433f5b.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/app.b30abcf667433f5b.hot-update.json"
+    },
+    "app.b3e58455f1ad0a21.hot-update.js": {
+      "name": "app.b3e58455f1ad0a21.hot-update.js",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.b3e58455f1ad0a21.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/app.b3e58455f1ad0a21.hot-update.js"
+    },
+    "app.b3e58455f1ad0a21.hot-update.json": {
+      "name": "app.b3e58455f1ad0a21.hot-update.json",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.b3e58455f1ad0a21.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/app.b3e58455f1ad0a21.hot-update.json"
+    },
+    "app.b51b5e9dc243d746.hot-update.js": {
+      "name": "app.b51b5e9dc243d746.hot-update.js",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.b51b5e9dc243d746.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/app.b51b5e9dc243d746.hot-update.js"
+    },
+    "app.b51b5e9dc243d746.hot-update.json": {
+      "name": "app.b51b5e9dc243d746.hot-update.json",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.b51b5e9dc243d746.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/app.b51b5e9dc243d746.hot-update.json"
+    },
+    "app.b62c9512f3306834.hot-update.js": {
+      "name": "app.b62c9512f3306834.hot-update.js",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.b62c9512f3306834.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/app.b62c9512f3306834.hot-update.js"
+    },
+    "app.b62c9512f3306834.hot-update.json": {
+      "name": "app.b62c9512f3306834.hot-update.json",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.b62c9512f3306834.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/app.b62c9512f3306834.hot-update.json"
+    },
+    "app.b7cee9c090ca6aa9.hot-update.js": {
+      "name": "app.b7cee9c090ca6aa9.hot-update.js",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.b7cee9c090ca6aa9.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/app.b7cee9c090ca6aa9.hot-update.js"
+    },
+    "app.b7cee9c090ca6aa9.hot-update.json": {
+      "name": "app.b7cee9c090ca6aa9.hot-update.json",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.b7cee9c090ca6aa9.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/app.b7cee9c090ca6aa9.hot-update.json"
+    },
+    "app.b8747b397fda4ff1.hot-update.js": {
+      "name": "app.b8747b397fda4ff1.hot-update.js",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.b8747b397fda4ff1.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/app.b8747b397fda4ff1.hot-update.js"
+    },
+    "app.b8747b397fda4ff1.hot-update.json": {
+      "name": "app.b8747b397fda4ff1.hot-update.json",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.b8747b397fda4ff1.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/app.b8747b397fda4ff1.hot-update.json"
+    },
+    "app.b8dbb204b8a03f45.hot-update.js": {
+      "name": "app.b8dbb204b8a03f45.hot-update.js",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.b8dbb204b8a03f45.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/app.b8dbb204b8a03f45.hot-update.js"
+    },
+    "app.b8dbb204b8a03f45.hot-update.json": {
+      "name": "app.b8dbb204b8a03f45.hot-update.json",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.b8dbb204b8a03f45.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/app.b8dbb204b8a03f45.hot-update.json"
+    },
+    "app.b8f613ce679adbf7.hot-update.js": {
+      "name": "app.b8f613ce679adbf7.hot-update.js",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.b8f613ce679adbf7.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/app.b8f613ce679adbf7.hot-update.js"
+    },
+    "app.b8f613ce679adbf7.hot-update.json": {
+      "name": "app.b8f613ce679adbf7.hot-update.json",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.b8f613ce679adbf7.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/app.b8f613ce679adbf7.hot-update.json"
+    },
+    "app.b9a07853096686ac.hot-update.js": {
+      "name": "app.b9a07853096686ac.hot-update.js",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.b9a07853096686ac.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/app.b9a07853096686ac.hot-update.js"
+    },
+    "app.b9a07853096686ac.hot-update.json": {
+      "name": "app.b9a07853096686ac.hot-update.json",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.b9a07853096686ac.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/app.b9a07853096686ac.hot-update.json"
+    },
+    "app.b9b2fc090ceca80e.hot-update.js": {
+      "name": "app.b9b2fc090ceca80e.hot-update.js",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.b9b2fc090ceca80e.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/app.b9b2fc090ceca80e.hot-update.js"
+    },
+    "app.b9b2fc090ceca80e.hot-update.json": {
+      "name": "app.b9b2fc090ceca80e.hot-update.json",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.b9b2fc090ceca80e.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/app.b9b2fc090ceca80e.hot-update.json"
+    },
+    "app.ba0b8717568b0750.hot-update.js": {
+      "name": "app.ba0b8717568b0750.hot-update.js",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.ba0b8717568b0750.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/app.ba0b8717568b0750.hot-update.js"
+    },
+    "app.ba0b8717568b0750.hot-update.json": {
+      "name": "app.ba0b8717568b0750.hot-update.json",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.ba0b8717568b0750.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/app.ba0b8717568b0750.hot-update.json"
+    },
+    "app.ba738a4630b9f2ed.hot-update.js": {
+      "name": "app.ba738a4630b9f2ed.hot-update.js",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.ba738a4630b9f2ed.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/app.ba738a4630b9f2ed.hot-update.js"
+    },
+    "app.ba738a4630b9f2ed.hot-update.json": {
+      "name": "app.ba738a4630b9f2ed.hot-update.json",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.ba738a4630b9f2ed.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/app.ba738a4630b9f2ed.hot-update.json"
+    },
+    "app.ba94b2b0b37786f4.hot-update.js": {
+      "name": "app.ba94b2b0b37786f4.hot-update.js",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.ba94b2b0b37786f4.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/app.ba94b2b0b37786f4.hot-update.js"
+    },
+    "app.ba94b2b0b37786f4.hot-update.json": {
+      "name": "app.ba94b2b0b37786f4.hot-update.json",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.ba94b2b0b37786f4.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/app.ba94b2b0b37786f4.hot-update.json"
+    },
+    "app.bb475eedca568905.hot-update.js": {
+      "name": "app.bb475eedca568905.hot-update.js",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.bb475eedca568905.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/app.bb475eedca568905.hot-update.js"
+    },
+    "app.bb475eedca568905.hot-update.json": {
+      "name": "app.bb475eedca568905.hot-update.json",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.bb475eedca568905.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/app.bb475eedca568905.hot-update.json"
+    },
+    "app.bc14143ab04daa7c.hot-update.js": {
+      "name": "app.bc14143ab04daa7c.hot-update.js",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.bc14143ab04daa7c.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/app.bc14143ab04daa7c.hot-update.js"
+    },
+    "app.bc14143ab04daa7c.hot-update.json": {
+      "name": "app.bc14143ab04daa7c.hot-update.json",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.bc14143ab04daa7c.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/app.bc14143ab04daa7c.hot-update.json"
+    },
+    "app.bd5173cf2c245314.hot-update.js": {
+      "name": "app.bd5173cf2c245314.hot-update.js",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.bd5173cf2c245314.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/app.bd5173cf2c245314.hot-update.js"
+    },
+    "app.bd5173cf2c245314.hot-update.json": {
+      "name": "app.bd5173cf2c245314.hot-update.json",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.bd5173cf2c245314.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/app.bd5173cf2c245314.hot-update.json"
+    },
+    "app.bd82ef800e688881.hot-update.js": {
+      "name": "app.bd82ef800e688881.hot-update.js",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.bd82ef800e688881.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/app.bd82ef800e688881.hot-update.js"
+    },
+    "app.bd82ef800e688881.hot-update.json": {
+      "name": "app.bd82ef800e688881.hot-update.json",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.bd82ef800e688881.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/app.bd82ef800e688881.hot-update.json"
+    },
+    "app.be7a443e3dc2e6c9.hot-update.js": {
+      "name": "app.be7a443e3dc2e6c9.hot-update.js",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.be7a443e3dc2e6c9.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/app.be7a443e3dc2e6c9.hot-update.js"
+    },
+    "app.be7a443e3dc2e6c9.hot-update.json": {
+      "name": "app.be7a443e3dc2e6c9.hot-update.json",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.be7a443e3dc2e6c9.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/app.be7a443e3dc2e6c9.hot-update.json"
+    },
+    "app.bf1cdef1c561a4d2.hot-update.js": {
+      "name": "app.bf1cdef1c561a4d2.hot-update.js",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.bf1cdef1c561a4d2.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/app.bf1cdef1c561a4d2.hot-update.js"
+    },
+    "app.bf1cdef1c561a4d2.hot-update.json": {
+      "name": "app.bf1cdef1c561a4d2.hot-update.json",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.bf1cdef1c561a4d2.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/app.bf1cdef1c561a4d2.hot-update.json"
+    },
+    "app.bf334f13f6dc1030.hot-update.js": {
+      "name": "app.bf334f13f6dc1030.hot-update.js",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.bf334f13f6dc1030.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/app.bf334f13f6dc1030.hot-update.js"
+    },
+    "app.bf334f13f6dc1030.hot-update.json": {
+      "name": "app.bf334f13f6dc1030.hot-update.json",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.bf334f13f6dc1030.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/app.bf334f13f6dc1030.hot-update.json"
+    },
+    "app.c0e2fda165469509.hot-update.js": {
+      "name": "app.c0e2fda165469509.hot-update.js",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.c0e2fda165469509.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/app.c0e2fda165469509.hot-update.js"
+    },
+    "app.c0e2fda165469509.hot-update.json": {
+      "name": "app.c0e2fda165469509.hot-update.json",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.c0e2fda165469509.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/app.c0e2fda165469509.hot-update.json"
+    },
+    "app.c3e5ed3713445680.hot-update.js": {
+      "name": "app.c3e5ed3713445680.hot-update.js",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.c3e5ed3713445680.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/app.c3e5ed3713445680.hot-update.js"
+    },
+    "app.c3e5ed3713445680.hot-update.json": {
+      "name": "app.c3e5ed3713445680.hot-update.json",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.c3e5ed3713445680.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/app.c3e5ed3713445680.hot-update.json"
+    },
+    "app.c4131fd869c0d587.hot-update.js": {
+      "name": "app.c4131fd869c0d587.hot-update.js",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.c4131fd869c0d587.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/app.c4131fd869c0d587.hot-update.js"
+    },
+    "app.c4131fd869c0d587.hot-update.json": {
+      "name": "app.c4131fd869c0d587.hot-update.json",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.c4131fd869c0d587.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/app.c4131fd869c0d587.hot-update.json"
+    },
+    "app.c8467abd30980d72.hot-update.js": {
+      "name": "app.c8467abd30980d72.hot-update.js",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.c8467abd30980d72.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/app.c8467abd30980d72.hot-update.js"
+    },
+    "app.c8467abd30980d72.hot-update.json": {
+      "name": "app.c8467abd30980d72.hot-update.json",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.c8467abd30980d72.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/app.c8467abd30980d72.hot-update.json"
+    },
+    "app.c89d812eaa48e741.hot-update.js": {
+      "name": "app.c89d812eaa48e741.hot-update.js",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.c89d812eaa48e741.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/app.c89d812eaa48e741.hot-update.js"
+    },
+    "app.c89d812eaa48e741.hot-update.json": {
+      "name": "app.c89d812eaa48e741.hot-update.json",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.c89d812eaa48e741.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/app.c89d812eaa48e741.hot-update.json"
+    },
+    "app.c930682ea1455bb7.hot-update.js": {
+      "name": "app.c930682ea1455bb7.hot-update.js",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.c930682ea1455bb7.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/app.c930682ea1455bb7.hot-update.js"
+    },
+    "app.c930682ea1455bb7.hot-update.json": {
+      "name": "app.c930682ea1455bb7.hot-update.json",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.c930682ea1455bb7.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/app.c930682ea1455bb7.hot-update.json"
+    },
+    "app.c9a762f256220ba5.hot-update.js": {
+      "name": "app.c9a762f256220ba5.hot-update.js",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.c9a762f256220ba5.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/app.c9a762f256220ba5.hot-update.js"
+    },
+    "app.c9a762f256220ba5.hot-update.json": {
+      "name": "app.c9a762f256220ba5.hot-update.json",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.c9a762f256220ba5.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/app.c9a762f256220ba5.hot-update.json"
+    },
+    "app.cc43e98413188412.hot-update.js": {
+      "name": "app.cc43e98413188412.hot-update.js",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.cc43e98413188412.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/app.cc43e98413188412.hot-update.js"
+    },
+    "app.cc43e98413188412.hot-update.json": {
+      "name": "app.cc43e98413188412.hot-update.json",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.cc43e98413188412.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/app.cc43e98413188412.hot-update.json"
+    },
+    "app.cc76c88d98d7de9d.hot-update.js": {
+      "name": "app.cc76c88d98d7de9d.hot-update.js",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.cc76c88d98d7de9d.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/app.cc76c88d98d7de9d.hot-update.js"
+    },
+    "app.cc76c88d98d7de9d.hot-update.json": {
+      "name": "app.cc76c88d98d7de9d.hot-update.json",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.cc76c88d98d7de9d.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/app.cc76c88d98d7de9d.hot-update.json"
+    },
+    "app.cd2fd9796cb44644.hot-update.js": {
+      "name": "app.cd2fd9796cb44644.hot-update.js",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.cd2fd9796cb44644.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/app.cd2fd9796cb44644.hot-update.js"
+    },
+    "app.cd2fd9796cb44644.hot-update.json": {
+      "name": "app.cd2fd9796cb44644.hot-update.json",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.cd2fd9796cb44644.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/app.cd2fd9796cb44644.hot-update.json"
+    },
+    "app.d151d862424b3ef1.hot-update.js": {
+      "name": "app.d151d862424b3ef1.hot-update.js",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.d151d862424b3ef1.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/app.d151d862424b3ef1.hot-update.js"
+    },
+    "app.d151d862424b3ef1.hot-update.json": {
+      "name": "app.d151d862424b3ef1.hot-update.json",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.d151d862424b3ef1.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/app.d151d862424b3ef1.hot-update.json"
+    },
+    "app.d249c44365c4b03f.hot-update.js": {
+      "name": "app.d249c44365c4b03f.hot-update.js",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.d249c44365c4b03f.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/app.d249c44365c4b03f.hot-update.js"
+    },
+    "app.d249c44365c4b03f.hot-update.json": {
+      "name": "app.d249c44365c4b03f.hot-update.json",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.d249c44365c4b03f.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/app.d249c44365c4b03f.hot-update.json"
+    },
+    "app.d332d7cf84cd4cc3.hot-update.js": {
+      "name": "app.d332d7cf84cd4cc3.hot-update.js",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.d332d7cf84cd4cc3.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/app.d332d7cf84cd4cc3.hot-update.js"
+    },
+    "app.d332d7cf84cd4cc3.hot-update.json": {
+      "name": "app.d332d7cf84cd4cc3.hot-update.json",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.d332d7cf84cd4cc3.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/app.d332d7cf84cd4cc3.hot-update.json"
+    },
+    "app.d3a28477dab0e3d5.hot-update.js": {
+      "name": "app.d3a28477dab0e3d5.hot-update.js",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.d3a28477dab0e3d5.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/app.d3a28477dab0e3d5.hot-update.js"
+    },
+    "app.d3a28477dab0e3d5.hot-update.json": {
+      "name": "app.d3a28477dab0e3d5.hot-update.json",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.d3a28477dab0e3d5.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/app.d3a28477dab0e3d5.hot-update.json"
+    },
+    "app.d3b8ba5e13d4d29a.hot-update.js": {
+      "name": "app.d3b8ba5e13d4d29a.hot-update.js",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.d3b8ba5e13d4d29a.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/app.d3b8ba5e13d4d29a.hot-update.js"
+    },
+    "app.d3b8ba5e13d4d29a.hot-update.json": {
+      "name": "app.d3b8ba5e13d4d29a.hot-update.json",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.d3b8ba5e13d4d29a.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/app.d3b8ba5e13d4d29a.hot-update.json"
+    },
+    "app.d49252554535f1af.hot-update.js": {
+      "name": "app.d49252554535f1af.hot-update.js",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.d49252554535f1af.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/app.d49252554535f1af.hot-update.js"
+    },
+    "app.d49252554535f1af.hot-update.json": {
+      "name": "app.d49252554535f1af.hot-update.json",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.d49252554535f1af.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/app.d49252554535f1af.hot-update.json"
+    },
+    "app.d58783845a81f3f2.hot-update.js": {
+      "name": "app.d58783845a81f3f2.hot-update.js",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.d58783845a81f3f2.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/app.d58783845a81f3f2.hot-update.js"
+    },
+    "app.d58783845a81f3f2.hot-update.json": {
+      "name": "app.d58783845a81f3f2.hot-update.json",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.d58783845a81f3f2.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/app.d58783845a81f3f2.hot-update.json"
+    },
+    "app.d62b4bc6006e58ac.hot-update.js": {
+      "name": "app.d62b4bc6006e58ac.hot-update.js",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.d62b4bc6006e58ac.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/app.d62b4bc6006e58ac.hot-update.js"
+    },
+    "app.d62b4bc6006e58ac.hot-update.json": {
+      "name": "app.d62b4bc6006e58ac.hot-update.json",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.d62b4bc6006e58ac.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/app.d62b4bc6006e58ac.hot-update.json"
+    },
+    "app.d6fbc74b68c4e310.hot-update.js": {
+      "name": "app.d6fbc74b68c4e310.hot-update.js",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.d6fbc74b68c4e310.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/app.d6fbc74b68c4e310.hot-update.js"
+    },
+    "app.d6fbc74b68c4e310.hot-update.json": {
+      "name": "app.d6fbc74b68c4e310.hot-update.json",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.d6fbc74b68c4e310.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/app.d6fbc74b68c4e310.hot-update.json"
+    },
+    "app.d73af616eabbffa9.hot-update.js": {
+      "name": "app.d73af616eabbffa9.hot-update.js",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.d73af616eabbffa9.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/app.d73af616eabbffa9.hot-update.js"
+    },
+    "app.d73af616eabbffa9.hot-update.json": {
+      "name": "app.d73af616eabbffa9.hot-update.json",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.d73af616eabbffa9.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/app.d73af616eabbffa9.hot-update.json"
+    },
+    "app.d8f7b77136e9e26f.hot-update.js": {
+      "name": "app.d8f7b77136e9e26f.hot-update.js",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.d8f7b77136e9e26f.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/app.d8f7b77136e9e26f.hot-update.js"
+    },
+    "app.d8f7b77136e9e26f.hot-update.json": {
+      "name": "app.d8f7b77136e9e26f.hot-update.json",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.d8f7b77136e9e26f.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/app.d8f7b77136e9e26f.hot-update.json"
+    },
+    "app.d917db9170448a25.hot-update.js": {
+      "name": "app.d917db9170448a25.hot-update.js",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.d917db9170448a25.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/app.d917db9170448a25.hot-update.js"
+    },
+    "app.d917db9170448a25.hot-update.json": {
+      "name": "app.d917db9170448a25.hot-update.json",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.d917db9170448a25.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/app.d917db9170448a25.hot-update.json"
+    },
+    "app.d9c01233759ca8e0.hot-update.js": {
+      "name": "app.d9c01233759ca8e0.hot-update.js",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.d9c01233759ca8e0.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/app.d9c01233759ca8e0.hot-update.js"
+    },
+    "app.d9c01233759ca8e0.hot-update.json": {
+      "name": "app.d9c01233759ca8e0.hot-update.json",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.d9c01233759ca8e0.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/app.d9c01233759ca8e0.hot-update.json"
+    },
+    "app.dc3cdabce9745bee.hot-update.js": {
+      "name": "app.dc3cdabce9745bee.hot-update.js",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.dc3cdabce9745bee.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/app.dc3cdabce9745bee.hot-update.js"
+    },
+    "app.dc3cdabce9745bee.hot-update.json": {
+      "name": "app.dc3cdabce9745bee.hot-update.json",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.dc3cdabce9745bee.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/app.dc3cdabce9745bee.hot-update.json"
+    },
+    "app.df37c8def586de6a.hot-update.js": {
+      "name": "app.df37c8def586de6a.hot-update.js",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.df37c8def586de6a.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/app.df37c8def586de6a.hot-update.js"
+    },
+    "app.df37c8def586de6a.hot-update.json": {
+      "name": "app.df37c8def586de6a.hot-update.json",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.df37c8def586de6a.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/app.df37c8def586de6a.hot-update.json"
+    },
+    "app.df96b46c08c11337.hot-update.js": {
+      "name": "app.df96b46c08c11337.hot-update.js",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.df96b46c08c11337.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/app.df96b46c08c11337.hot-update.js"
+    },
+    "app.df96b46c08c11337.hot-update.json": {
+      "name": "app.df96b46c08c11337.hot-update.json",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.df96b46c08c11337.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/app.df96b46c08c11337.hot-update.json"
+    },
+    "app.dfe2831fd90fa0fb.hot-update.js": {
+      "name": "app.dfe2831fd90fa0fb.hot-update.js",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.dfe2831fd90fa0fb.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/app.dfe2831fd90fa0fb.hot-update.js"
+    },
+    "app.dfe2831fd90fa0fb.hot-update.json": {
+      "name": "app.dfe2831fd90fa0fb.hot-update.json",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.dfe2831fd90fa0fb.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/app.dfe2831fd90fa0fb.hot-update.json"
+    },
+    "app.e122e6855e607b1b.hot-update.js": {
+      "name": "app.e122e6855e607b1b.hot-update.js",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.e122e6855e607b1b.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/app.e122e6855e607b1b.hot-update.js"
+    },
+    "app.e122e6855e607b1b.hot-update.json": {
+      "name": "app.e122e6855e607b1b.hot-update.json",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.e122e6855e607b1b.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/app.e122e6855e607b1b.hot-update.json"
+    },
+    "app.e2452c1a2a6d9eb7.hot-update.js": {
+      "name": "app.e2452c1a2a6d9eb7.hot-update.js",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.e2452c1a2a6d9eb7.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/app.e2452c1a2a6d9eb7.hot-update.js"
+    },
+    "app.e2452c1a2a6d9eb7.hot-update.json": {
+      "name": "app.e2452c1a2a6d9eb7.hot-update.json",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.e2452c1a2a6d9eb7.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/app.e2452c1a2a6d9eb7.hot-update.json"
+    },
+    "app.e31500daf1a46acc.hot-update.js": {
+      "name": "app.e31500daf1a46acc.hot-update.js",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.e31500daf1a46acc.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/app.e31500daf1a46acc.hot-update.js"
+    },
+    "app.e31500daf1a46acc.hot-update.json": {
+      "name": "app.e31500daf1a46acc.hot-update.json",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.e31500daf1a46acc.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/app.e31500daf1a46acc.hot-update.json"
+    },
+    "app.e3e2d1cb59307bca.hot-update.js": {
+      "name": "app.e3e2d1cb59307bca.hot-update.js",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.e3e2d1cb59307bca.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/app.e3e2d1cb59307bca.hot-update.js"
+    },
+    "app.e3e2d1cb59307bca.hot-update.json": {
+      "name": "app.e3e2d1cb59307bca.hot-update.json",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.e3e2d1cb59307bca.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/app.e3e2d1cb59307bca.hot-update.json"
+    },
+    "app.e583df60269d3e10.hot-update.js": {
+      "name": "app.e583df60269d3e10.hot-update.js",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.e583df60269d3e10.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/app.e583df60269d3e10.hot-update.js"
+    },
+    "app.e583df60269d3e10.hot-update.json": {
+      "name": "app.e583df60269d3e10.hot-update.json",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.e583df60269d3e10.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/app.e583df60269d3e10.hot-update.json"
+    },
+    "app.e5a7876e2733b62c.hot-update.js": {
+      "name": "app.e5a7876e2733b62c.hot-update.js",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.e5a7876e2733b62c.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/app.e5a7876e2733b62c.hot-update.js"
+    },
+    "app.e5a7876e2733b62c.hot-update.json": {
+      "name": "app.e5a7876e2733b62c.hot-update.json",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.e5a7876e2733b62c.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/app.e5a7876e2733b62c.hot-update.json"
+    },
+    "app.e95c4a06ba13dbd2.hot-update.js": {
+      "name": "app.e95c4a06ba13dbd2.hot-update.js",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.e95c4a06ba13dbd2.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/app.e95c4a06ba13dbd2.hot-update.js"
+    },
+    "app.e95c4a06ba13dbd2.hot-update.json": {
+      "name": "app.e95c4a06ba13dbd2.hot-update.json",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.e95c4a06ba13dbd2.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/app.e95c4a06ba13dbd2.hot-update.json"
+    },
+    "app.ebbcbbdf00bc1dc1.hot-update.js": {
+      "name": "app.ebbcbbdf00bc1dc1.hot-update.js",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.ebbcbbdf00bc1dc1.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/app.ebbcbbdf00bc1dc1.hot-update.js"
+    },
+    "app.ebbcbbdf00bc1dc1.hot-update.json": {
+      "name": "app.ebbcbbdf00bc1dc1.hot-update.json",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.ebbcbbdf00bc1dc1.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/app.ebbcbbdf00bc1dc1.hot-update.json"
+    },
+    "app.f2d25e84f8d1961a.hot-update.js": {
+      "name": "app.f2d25e84f8d1961a.hot-update.js",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.f2d25e84f8d1961a.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/app.f2d25e84f8d1961a.hot-update.js"
+    },
+    "app.f2d25e84f8d1961a.hot-update.json": {
+      "name": "app.f2d25e84f8d1961a.hot-update.json",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.f2d25e84f8d1961a.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/app.f2d25e84f8d1961a.hot-update.json"
+    },
+    "app.f3ea952ccf704405.hot-update.js": {
+      "name": "app.f3ea952ccf704405.hot-update.js",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.f3ea952ccf704405.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/app.f3ea952ccf704405.hot-update.js"
+    },
+    "app.f3ea952ccf704405.hot-update.json": {
+      "name": "app.f3ea952ccf704405.hot-update.json",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.f3ea952ccf704405.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/app.f3ea952ccf704405.hot-update.json"
+    },
+    "app.f438512caa6b6241.hot-update.js": {
+      "name": "app.f438512caa6b6241.hot-update.js",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.f438512caa6b6241.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/app.f438512caa6b6241.hot-update.js"
+    },
+    "app.f438512caa6b6241.hot-update.json": {
+      "name": "app.f438512caa6b6241.hot-update.json",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.f438512caa6b6241.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/app.f438512caa6b6241.hot-update.json"
+    },
+    "app.f479f5b2adbcfc1a.hot-update.js": {
+      "name": "app.f479f5b2adbcfc1a.hot-update.js",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.f479f5b2adbcfc1a.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/app.f479f5b2adbcfc1a.hot-update.js"
+    },
+    "app.f479f5b2adbcfc1a.hot-update.json": {
+      "name": "app.f479f5b2adbcfc1a.hot-update.json",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.f479f5b2adbcfc1a.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/app.f479f5b2adbcfc1a.hot-update.json"
+    },
+    "app.f574402fd0be69af.hot-update.js": {
+      "name": "app.f574402fd0be69af.hot-update.js",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.f574402fd0be69af.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/app.f574402fd0be69af.hot-update.js"
+    },
+    "app.f574402fd0be69af.hot-update.json": {
+      "name": "app.f574402fd0be69af.hot-update.json",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.f574402fd0be69af.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/app.f574402fd0be69af.hot-update.json"
+    },
+    "app.f5a60e0f2f743f09.hot-update.js": {
+      "name": "app.f5a60e0f2f743f09.hot-update.js",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.f5a60e0f2f743f09.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/app.f5a60e0f2f743f09.hot-update.js"
+    },
+    "app.f5a60e0f2f743f09.hot-update.json": {
+      "name": "app.f5a60e0f2f743f09.hot-update.json",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.f5a60e0f2f743f09.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/app.f5a60e0f2f743f09.hot-update.json"
+    },
+    "app.f6bed587a7d069bd.hot-update.js": {
+      "name": "app.f6bed587a7d069bd.hot-update.js",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.f6bed587a7d069bd.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/app.f6bed587a7d069bd.hot-update.js"
+    },
+    "app.f6bed587a7d069bd.hot-update.json": {
+      "name": "app.f6bed587a7d069bd.hot-update.json",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.f6bed587a7d069bd.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/app.f6bed587a7d069bd.hot-update.json"
+    },
+    "app.f92b19a2a1945dea.hot-update.js": {
+      "name": "app.f92b19a2a1945dea.hot-update.js",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.f92b19a2a1945dea.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/app.f92b19a2a1945dea.hot-update.js"
+    },
+    "app.f92b19a2a1945dea.hot-update.json": {
+      "name": "app.f92b19a2a1945dea.hot-update.json",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.f92b19a2a1945dea.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/app.f92b19a2a1945dea.hot-update.json"
+    },
+    "app.faad761aba394ad5.hot-update.js": {
+      "name": "app.faad761aba394ad5.hot-update.js",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.faad761aba394ad5.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/app.faad761aba394ad5.hot-update.js"
+    },
+    "app.faad761aba394ad5.hot-update.json": {
+      "name": "app.faad761aba394ad5.hot-update.json",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.faad761aba394ad5.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/app.faad761aba394ad5.hot-update.json"
+    },
+    "app.fc3b6dc7d0b7940b.hot-update.js": {
+      "name": "app.fc3b6dc7d0b7940b.hot-update.js",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.fc3b6dc7d0b7940b.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/app.fc3b6dc7d0b7940b.hot-update.js"
+    },
+    "app.fc3b6dc7d0b7940b.hot-update.json": {
+      "name": "app.fc3b6dc7d0b7940b.hot-update.json",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.fc3b6dc7d0b7940b.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/app.fc3b6dc7d0b7940b.hot-update.json"
+    },
+    "app.fc94eac1e0765fd2.hot-update.js": {
+      "name": "app.fc94eac1e0765fd2.hot-update.js",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.fc94eac1e0765fd2.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/app.fc94eac1e0765fd2.hot-update.js"
+    },
+    "app.fc94eac1e0765fd2.hot-update.json": {
+      "name": "app.fc94eac1e0765fd2.hot-update.json",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.fc94eac1e0765fd2.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/app.fc94eac1e0765fd2.hot-update.json"
+    },
+    "app.fce332ff5684e7cf.hot-update.js": {
+      "name": "app.fce332ff5684e7cf.hot-update.js",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.fce332ff5684e7cf.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/app.fce332ff5684e7cf.hot-update.js"
+    },
+    "app.fce332ff5684e7cf.hot-update.json": {
+      "name": "app.fce332ff5684e7cf.hot-update.json",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.fce332ff5684e7cf.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/app.fce332ff5684e7cf.hot-update.json"
+    },
+    "app.fd5bd0d78656f5db.hot-update.js": {
+      "name": "app.fd5bd0d78656f5db.hot-update.js",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.fd5bd0d78656f5db.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/app.fd5bd0d78656f5db.hot-update.js"
+    },
+    "app.fd5bd0d78656f5db.hot-update.json": {
+      "name": "app.fd5bd0d78656f5db.hot-update.json",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.fd5bd0d78656f5db.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/app.fd5bd0d78656f5db.hot-update.json"
+    },
+    "app.fd75ae52b7d383a4.hot-update.js": {
+      "name": "app.fd75ae52b7d383a4.hot-update.js",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.fd75ae52b7d383a4.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/app.fd75ae52b7d383a4.hot-update.js"
+    },
+    "app.fd75ae52b7d383a4.hot-update.json": {
+      "name": "app.fd75ae52b7d383a4.hot-update.json",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.fd75ae52b7d383a4.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/app.fd75ae52b7d383a4.hot-update.json"
+    },
+    "app.febd1cd1e501f34e.hot-update.js": {
+      "name": "app.febd1cd1e501f34e.hot-update.js",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.febd1cd1e501f34e.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/app.febd1cd1e501f34e.hot-update.js"
+    },
+    "app.febd1cd1e501f34e.hot-update.json": {
+      "name": "app.febd1cd1e501f34e.hot-update.json",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.febd1cd1e501f34e.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/app.febd1cd1e501f34e.hot-update.json"
+    },
+    "app.ff42576d90991149.hot-update.js": {
+      "name": "app.ff42576d90991149.hot-update.js",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.ff42576d90991149.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/app.ff42576d90991149.hot-update.js"
+    },
+    "app.ff42576d90991149.hot-update.json": {
+      "name": "app.ff42576d90991149.hot-update.json",
+      "path": "C:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\dist\\app.ff42576d90991149.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/app.ff42576d90991149.hot-update.json"
     },
     "bundle.js": {
       "name": "bundle.js",
@@ -639,11 +2419,10 @@
   },
   "chunks": {
     "app": [
-      "bundle.js",
-      "app.e09fd1c7745ee172.hot-update.js"
+      "bundle.js"
     ]
   },
   "publicPath": "http://127.0.0.1:8080/",
-  "error": "ESLintError",
-  "message": "[eslint] \nC:\\Users\\Andry\\Desktop\\merger\\merger\\frontend\\src\\components\\Calendar\\CalendarDay.vue\n  104:22  error  'indice' is defined but never used  no-unused-vars\n\n✖ 1 problem (1 error, 0 warnings)\n"
+  "error": "ModuleBuildError",
+  "message": "Module build failed (from ./node_modules/sass-loader/dist/cjs.js):\nSassError: expected \";\".\n   ╷\n14 │     overflow-y: auto;\r\n   │               ^\n   ╵\n  src\\components\\Dashboard\\DashBooking\\SideBar.vue 14:15  root stylesheet"
 }

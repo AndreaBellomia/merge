@@ -13,7 +13,6 @@ class Appointments(models.Model):
         ('FREE', 'Available'),
         ('WAIT', 'Wait'),
         ('BLOCK', 'Booked')
-
     ]
     
     owner = models.ForeignKey(User, on_delete=models.CASCADE)
@@ -34,8 +33,8 @@ class Booking(models.Model):
     STATO = [
         ('FREE', 'Available'),
         ('WAIT', 'Wait'),
-        ('BUSY', 'Busy'),
-        ('BLOCK', 'Booked'),
+        ('BUSY', 'Booked'),
+        ('BLOCK', 'Blocked'),
         ('PAUSE', 'Suspended'),
 
     ]

@@ -19,3 +19,4 @@ class BookingValidator():
         if self.appointment.state != 'FREE':
             raise serializers.ValidationError({"detail": f"State errors - this appointment is not currently available"})
         return True
+    

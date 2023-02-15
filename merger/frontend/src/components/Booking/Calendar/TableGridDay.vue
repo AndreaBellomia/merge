@@ -1,16 +1,15 @@
 <template>
   <div
     class="
-      pt-1.5
       m-1
       rounded-md
-      text-center
-      w-10
-      h-10
+
+
       border border-transparent
-      text-center
+
       hover:cursor-pointer hover:bg-slate-200
       border
+      cell-main-container
     "
     :class="`
         ${
@@ -42,6 +41,25 @@
     </div>
   </div>
 </template>
+
+
+<style lang="scss" scoped>
+.cell-main-container {
+    aspect-ratio: 1 / 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: larger;
+
+    max-height: 6rem;
+
+    p {
+        font-size: 1rem;
+    }
+
+}
+</style>
 
 <script >
 export default {

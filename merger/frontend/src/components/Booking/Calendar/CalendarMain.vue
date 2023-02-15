@@ -1,7 +1,7 @@
 <template>
   <div class="flex-row max-w-max">
     <div v-if="prenotationProgress == 0" class="">
-      <div class="custom-grid-org prevent-select">
+      <div class="custom-grid-org prevent-select ">
         <CalendarTable
           class=""
           :DateTime="DateTime"
@@ -28,7 +28,7 @@
           @next-page="prenotationProgress++"
           :nextPageBool="nextPageCeck()"
           :btnMsg="'Conferma'"
-          :errorMsg="'Seleziona una data'"
+          :errorMsg="'Seleziona un appuntamento'"
         />
       </div>
     </div>
@@ -42,27 +42,20 @@
       <div class="custom-btn-container">
         <CalendarConfirm
           @next-page="confirmPrenotation(formValidated)"
+          @back-page="prenotationProgress--"
           :nextPageBool="formValidated.status"
           :btnMsg="'Prenota'"
           :errorMsg="'Inserisci le informazioni richieste'"
+          :backActive="true"
         />
       </div>
-    </div>
-    <div v-else-if="prenotationProgress == 2">
-      <FormBooking
-        :QuerrySelected="QuerrySelected"
-        :monthName="monthName"
-        :dayName="dayName"
-        @form-is-valid="(formValid) => (formValidated = formValid)"
+      <ModalConfirm
+      :popUp="PopUp"
+      :prenotation="QuerrySelected"
+      :monthName="monthName"
+      :dayName="dayName"
+      @close-modal="closePopUpModify()"
       />
-      <div class="custom-btn-container">
-        <CalendarConfirm
-          @next-page="confirmPrenotation(formValidated)"
-          :nextPageBool="formValidated.status"
-          :btnMsg="'Prenota'"
-          :errorMsg="'Inserisci le informazioni richieste'"
-        />
-      </div>
     </div>
   </div>
 </template>
@@ -83,14 +76,19 @@
   -ms-user-select: none; /* IE 10 and IE 11 */
   user-select: none; /* Standard syntax */
 }
+.centered {
+  position: PopUp; /* or absolute */
+  top: 25%;
+  left: 25%;
+}
 
-@media only screen and (max-width: 885px) {
+@media only screen and (max-width: 768px) {
   .custom-btn-container {
     justify-content: center;
   }
+
   .custom-grid-org {
-    display: flex;
-    flex-direction: column;
+    display: block;
   }
 }
 </style>
@@ -104,6 +102,7 @@ import CalendarDay from "./CalendarDay.vue";
 import CalendarTable from "./CalendarTable.vue";
 import CalendarConfirm from "./CalendarConfirm.vue";
 import FormBooking from "./FormBooking.vue";
+import ModalConfirm from "./ConfirmModal.vue"
 
 const date = new Date();
 
@@ -113,6 +112,7 @@ export default {
     CalendarTable,
     CalendarConfirm,
     FormBooking,
+    ModalConfirm,
   },
   data() {
     return {
@@ -131,6 +131,8 @@ export default {
       QuerrySelected: undefined,
 
       formValidated: Object,
+
+      PopUp: false,
 
       monthName: [
         "Gennaio",
@@ -207,12 +209,21 @@ export default {
         }
         return true;
       } catch (error) {
-        return undefined;
+        return true;
       }
     },
 
+    openPopUpModify: function() {
+        this.PopUp = true
+    },
+
+    closePopUpModify: function() {
+        this.prenotationProgress--
+        this.PopUp = false
+        window.location.reload()
+    },
+
     confirmPrenotation: function (form) {
-      this.prenotationProgress++;
       this.postHTTP_appointment(form.body, form.title, this.QuerrySelected.id);
     },
 
@@ -224,7 +235,10 @@ export default {
           appointments: val_app,
         })
         .then((response) => {
-          console.log(response);
+          if (response.status == 201) {
+            this.openPopUpModify()
+            this.getHTTP_appointment()
+          }
         })
         .catch((error) => {
           console.log(error);

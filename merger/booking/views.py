@@ -69,11 +69,20 @@ class BookingApiView(generics.ListCreateAPIView):
     """
     EndPoints Return list of booking and create new one
     """
-
-    queryset = Booking.objects.all()
     serializer_class = BookingSerializer
     
+    def get_queryset(self):
+        """
+        This view should return a list of all the purchases
+        for the currently authenticated user.
+        """
+        user = self.request.user
+        return Booking.objects.filter(commiter=user, start_time__gte=timezone.now())
+
     def perform_create(self, serializer):
+        """
+        Manage the Creating mixin for auto compile the readonly filds
+        """
         query = serializer.validated_data['appointments']
         instace = Appointments.objects.get(pk=self.request.data['appointments'])
         if BookingValidator(instace).ValidateAppBooking():
@@ -83,6 +92,7 @@ class BookingApiView(generics.ListCreateAPIView):
                             end_time=query.end_time,
                             stato='WAIT',
                             commiter=self.request.user)
+
 
 
 class BookingUpdateDeleteApiView(APIView):
@@ -119,5 +129,9 @@ class BookingUpdateDeleteApiView(APIView):
     
     def delete(self, request, pk):
         instace = self.get_object(pk)
-        instace.delete()
-        return Response(status=status.HTTP_204_NO_CONTENT)
+        if instace.stato in ['FREE', 'WAIT']:
+            instace.appointments.state = 'FREE'
+            instace.appointments.save()
+            instace.delete()
+            return Response(status=status.HTTP_204_NO_CONTENT)
+        return Response(status=status.HTTP_304_NOT_MODIFIED)
