@@ -8,17 +8,16 @@
         @next-month="dateNexMonth()"
       />
 
-      <div class="compnent-list-day">
-        <div
-          v-for="day in dateDaysInMonth()"
-          :key="day"
-        >
-          <BodyDate
-            :date="Time"
-            :day="day"
-            :currentDay="dateGetCurrentDate(day)"
-            :dayName="dateDayName(day)"
-          />
+      <div class="list-contaner">
+        <div class="compnent-list-day">
+          <div v-for="day in dateDaysInMonth()" :key="day">
+            <BodyDate
+              :date="Time"
+              :day="day"
+              :currentDay="dateGetCurrentDate(day)"
+              :dayName="dateDayName(day)"
+            />
+          </div>
         </div>
       </div>
     </div>
@@ -27,16 +26,24 @@
 
 <style lang="scss" scoped>
 .card-component {
-  width: 30%;
+  width: 100%;
   min-width: 14rem;
-  .header-list{
-    height: 6vh;
-    box-shadow: -0px 10px 16px -15px rgb(73, 73, 73);
+  box-shadow: -0px -5px 10px 0px rgb(73, 73, 73);
+  
+  .header-list {
+    box-shadow: 10px 10px 1rem -15px rgb(73, 73, 73);
   }
-  .compnent-list-day{
-    height: 94vh; //or whatever percentage is needed
+
+  .list-contaner{
     overflow-y: auto;
+    direction: rtl;
+    height: 92.5vh;
+
+    .compnent-list-day {
+      direction: ltr;
+    }
   }
+  
 }
 /* width */
 ::-webkit-scrollbar {
@@ -46,25 +53,19 @@
 /* Track */
 ::-webkit-scrollbar-track {
   background: #f1f1f1;
-  
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
   background: #888;
   border-radius: 1rem;
-  
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
   border-radius: 5rem;
-  
-  
 }
-
-
 </style>
 
 

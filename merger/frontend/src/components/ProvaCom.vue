@@ -7,7 +7,7 @@
 
 <script>
 
-import Dash from './Dashboard/MainDash.vue'
+import Dash from './Dashboard/DashBooking/MainCalendarDash.vue'
 
 export default {
   components: {
