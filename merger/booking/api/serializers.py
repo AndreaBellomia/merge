@@ -5,8 +5,12 @@ from booking.models     import Appointments, Booking
 
 
 class AppointmentsSerializer(serializers.ModelSerializer):
+
+    
+
     class Meta:
         model = Appointments
+
         fields = "__all__"
 
     #validate date and time of prenotation
@@ -17,6 +21,10 @@ class AppointmentsSerializer(serializers.ModelSerializer):
     
 
 class BookingSerializer(serializers.ModelSerializer):
+
+    appointments = serializers.StringRelatedField()
+
+
 
     class Meta:
         model = Booking

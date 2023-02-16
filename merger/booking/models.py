@@ -22,7 +22,7 @@ class Appointments(models.Model):
     state = models.CharField(choices=STATO, max_length=5)
 
     def __str__(self):
-        return self.owner.username + ' ' + str(self.start_time)
+        return self.owner.username
 
 
 class Booking(models.Model):
@@ -55,6 +55,10 @@ class Booking(models.Model):
 
     def __str__(self):
         return  str(self.appointments.owner.username) + ' | ' + self.commiter.username + ' - ' + str(self.appointments.start_time)
+    
+
+    def get_owner_name(self):
+        return self.appointments.owner.username
 
 
 
