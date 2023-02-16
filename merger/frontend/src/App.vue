@@ -1,11 +1,12 @@
 <template>
-  <section class="custom-section">
+  <section>
     <router-view />
   </section>
   <nav class="custom-navbar">
     <router-link to="/">
-      <span class="custom-item px-3 py-2 flex material-symbols-outlined">
-        undo
+      <span @click="selectItem('notifications')" :class="{ 'custom-item-selected': selected['notifications'] }"
+        class="custom-item px-3 py-2 flex material-symbols-outlined">
+        notifications
       </span>
     </router-link>
     <router-link to="/">
@@ -40,6 +41,7 @@ export default {
   data() {
     return {
       selected: {
+        ['notifications']: false,
         ['chat']: false,
         ['booking']: true,
         ['ticket']: false,
@@ -51,6 +53,7 @@ export default {
     selectItem(id) {
       //initial state of selected
       this.selected = {
+        ['notifications']: false,
         ['chat']: false,
         ['booking']: false,
         ['ticket']: false,
@@ -67,7 +70,7 @@ export default {
 .custom-navbar {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-around;
   position: fixed;
   bottom: 0;
   width: 100%;
@@ -78,8 +81,6 @@ export default {
   .custom-item {
     color: #F8FCFF;
     font-size: xx-large;
-    margin-right: 0.5rem;
-    margin-left: 0.5rem;
   }
 
   .custom-item-selected {
@@ -94,5 +95,4 @@ export default {
     box-shadow: 0px 4px 2px rgba(0, 0, 0, 0.5);
   }
 }
-.custom-section {}
 </style>
