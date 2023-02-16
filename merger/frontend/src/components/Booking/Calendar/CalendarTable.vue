@@ -57,12 +57,7 @@
       <div class="grid-calendar-container text-center px-1 text-black pb-1">
         <div
           v-for="(day, index) in getDaysInMonth()"
-          :style="`
-                    ${
-                      day == 1
-                        ? 'grid-column-start: ' + getFirstDayInMonth()
-                        : ''
-                    }`"
+          :style="`${day == 1 ? 'grid-column-start: ' + getFirstDayInMonth(): ''}`"
           :key="index"
         >
           <TableGridDay
