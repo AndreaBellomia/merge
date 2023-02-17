@@ -2,9 +2,9 @@
     <div class="custom-card">
         <div class="custom-card-container">
             <div class="flex flex-col items-start">
-                <span class="custom-card-header"> 14:00 - 16:00
+                <span class="custom-card-header"> {{ formatData().starttime }} - {{ formatData().endtime }}
                 </span>
-                <span class="custom-card-text">nome cognome amm</span>
+                <span class="custom-card-text">{{ appointment.owner }}</span>
             </div>
             <div class="flex flex-col items-center">
                 <span class="custom-card-icon material-symbols-outlined">
@@ -17,6 +17,35 @@
 
 <script>
 export default {
+    props: {
+        appointment: {
+            type: Object,
+            required: true
+        }
+    },
+    methods: {
+        formatData: function () {
+            const date = new Date(this.appointment.start_time);
+            const date_end = new Date(this.appointment.end_time);
+            let day = date.getDay();
+            if (day == 0) {
+                day = 7;
+            }
+            function minutes(date) {
+                let minut = undefined;
+                if (date.getMinutes() === 0) {
+                    minut = "00";
+                } else {
+                    minut = date.getMinutes();
+                }
+                return minut;
+            }
+            return {
+                starttime: date.getHours() + ":" + minutes(date),
+                endtime: date_end.getHours() + ":" + minutes(date_end),
+            };
+        },
+    }
 }
 </script>
 

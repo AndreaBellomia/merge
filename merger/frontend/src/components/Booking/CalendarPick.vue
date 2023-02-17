@@ -22,7 +22,7 @@
                     <div class="custom-item" v-for="day in getDayNumberOfMonth()" :key="day"
                         :style="`${day == 1 ? 'grid-column-start: ' + getFirstDayOfMonth() : ''}`"
                         :class="`${day == daySelected ? 'custom-select' : ''}
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 ${styleRedDay(day) ? 'custom-holiday' : ''}`"
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 ${styleRedDay(day) ? 'custom-holiday' : ''}`"
                         @click="setdate(day)">{{
                             day }}
                     </div>
@@ -33,7 +33,8 @@
 
     <div class="flex flex-col mt-6 mb-32">
         <span class="custom-tilte-appointments">Appuntamenti</span>
-        <AppointmentsAvailableListItem v-for="appointment in appointmentsSelected" :key="appointment">
+        <AppointmentsAvailableListItem v-for="appointment in appointmentsSelected" :key="appointment"
+            :appointment=appointment>
         </AppointmentsAvailableListItem>
     </div>
 </template>
@@ -98,7 +99,6 @@ export default {
             this.date = new Date(this.date.getFullYear(), this.date.getMonth(), day)
             this.daySelected = day
             this.getAppointmentsOfDateSelected()
-            console.log(this.appointmentsSelected)
         },
         getAppointmentsOfDateSelected: function () {
             this.appointmentsSelected = []
@@ -107,7 +107,7 @@ export default {
                 if (convertInDate.getFullYear() == this.date.getFullYear()
                     && convertInDate.getMonth() == this.date.getMonth()
                     && convertInDate.getDate() == this.date.getDate()) {
-                    this.appointmentsSelected.push(convertInDate)
+                    this.appointmentsSelected.push(appointment)
                 }
             });
         }
