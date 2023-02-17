@@ -17,7 +17,7 @@
 
                 <div class="custom-grid-calendar">
                     <div class="custom-header-col" v-for="day in 7" :key="day"
-                        :class="`${styleRedDay(day + -2) ? 'custom-holiday' : ''}`">{{ getDayName(day) }}</div>
+                        :class="`${day == 6 || day == 7 ? 'custom-holiday' : ''}`">{{ getDayName(day) }}</div>
 
                     <div class="custom-item" v-for="day in getDayNumberOfMonth()" :key="day"
                         :style="`${day == 1 ? 'grid-column-start: ' + getFirstDayOfMonth() : ''}`"
@@ -67,11 +67,11 @@ export default {
             this.daySelected = 1
         },
         previousDate: function () {
-            this.date = new Date(this.date.getFullYear(), this.date.getMonth() - 1, this.getDayNumberOfMonth())
+            this.date = new Date(this.date.getFullYear(), this.date.getMonth() - 1, new Date(this.date.getFullYear(), this.date.getMonth(), 0).getDate())
             this.daySelected = this.getDayNumberOfMonth()
         },
         getDayNumberOfMonth: function () {
-            return new Date(this.date.getFullYear(), this.date.getMonth(), 0).getDate()
+            return new Date(this.date.getFullYear(), this.date.getMonth()+1, 0).getDate()
         },
         getFirstDayOfMonth: function () {
             return new Date(this.date.getFullYear(), this.date.getMonth(), 1).getUTCDay() + 1
@@ -96,8 +96,8 @@ export default {
                 });
         },
         setdate: function (day) {
-            this.date = new Date(this.date.getFullYear(), this.date.getMonth(), day)
             this.daySelected = day
+            this.date = new Date(this.date.getFullYear(), this.date.getMonth(), day)
             this.getAppointmentsOfDateSelected()
         },
         getAppointmentsOfDateSelected: function () {
