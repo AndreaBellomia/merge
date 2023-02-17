@@ -95,11 +95,9 @@ export default {
                 });
         },
         setdate: function (day) {
-            console.log(day)
             this.daySelected = day
             this.date = new Date(this.date.getFullYear(), this.date.getMonth(), day)
             this.getAppointmentsOfDateSelected()
-            console.log(this.date)
         },
         getAppointmentsOfDateSelected: function () {
             this.appointmentsSelected = []
