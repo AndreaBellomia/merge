@@ -1,5 +1,5 @@
 <!-- 
-<Popup :show="prova" :icon="'check_circle'" :title="'Prova!'" :button="'Chiudi'" @close-modal="prova = false">Slor content</Popup> 
+<Popup :show="prova" :icon="'check_circle'" :title="'Prova!'" :buttonText="'Chiudi'" @close-modal="prova = false">Slor content</Popup> 
     -->
 <template>
     <Transition>
@@ -15,7 +15,7 @@
                         <slot></slot>
                     </div>
                     <div class="custom-box-bottom">
-                        <button @click="$emit('closeModal')" class="custom-btn-bottom">{{ button }}</button>
+                        <button @click="$emit('closeModal')" class="custom-btn-bottom">{{ buttonText }}</button>
                     </div>
                 </div>
             </Transition>
@@ -42,7 +42,7 @@ export default {
             type: String,
             required: false
         },
-        button: {
+        buttonText: {
             type: String,
             required: true
         }
