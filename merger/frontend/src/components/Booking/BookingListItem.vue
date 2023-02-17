@@ -1,5 +1,5 @@
 <template>
-    <div class="custom-card">
+    <div v-if="booking.stato != 'FREE'" class="custom-card" :class="getStateClass()">
         <div class="custom-card-container">
             <div class="flex flex-col items-start">
                 <span class="custom-card-header">{{ formatData() }}
@@ -49,6 +49,15 @@ export default {
                 ${date.getDate()} 
                 ${date.toLocaleString('default', { month: 'long' })}`
         },
+        getStateClass: function () {
+            if (this.booking.stato == "BUSY") {
+                return "green"
+            } else if (this.booking.stato == "WAIT" || this.booking.stato == "PAUSE") {
+                return "orange"
+            } else {
+                return "red"
+            }
+        }
     },
 }
 </script>
@@ -59,7 +68,6 @@ export default {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 14px;
     margin: 0.6rem;
-    border-left: 8px solid #1ABD00;
 
     .custom-card-container {
         display: flex;
@@ -103,6 +111,18 @@ export default {
         font-size: 2.5rem;
         color: #5C5A60;
     }
+}
+
+.custom-card.green {
+    border-left: 8px solid #1ABD00
+}
+
+.custom-card.orange {
+    border-left: 8px solid #FFB800
+}
+
+.custom-card.red {
+    border-left: 8px solid #FF1F00
 }
 </style>
 

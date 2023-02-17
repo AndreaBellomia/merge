@@ -18,7 +18,8 @@
       </div>
     </header>
     <main class="mb-32">
-      <BookingListItem v-for="booking in bookings" :key="booking" :booking="booking"></BookingListItem>
+      <BookingListItem v-for="booking in bookings" :key="booking" :booking="booking">
+      </BookingListItem>
     </main>
     <nav class="custom-fb-container flex flex-col items-end m-1">
       <span @click="showAddItem = !showAddItem" class="custom-fb flex material-symbols-outlined">
@@ -30,7 +31,7 @@
     </nav>
   </body>
   <AddItem :showAddItem="showAddItem" @undo-to-booking-view="showAddItem = !showAddItem" v-else>
-</AddItem>
+  </AddItem>
 </template>
 
 <script>
