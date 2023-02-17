@@ -29,16 +29,21 @@
         </div>
     </div>
 
-    <div class="flex flex-col items-center">
-        <span>Appuntamenti</span>
-        <div class="flex flex col items-center">
-            <ListItem></ListItem>
-        </div>
+    <div class="flex flex-col mt-6 mb-32">
+        <span class="custom-tilte-appointments">Appuntamenti</span>
+        <AppointmentsAvailableListItem></AppointmentsAvailableListItem>
+        <AppointmentsAvailableListItem></AppointmentsAvailableListItem>
+        <AppointmentsAvailableListItem></AppointmentsAvailableListItem>
+        <AppointmentsAvailableListItem></AppointmentsAvailableListItem>
     </div>
 </template>
 
 <script>
+import AppointmentsAvailableListItem from './AppointmentsAvailableListItem.vue'
 export default {
+    components: {
+        AppointmentsAvailableListItem,
+    },
     data() {
         return {
             date: this.getCurrentDate(),
@@ -177,6 +182,14 @@ export default {
     }
  
     }
-    
+}
+
+.custom-tilte-appointments {
+    color: #000000;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.4rem;
+    line-height: 19px;
+    text-align: center;
 }
 </style>
