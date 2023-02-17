@@ -16,14 +16,16 @@
             <div class="custom-calendar-main">
 
                 <div class="custom-grid-calendar">
-                    <div class="custom-header-col" v-for="day in 7" :key="day" :class="`${styleRedDay(day+-2) ? 'custom-holiday': ''}`">{{ getDayName(day) }}</div>
+                    <div class="custom-header-col" v-for="day in 7" :key="day"
+                        :class="`${styleRedDay(day + -2) ? 'custom-holiday' : ''}`">{{ getDayName(day) }}</div>
 
                     <div class="custom-item" v-for="day in getDayNumberOfMonth()" :key="day"
                         :style="`${day == 1 ? 'grid-column-start: ' + getFirstDayOfMonth() : ''}`"
-                        :class="`${day == select_day ? 'custom-select': ''}
-                                 ${styleRedDay(day) ? 'custom-holiday': ''}`"
-                        @click="select_day = day"
-                        >{{ day }}</div>
+                        :class="`${day == daySelected ? 'custom-select' : ''}
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 ${styleRedDay(day) ? 'custom-holiday' : ''}`"
+                        @click="setdate(day)">{{
+                            day }}
+                    </div>
                 </div>
             </div>
         </div>
@@ -31,14 +33,13 @@
 
     <div class="flex flex-col mt-6 mb-32">
         <span class="custom-tilte-appointments">Appuntamenti</span>
-        <AppointmentsAvailableListItem></AppointmentsAvailableListItem>
-        <AppointmentsAvailableListItem></AppointmentsAvailableListItem>
-        <AppointmentsAvailableListItem></AppointmentsAvailableListItem>
-        <AppointmentsAvailableListItem></AppointmentsAvailableListItem>
+        <AppointmentsAvailableListItem v-for="appointment in appointmentsSelected" :key="appointment">
+        </AppointmentsAvailableListItem>
     </div>
 </template>
 
 <script>
+import axios from 'axios';
 import AppointmentsAvailableListItem from './AppointmentsAvailableListItem.vue'
 export default {
     components: {
@@ -46,9 +47,14 @@ export default {
     },
     data() {
         return {
+            appointments: [],
             date: this.getCurrentDate(),
-            select_day: undefined,            
+            daySelected: undefined,
+            appointmentsSelected: [],
         }
+    },
+    mounted() {
+        this.getHTTP_appointmentsList()
     },
     methods: {
         getCurrentDate: function () {
@@ -57,11 +63,11 @@ export default {
         },
         nextDate: function () {
             this.date = new Date(this.date.getFullYear(), this.date.getMonth() + 1, 1)
-            this.select_day = 1
+            this.daySelected = 1
         },
         previousDate: function () {
             this.date = new Date(this.date.getFullYear(), this.date.getMonth() - 1, this.getDayNumberOfMonth())
-            this.select_day = this.getDayNumberOfMonth()
+            this.daySelected = this.getDayNumberOfMonth()
         },
         getDayNumberOfMonth: function () {
             return new Date(this.date.getFullYear(), this.date.getMonth(), 0).getDate()
@@ -78,6 +84,33 @@ export default {
                 return true;
             }
         },
+        getHTTP_appointmentsList() {
+            axios
+                .get("api/appointments/")
+                .then((response) => {
+                    this.appointments = response.data;
+                })
+                .catch((error) => {
+                    console.log(error);
+                });
+        },
+        setdate: function (day) {
+            this.date = new Date(this.date.getFullYear(), this.date.getMonth(), day)
+            this.daySelected = day
+            this.getAppointmentsOfDateSelected()
+            console.log(this.appointmentsSelected)
+        },
+        getAppointmentsOfDateSelected: function () {
+            this.appointmentsSelected = []
+            this.appointments.forEach(appointment => {
+                const convertInDate = new Date(appointment.start_time)
+                if (convertInDate.getFullYear() == this.date.getFullYear()
+                    && convertInDate.getMonth() == this.date.getMonth()
+                    && convertInDate.getDate() == this.date.getDate()) {
+                    this.appointmentsSelected.push(convertInDate)
+                }
+            });
+        }
     }
 }
 </script>
@@ -95,92 +128,92 @@ export default {
     padding-left: 4rem;
 
 
-    .custom-calendar-container{
-       .custom-header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 1rem;
+    .custom-calendar-container {
+        .custom-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem;
 
-        .custom-arrow {
-            font-size: 2.2rem;
-            color: #F8FCFF;
-            -webkit-user-select: none;
-            cursor: pointer;
-        }
-
-        .custom-year {
-            font-style: normal;
-            font-weight: 500;
-            font-size: 1.8rem;
-            line-height: 29px;
-            color: #F8FCFF;
-        }
-
-        .custom-month {
-            font-style: normal;
-            font-weight: 500;
-            font-size: 1.8rem;
-            line-height: 29px;
-            color: #A771FF;
-        }
-    }
-
-    .custom-calendar-main {
-        display: flex;
-        justify-content: center;
-
-        .custom-grid-calendar {
-            display: grid;
-            gap: 0.5rem;
-            grid-template-columns: repeat(7, auto);
-
-            .custom-header-col {
-                aspect-ratio: 2 / 1;
-                text-align: center;
-                font-style: normal;
-                font-weight: 300;
-                font-size: 1rem;
-                line-height: 18px;
+            .custom-arrow {
+                font-size: 2.2rem;
                 color: #F8FCFF;
-            }
-
-            .custom-item {
-                aspect-ratio: 1 / 1;
-                width: 2.5rem;
-                color: #F8FCFF;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-
-                border-radius: 10rem;
-
-                font-weight: 500;
-                font-size: 1rem;
+                -webkit-user-select: none;
                 cursor: pointer;
-
-
-                &:hover {
-                    background-color: #313131;
-                }
             }
 
-            .custom-holiday {
-                color: #ff0000;
+            .custom-year {
+                font-style: normal;
+                font-weight: 500;
+                font-size: 1.8rem;
+                line-height: 29px;
+                color: #F8FCFF;
             }
 
-            .custom-select {
-                background-color: #8C60D4;
-                color: #ffffff;
+            .custom-month {
+                font-style: normal;
+                font-weight: 500;
+                font-size: 1.8rem;
+                line-height: 29px;
+                color: #A771FF;
             }
-
-            
         }
 
-        
-        
-    }
- 
+        .custom-calendar-main {
+            display: flex;
+            justify-content: center;
+
+            .custom-grid-calendar {
+                display: grid;
+                gap: 0.5rem;
+                grid-template-columns: repeat(7, auto);
+
+                .custom-header-col {
+                    aspect-ratio: 2 / 1;
+                    text-align: center;
+                    font-style: normal;
+                    font-weight: 300;
+                    font-size: 1rem;
+                    line-height: 18px;
+                    color: #F8FCFF;
+                }
+
+                .custom-item {
+                    aspect-ratio: 1 / 1;
+                    width: 2.5rem;
+                    color: #F8FCFF;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    border-radius: 10rem;
+
+                    font-weight: 500;
+                    font-size: 1rem;
+                    cursor: pointer;
+
+
+                    &:hover {
+                        background-color: #313131;
+                    }
+                }
+
+                .custom-holiday {
+                    color: #ff0000;
+                }
+
+                .custom-select {
+                    background-color: #8C60D4;
+                    color: #ffffff;
+                }
+
+
+            }
+
+
+
+        }
+
     }
 }
 
