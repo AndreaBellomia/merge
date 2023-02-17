@@ -6,7 +6,7 @@ from booking.models     import Appointments, Booking
 
 class AppointmentsSerializer(serializers.ModelSerializer):
 
-    
+    owner = serializers.CharField(source="owner.username", read_only=True)
 
     class Meta:
         model = Appointments
@@ -22,7 +22,7 @@ class AppointmentsSerializer(serializers.ModelSerializer):
 
 class BookingSerializer(serializers.ModelSerializer):
 
-    appointments = serializers.StringRelatedField()
+    owner = serializers.CharField(source="appointments.owner.username", read_only=True)
 
 
 

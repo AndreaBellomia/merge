@@ -22,7 +22,12 @@ class Appointments(models.Model):
     state = models.CharField(choices=STATO, max_length=5)
 
     def __str__(self):
-        return self.owner.username
+        return self.owner.username + '|' + self.start_time
+    
+
+    class Meta:
+        verbose_name = "Appointment"
+        verbose_name_plural = "Appointments"
 
 
 class Booking(models.Model):
@@ -56,9 +61,11 @@ class Booking(models.Model):
     def __str__(self):
         return  str(self.appointments.owner.username) + ' | ' + self.commiter.username + ' - ' + str(self.appointments.start_time)
     
+    class Meta:
+        verbose_name = "Booking"
+        verbose_name_plural = "Bookings"
+    
 
-    def get_owner_name(self):
-        return self.appointments.owner.username
 
 
 
