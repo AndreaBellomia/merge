@@ -1,11 +1,17 @@
 import { createRouter, createWebHashHistory } from 'vue-router'
-import BookingView from '../views/BookingView.vue'
+import MyBookingView from '../views/MyBookingView.vue'
+import AddBookingView from '../views/AddBookingView.vue'
 
 const routes = [
   {
-    path: '/booking',
-    name: 'booking',
-    component: BookingView
+    path: '/MyBookingView',
+    name: 'MyBookingView',
+    component: MyBookingView
+  },
+  {
+    path: '/AddBookingView',
+    name: 'AddBookingView',
+    component: AddBookingView
   },
 ]
 

@@ -51,18 +51,17 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-
 .v-enter-active,
 .v-leave-active {
-  transition: opacity 0.2s ease;
+    transition: opacity 0.2s ease;
 }
 
 .v-enter-from,
 .v-leave-to {
-  opacity: 0;
+    opacity: 0;
 }
 
-.custom-popup-background{
+.custom-popup-background {
     position: absolute;
     height: 100%;
     width: 100%;
@@ -102,7 +101,7 @@ export default {
             text-align: center;
         }
 
-        .material-symbols-outlined{
+        .material-symbols-outlined {
             position: relative;
             top: 1.5rem;
             left: 50%;
@@ -115,7 +114,7 @@ export default {
             padding: 0.3rem;
         }
 
-        .custom-box-content{
+        .custom-box-content {
             position: relative;
             height: 60%;
             padding: 0.75rem 10%;
@@ -123,7 +122,7 @@ export default {
             text-align: center;
         }
 
-        .custom-box-bottom{
+        .custom-box-bottom {
             position: absolute;
             width: 100%;
             height: 4rem;
@@ -132,7 +131,7 @@ export default {
 
             background-color: #ffffff;
 
-            .custom-btn-bottom{
+            .custom-btn-bottom {
                 position: absolute;
                 top: 50%;
                 left: 50%;

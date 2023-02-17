@@ -15,7 +15,7 @@
         chat
       </span>
     </router-link>
-    <router-link to="/booking">
+    <router-link to="/MyBookingView">
       <span @click="selectItem('booking')" :class="{ 'custom-item-selected': selected['booking'] }"
         class="custom-item px-3 py-2 flex material-symbols-outlined">
         calendar_month
@@ -81,6 +81,8 @@ export default {
   .custom-item {
     color: #F8FCFF;
     font-size: xx-large;
+    -webkit-user-select: none;
+    cursor: pointer;
   }
 
   .custom-item-selected {
