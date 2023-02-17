@@ -1,6 +1,7 @@
 import { createRouter, createWebHashHistory } from 'vue-router'
 import MyBookingView from '../views/MyBookingView.vue'
 import AddBookingView from '../views/AddBookingView.vue'
+import FormBookingView from '../views/FormBookingView.vue'
 
 const routes = [
   {
@@ -12,6 +13,11 @@ const routes = [
     path: '/AddBookingView',
     name: 'AddBookingView',
     component: AddBookingView
+  },
+  {
+    path: '/FormBookingView',
+    name: 'FormBookingView',
+    component: FormBookingView
   },
 ]
 

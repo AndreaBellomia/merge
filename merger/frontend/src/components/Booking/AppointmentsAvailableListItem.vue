@@ -7,15 +7,19 @@
                 <span class="custom-card-text">{{ appointment.owner }}</span>
             </div>
             <div class="flex flex-col items-center">
-                <span class="custom-card-icon material-symbols-outlined">
-                    chevron_right
-                </span>
+                <RouterLink to="/FormBookingView">
+                    <span class="custom-card-icon material-symbols-outlined">
+                        chevron_right
+                    </span>
+                </RouterLink>
             </div>
         </div>
     </div>
 </template>
 
 <script>
+import { RouterLink } from 'vue-router';
+
 export default {
     props: {
         appointment: {
@@ -35,7 +39,8 @@ export default {
                 let minut = undefined;
                 if (date.getMinutes() === 0) {
                     minut = "00";
-                } else {
+                }
+                else {
                     minut = date.getMinutes();
                 }
                 return minut;
@@ -45,7 +50,8 @@ export default {
                 endtime: date_end.getHours() + ":" + minutes(date_end),
             };
         },
-    }
+    },
+    components: { RouterLink }
 }
 </script>
 
