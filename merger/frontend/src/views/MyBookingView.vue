@@ -1,43 +1,42 @@
 <template>
-  <header class="flex flex-col space-y-8 p-8">
-    <span class="custom-title">Prenotazioni</span>
-    <div class="custom-legend-container flex space-x-4">
-      <span class="custom-legend flex items-center">
-        <span class="custom-circle confirmed"></span>
-        <span class="custom-label">Confermato</span>
-      </span>
-      <span class="custom-legend flex items-center">
-        <span class="custom-circle waiting ml-3"></span>
-        <span class="custom-label">In Attesa</span>
-      </span>
-      <span class="custom-legend ml-3 flex items-center">
-        <span class="custom-circle canceled ml-3"></span>
-        <span class="custom-label">Annullato</span>
-      </span>
-    </div>
-  </header>
-  <main class="mb-32">
-    <BookingListItem v-for="booking in bookings" :key="booking" :booking="booking">
-    </BookingListItem>
-  </main>
-  <nav class="custom-fb-container flex flex-col items-end m-1">
-    <router-link to="/AddBookingView">
-      <span class="custom-fb flex material-symbols-outlined">
-        add
-      </span>
-    </router-link>
-    <span class="custom-fb flex material-symbols-outlined">
-      filter_list
-    </span>
-  </nav>
+  <div>
+    <header class="flex flex-col space-y-8 p-8">
+        <span class="custom-title">Prenotazioni</span>
+        <div class="custom-legend-container flex space-x-4">
+        <span class="custom-legend flex items-center">
+            <span class="custom-circle confirmed"></span>
+            <span class="custom-label">Confermato</span>
+        </span>
+        <span class="custom-legend flex items-center">
+            <span class="custom-circle waiting ml-3"></span>
+            <span class="custom-label">In Attesa</span>
+        </span>
+        <span class="custom-legend ml-3 flex items-center">
+            <span class="custom-circle canceled ml-3"></span>
+            <span class="custom-label">Annullato</span>
+        </span>
+        </div>
+    </header>
+    <main class="mb-32">
+        <BookingListItem v-for="booking in bookings" :key="booking" :booking="booking">
+        </BookingListItem>
+    </main>
+    <nav class="custom-fb-container">
+        <FloatingActionButton :routerLink="'/AddBookingView'" :icon="'add'" />
+        <FloatingActionButton :routerLink="'/'" :icon="'filter_list'" />
+    </nav>
+  </div>
 </template>
 
 <script>
 import axios from 'axios';
 import BookingListItem from '../components/Booking/BookingListItem.vue'
+import FloatingActionButton from '../components/Booking/FloatingActionButton.vue'
+
 export default {
   components: {
-    BookingListItem
+    BookingListItem,
+    FloatingActionButton
   },
   data() {
     return {
@@ -50,7 +49,7 @@ export default {
   methods: {
     getHTTP_bookingList() {
       axios
-        .get("api/booking/?format=json")
+        .get("/api/client/booking/?format=json")
         .then((response) => {
           this.bookings = response.data;
         })
@@ -104,25 +103,10 @@ export default {
 }
 
 .custom-fb-container {
-  position: fixed;
-  bottom: 0;
-  height: 25%;
-  width: 100%;
-
-  .custom-fb {
-    width: 3rem;
-    height: 3rem;
-    border-radius: 50%;
-    background: #8F62DA;
-    box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.5);
-    color: #F8FCFF;
-    font-size: xx-large;
-    padding-top: 0.5rem;
-    padding-left: 0.5rem;
-    margin-right: 2rem;
-    margin-bottom: 1rem;
-    -webkit-user-select: none;
-    cursor: pointer;
-  }
+  position: absolute;
+  bottom: 8rem;
+  right: 1.5rem;
+  display: flex;
+  flex-direction: column;
 }
 </style>

@@ -1,9 +1,9 @@
 <template>
-    <div v-if="booking.stato != 'FREE'" class="custom-card" :class="getStateClass()">
+    <div v-if="booking.stato != 'FREE'" class="custom-card" >
+        <div class="custom-status-bar" :class="getStateClass()"/>
         <div class="custom-card-container">
             <div class="flex flex-col items-start">
-                <span class="custom-card-header">{{ formatData() }}
-                </span>
+                <span class="custom-card-header">{{ formatData() }}</span>
                 <span class="custom-card-text mb-4">{{ booking.appointments }}</span>
                 <span class="custom-card-text">{{ booking.type }}</span>
             </div>
@@ -64,16 +64,28 @@ export default {
 
 <style scoped lang="scss">
 .custom-card {
+    position: relative;
     background: #FFFFFF;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 14px;
     margin: 0.6rem;
+
+    .custom-status-bar{
+        position: absolute;
+        top: 50%;
+        transform: translate(0%, -50%);
+        height: 80%;
+        width: 0.35rem;
+        border-radius: 0.5rem;
+        background-color: #686868;
+    }
 
     .custom-card-container {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         padding: 0.5rem;
+        margin-left: 0.25rem;
     }
 
     .custom-card-header {
@@ -113,18 +125,19 @@ export default {
         -webkit-user-select: none;
         cursor: pointer;
     }
+    .custom-status-bar.green {
+        background-color: #1ABD00
+    }
+
+        .custom-status-bar.orange {
+            background-color: #FFB800
+    }
+
+        .custom-status-bar.red {
+            background-color: #FF1F00
+    }
 }
 
-.custom-card.green {
-    border-left: 8px solid #1ABD00
-}
 
-.custom-card.orange {
-    border-left: 8px solid #FFB800
-}
-
-.custom-card.red {
-    border-left: 8px solid #FF1F00
-}
 </style>
 

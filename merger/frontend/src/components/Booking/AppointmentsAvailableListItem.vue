@@ -1,5 +1,6 @@
 <template>
     <div class="custom-card">
+        <div class="custom-status-bar"/>
         <div class="custom-card-container">
             <div class="flex flex-col items-start">
                 <span class="custom-card-header"> {{ formatData().starttime }} - {{ formatData().endtime }}
@@ -57,17 +58,28 @@ export default {
 
 <style scoped lang="scss">
 .custom-card {
-    background: #FFFFFF;
+    position: relative;
+    background: #ffffff;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 14px;
     margin: 0.6rem;
-    border-left: 8px solid #1ABD00;
+
+    .custom-status-bar{
+        position: absolute;
+        top: 50%;
+        transform: translate(0%, -50%);
+        height: 80%;
+        width: 0.35rem;
+        border-radius: 1rem;
+        background-color: #1ABD00;
+    }
 
     .custom-card-container {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         padding: 0.5rem;
+        margin-left: 0.25rem;
     }
 
     .custom-card-header {
