@@ -101,7 +101,7 @@ export default {
     .custom-card-text {
         font-style: normal;
         font-weight: 400;
-        font-size: 0.75rem;
+        font-size: 0.85rem;
         display: flex;
         align-items: center;
         text-align: center;
