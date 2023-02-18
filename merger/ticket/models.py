@@ -15,7 +15,7 @@ class TicketTipe(models.Model):
 
     def __str__(self):
         return f'{self.title} | {self.active}'
-    
+
 
 class Ticket(models.Model):
 
@@ -38,14 +38,14 @@ class Ticket(models.Model):
     description = models.CharField(max_length=250)
     object = models.CharField(max_length=80)
     status = models.CharField(choices=STATO, max_length=5)
-    status_bool = models.BooleanField(default=True)
+    status_bool = models.BooleanField(default=True) # for close ticket
 
     date_create = models.DateTimeField(auto_now_add=True)
+    date_close = models.DateTimeField(auto_now_add=True)
     date_last_update = models.DateTimeField(auto_now=True)
 
     def __str__(self):
         return f'{self.type_document} | {self.cliente}'
-    
 
 
 class TicketMsg(models.Model):
@@ -59,21 +59,4 @@ class TicketMsg(models.Model):
 
     def __str__(self):
         return f'{self.autor} | {self.date_create}'
-
-
-class TicketCommit(models.Model):
-    """
-    Models per la gestione delle lavorazioni in riferimento al ticket
-    """
-
-    ticket = models.ForeignKey(Ticket, on_delete=models.CASCADE, related_name='commit')
-    title =  models.CharField(max_length=80)
-    description = models.CharField(max_length=250)
-    date_create = models.DateTimeField(auto_now_add=True)
-    date_last_update = models.DateTimeField(auto_now=True)
-    attachment = models.URLField()
-
-    def __str__(self):
-        return f'{self.ticket.title} | {self.title}'
-
 

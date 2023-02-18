@@ -22,7 +22,7 @@ class Appointments(models.Model):
     state = models.CharField(choices=STATO, max_length=5)
 
     def __str__(self):
-        return self.owner.username + '|' + self.start_time
+        return self.owner.username + '|' + str(self.start_time)
     
 
     class Meta:
