@@ -20,6 +20,7 @@ from core.views import user_profile_view
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/', include('booking.urls')),
+    path('api/', include('ticket.urls')),
     path('', user_profile_view, name='home')
 ]
 #ciao
