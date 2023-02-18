@@ -110,6 +110,8 @@ export default {
         margin: 1rem;
         font-size: 2.5rem;
         color: #5C5A60;
+        -webkit-user-select: none;
+        cursor: pointer;
     }
 }
 

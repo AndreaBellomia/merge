@@ -1,47 +1,55 @@
 <template>
-    <div class="custom-calendar-background">
-        <div class="custom-calendar-container">
-            <div class="custom-header">
-                <span @click="previousDate()" class="custom-arrow material-symbols-outlined">
-                    chevron_left
-                </span>
-                <span>
-                    <span class="custom-year mr-3">{{ date.getFullYear() }}</span>
-                    <span class="custom-month">{{ date.toLocaleDateString("default", { month: 'long' }) }}</span>
-                </span>
-                <span @click="nextDate()" class="custom-arrow material-symbols-outlined">
-                    chevron_right
-                </span>
-            </div>
-            <div class="custom-calendar-main">
+    <main>
+        <div class="custom-calendar-background">
+            <div class="custom-calendar-container">
+                <div class="custom-header">
+                    <span @click="previousDate()" class="custom-arrow material-symbols-outlined">
+                        chevron_left
+                    </span>
+                    <span>
+                        <span class="custom-year mr-3">{{ date.getFullYear() }}</span>
+                        <span class="custom-month">{{ date.toLocaleDateString("default", { month: 'long' }) }}</span>
+                    </span>
+                    <span @click="nextDate()" class="custom-arrow material-symbols-outlined">
+                        chevron_right
+                    </span>
+                </div>
+                <div class="custom-calendar-main">
 
-                <div class="custom-grid-calendar">
-                    <div class="custom-header-col" v-for="day in 7" :key="day"
-                        :class="`${day == 6 || day == 7 ? 'custom-holiday' : ''}`">{{ getDayName(day) }}</div>
+                    <div class="custom-grid-calendar">
+                        <div class="custom-header-col" v-for="day in 7" :key="day"
+                            :class="`${day == 6 || day == 7 ? 'custom-holiday' : ''}`">{{ getDayName(day) }}</div>
 
-                    <div class="custom-item" v-for="day in getDayNumberOfMonth()" :key="day"
-                        :style="`${day == 1 ? 'grid-column-start: ' + getFirstDayOfMonth() : ''}`"
-                        :class="`${day == daySelected ? 'custom-select' : ''}
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 ${styleRedDay(day) ? 'custom-holiday' : ''}`"
-                        @click="setdate(day)">{{
-                            day }}
+                        <div class="custom-item" v-for="day in getDayNumberOfMonth()" :key="day"
+                            :style="`${day == 1 ? 'grid-column-start: ' + getFirstDayOfMonth() : ''}`"
+                            :class="`${day == daySelected ? 'custom-select' : ''}
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 ${styleRedDay(day) ? 'custom-holiday' : ''}`"
+                            @click="setdate(day)">{{
+                                day }}
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-
-    <div class="flex flex-col mt-6 mb-32">
-        <span class="custom-tilte-appointments">Appuntamenti</span>
-        <AppointmentsAvailableListItem v-for="appointment in appointmentsSelected" :key="appointment"
-            :appointment=appointment>
-        </AppointmentsAvailableListItem>
-    </div>
+        <div class="flex flex-col mt-6 mb-32">
+            <span class="custom-tilte-appointments">Appuntamenti</span>
+            <AppointmentsAvailableListItem v-for="appointment in appointmentsSelected" :key="appointment"
+                :appointment=appointment>
+            </AppointmentsAvailableListItem>
+        </div>
+    </main>
+    <nav class="custom-fb-container flex flex-col items-start m-1">
+        <RouterLink to="/MyBookingView">
+            <span class="custom-fb flex material-symbols-outlined">
+                undo
+            </span>
+        </RouterLink>
+    </nav>
 </template>
 
 <script>
 import axios from 'axios';
-import AppointmentsAvailableListItem from './AppointmentsAvailableListItem.vue'
+import AppointmentsAvailableListItem from '../components/Booking/AppointmentsAvailableListItem.vue'
 export default {
     components: {
         AppointmentsAvailableListItem,
@@ -71,7 +79,7 @@ export default {
             this.daySelected = this.getDayNumberOfMonth()
         },
         getDayNumberOfMonth: function () {
-            return new Date(this.date.getFullYear(), this.date.getMonth()+1, 0).getDate()
+            return new Date(this.date.getFullYear(), this.date.getMonth() + 1, 0).getDate()
         },
         getFirstDayOfMonth: function () {
             return new Date(this.date.getFullYear(), this.date.getMonth(), 1).getUTCDay() + 1
@@ -126,7 +134,6 @@ export default {
     padding-bottom: 4rem;
     padding-right: 4rem;
     padding-left: 4rem;
-
 
     .custom-calendar-container {
         .custom-header {
@@ -206,14 +213,8 @@ export default {
                     background-color: #8C60D4;
                     color: #ffffff;
                 }
-
-
             }
-
-
-
         }
-
     }
 }
 
@@ -224,5 +225,28 @@ export default {
     font-size: 1.4rem;
     line-height: 19px;
     text-align: center;
+}
+
+.custom-fb-container {
+    position: fixed;
+    bottom: 0;
+    height: 20%;
+    width: 100%;
+
+    .custom-fb {
+        width: 3rem;
+        height: 3rem;
+        border-radius: 50%;
+        background: #8F62DA;
+        box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.5);
+        color: #F8FCFF;
+        font-size: xx-large;
+        padding-top: 0.5rem;
+        padding-left: 0.5rem;
+        margin-left: 2rem;
+        margin-bottom: 1rem;
+        -webkit-user-select: none;
+        cursor: pointer;
+    }
 }
 </style>
