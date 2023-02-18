@@ -22,7 +22,7 @@ class AppointmentsSerializer(serializers.ModelSerializer):
 
 class BookingSerializer(serializers.ModelSerializer):
 
-    owner = serializers.CharField(source="appointments.owner.username", read_only=True)
+    appointments = serializers.CharField(source="appointments.owner.username", read_only=True)
 
 
 

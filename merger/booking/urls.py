@@ -4,19 +4,19 @@ from booking.views import AppointmentsListApiView, AppointmentDatailApiView, Boo
 
 
 urlpatterns = [
-    path('appointments/', 
+    path('client/appointments/', 
         AppointmentsListApiView.as_view(), 
         name='pre-boking-list'),
     
-    path('appointments/<int:pk>', 
+    path('client/appointments/<int:pk>', 
         AppointmentDatailApiView.as_view(), 
         name='pre-boking'),
     
-    path('booking/', 
+    path('client/booking/', 
         BookingApiView.as_view(), 
         name='list-booking'),
     
-    path('booking/<int:pk>', 
+    path('client/booking/<int:pk>', 
         BookingUpdateDeleteApiView.as_view(), 
         name='meke-booking'),
 ]
