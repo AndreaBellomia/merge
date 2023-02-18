@@ -1,58 +1,59 @@
 <template>
-    <main>
-        <div class="custom-calendar-background">
-            <div class="custom-calendar-container">
-                <div class="custom-header">
-                    <span @click="previousDate()" class="custom-arrow material-symbols-outlined">
-                        chevron_left
-                    </span>
-                    <span>
-                        <span class="custom-year mr-3">{{ date.getFullYear() }}</span>
-                        <span class="custom-month">{{ date.toLocaleDateString("default", { month: 'long' }) }}</span>
-                    </span>
-                    <span @click="nextDate()" class="custom-arrow material-symbols-outlined">
-                        chevron_right
-                    </span>
-                </div>
-                <div class="custom-calendar-main">
+    <div>  
+        <main>
+            <div class="custom-calendar-background">
+                <div class="custom-calendar-container">
+                    <div class="custom-header">
+                        <span @click="previousDate()" class="custom-arrow material-symbols-outlined">
+                            chevron_left
+                        </span>
+                        <span>
+                            <span class="custom-year mr-3">{{ date.getFullYear() }}</span>
+                            <span class="custom-month">{{ date.toLocaleDateString("default", { month: 'long' }) }}</span>
+                        </span>
+                        <span @click="nextDate()" class="custom-arrow material-symbols-outlined">
+                            chevron_right
+                        </span>
+                    </div>
+                    <div class="custom-calendar-main">
 
-                    <div class="custom-grid-calendar">
-                        <div class="custom-header-col" v-for="day in 7" :key="day"
-                            :class="`${day == 6 || day == 7 ? 'custom-holiday' : ''}`">{{ getDayName(day) }}</div>
+                        <div class="custom-grid-calendar">
+                            <div class="custom-header-col" v-for="day in 7" :key="day"
+                                :class="`${day == 6 || day == 7 ? 'custom-holiday' : ''}`">{{ getDayName(day) }}</div>
 
-                        <div class="custom-item" v-for="day in getDayNumberOfMonth()" :key="day"
-                            :style="`${day == 1 ? 'grid-column-start: ' + getFirstDayOfMonth() : ''}`"
-                            :class="`${day == daySelected ? 'custom-select' : ''}
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 ${styleRedDay(day) ? 'custom-holiday' : ''}`"
-                            @click="setdate(day)">{{
-                                day }}
+                            <div class="custom-item" v-for="day in getDayNumberOfMonth()" :key="day"
+                                :style="`${day == 1 ? 'grid-column-start: ' + getFirstDayOfMonth() : ''}`"
+                                :class="`${day == daySelected ? 'custom-select' : ''}
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    ${styleRedDay(day) ? 'custom-holiday' : ''}`"
+                                @click="setdate(day)">{{
+                                    day }}
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="flex flex-col mt-6 mb-32">
-            <span class="custom-tilte-appointments">Appuntamenti</span>
-            <AppointmentsAvailableListItem v-for="appointment in appointmentsSelected" :key="appointment"
-                :appointment=appointment>
-            </AppointmentsAvailableListItem>
-        </div>
-    </main>
-    <nav class="custom-fb-container flex flex-col items-start m-1">
-        <RouterLink to="/MyBookingView">
-            <span class="custom-fb flex material-symbols-outlined">
-                undo
-            </span>
-        </RouterLink>
-    </nav>
+            <div class="flex flex-col mt-6 mb-32">
+                <span class="custom-tilte-appointments">Appuntamenti</span>
+                <AppointmentsAvailableListItem v-for="appointment in appointmentsSelected" :key="appointment"
+                    :appointment=appointment>
+                </AppointmentsAvailableListItem>
+            </div>
+        </main>
+        <nav class="custom-fb-container flex flex-col items-start m-1">
+            <FloatingActionButton :routerLink="'/MyBookingView'" :icon="'undo'"/>
+        </nav>
+    </div>
 </template>
 
 <script>
 import axios from 'axios';
 import AppointmentsAvailableListItem from '../components/Booking/AppointmentsAvailableListItem.vue'
+import FloatingActionButton from '../components/Booking/FloatingActionButton.vue'
+
 export default {
     components: {
         AppointmentsAvailableListItem,
+        FloatingActionButton,
     },
     data() {
         return {
@@ -71,12 +72,14 @@ export default {
             return date
         },
         nextDate: function () {
-            this.date = new Date(this.date.getFullYear(), this.date.getMonth() + 1, 1)
             this.daySelected = 1
+            this.date = new Date(this.date.getFullYear(), this.date.getMonth() + 1, this.daySelected)
+            this.getAppointmentsOfDateSelected()
         },
         previousDate: function () {
-            this.date = new Date(this.date.getFullYear(), this.date.getMonth() - 1, new Date(this.date.getFullYear(), this.date.getMonth(), 0).getDate())
-            this.daySelected = this.getDayNumberOfMonth()
+            this.daySelected = new Date(this.date.getFullYear(), this.date.getMonth(), -1).getDate()+1
+            this.date = new Date(this.date.getFullYear(), this.date.getMonth() - 1, this.daySelected)
+            this.getAppointmentsOfDateSelected()
         },
         getDayNumberOfMonth: function () {
             return new Date(this.date.getFullYear(), this.date.getMonth() + 1, 0).getDate()
@@ -95,7 +98,7 @@ export default {
         },
         getHTTP_appointmentsList() {
             axios
-                .get("api/appointments/")
+                .get("api/client/appointments/")
                 .then((response) => {
                     this.appointments = response.data;
                 })
@@ -228,25 +231,10 @@ export default {
 }
 
 .custom-fb-container {
-    position: fixed;
-    bottom: 0;
-    height: 20%;
-    width: 100%;
-
-    .custom-fb {
-        width: 3rem;
-        height: 3rem;
-        border-radius: 50%;
-        background: #8F62DA;
-        box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.5);
-        color: #F8FCFF;
-        font-size: xx-large;
-        padding-top: 0.5rem;
-        padding-left: 0.5rem;
-        margin-left: 2rem;
-        margin-bottom: 1rem;
-        -webkit-user-select: none;
-        cursor: pointer;
-    }
+  position: absolute;
+  bottom: 8rem;
+  left: 1.5rem;
+  display: flex;
+  flex-direction: column;
 }
 </style>
