@@ -1,39 +1,42 @@
 <template>
-  <section>
-    <router-view />
-  </section>
-  <nav class="custom-navbar">
-    <router-link to="/">
-      <span @click="selectItem('notifications')" :class="{ 'custom-item-selected': selected['notifications'] }"
-        class="custom-item px-3 py-2 flex material-symbols-outlined">
-        notifications
-      </span>
-    </router-link>
-    <router-link to="/">
-      <span @click="selectItem('chat')" :class="{ 'custom-item-selected': selected['chat'] }"
-        class="custom-item px-3 py-2 flex material-symbols-outlined">
-        chat
-      </span>
-    </router-link>
-    <router-link to="/MyBookingView">
-      <span @click="selectItem('booking')" :class="{ 'custom-item-selected': selected['booking'] }"
-        class="custom-item px-3 py-2 flex material-symbols-outlined">
-        calendar_month
-      </span>
-    </router-link>
-    <router-link to="/">
-      <span @click="selectItem('ticket')" :class="{ 'custom-item-selected': selected['ticket'] }"
-        class="custom-item px-3 py-2 flex material-symbols-outlined">
-        confirmation_number
-      </span>
-    </router-link>
-    <router-link to="/">
-      <span @click="selectItem('profile')" :class="{ 'custom-item-selected': selected['profile'] }"
-        class="custom-item px-3 py-2 flex material-symbols-outlined">
-        account_circle
-      </span>
-    </router-link>
-  </nav>
+    <div>
+      <section>
+        <router-view />
+      </section>
+        <nav class="custom-navbar">
+            <router-link to="/">
+            <span @click="selectItem('notifications')" :class="{ 'custom-item-selected': selected['notifications'] }"
+                class="custom-item px-3 py-2 flex material-symbols-outlined">
+                notifications
+            </span>
+            </router-link>
+            <router-link to="/">
+            <span @click="selectItem('chat')" :class="{ 'custom-item-selected': selected['chat'] }"
+                class="custom-item px-3 py-2 flex material-symbols-outlined">
+                chat
+            </span>
+            </router-link>
+            <router-link to="/MyBookingView">
+            <span @click="selectItem('booking')" :class="{ 'custom-item-selected': selected['booking'] }"
+                class="custom-item px-3 py-2 flex material-symbols-outlined">
+                calendar_month
+            </span>
+            </router-link>
+            <router-link to="/MyTicketView">
+            <span @click="selectItem('ticket')" :class="{ 'custom-item-selected': selected['ticket'] }"
+                class="custom-item px-3 py-2 flex material-symbols-outlined">
+                confirmation_number
+            </span>
+            </router-link>
+            <router-link to="/">
+            <span @click="selectItem('profile')" :class="{ 'custom-item-selected': selected['profile'] }"
+                class="custom-item px-3 py-2 flex material-symbols-outlined">
+                account_circle
+            </span>
+            </router-link>
+        </nav>
+    </div>
+
 </template>
 
 <script>

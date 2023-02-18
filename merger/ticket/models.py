@@ -3,7 +3,7 @@ from django.contrib.auth.models import User
 
 
 
-class TicketTipe(models.Model):
+class TicketType(models.Model):
     """
     Models per la creazione dei tipi di ticket
     """
@@ -15,6 +15,12 @@ class TicketTipe(models.Model):
 
     def __str__(self):
         return f'{self.title} | {self.active}'
+    
+    class Meta:
+        verbose_name = "Type"
+        verbose_name_plural = "Types"
+    
+
 
 
 class Ticket(models.Model):
@@ -33,7 +39,7 @@ class Ticket(models.Model):
 
     ]
 
-    type_document = models.ForeignKey(TicketTipe, on_delete=models.SET(f'{TicketTipe.title}'), related_name='ticket')
+    type_document = models.ForeignKey(TicketType, on_delete=models.SET(f'{TicketType.title}'), related_name='ticket')
     cliente = models.ForeignKey(User, on_delete=models.SET(f'{User.username}'), related_name='cliente')
     description = models.CharField(max_length=250)
     object = models.CharField(max_length=80)
@@ -41,11 +47,16 @@ class Ticket(models.Model):
     status_bool = models.BooleanField(default=True) # for close ticket
 
     date_create = models.DateTimeField(auto_now_add=True)
-    date_close = models.DateTimeField(auto_now_add=True)
+    date_close = models.DateTimeField(blank=True, null=True)
     date_last_update = models.DateTimeField(auto_now=True)
 
     def __str__(self):
-        return f'{self.type_document} | {self.cliente}'
+        return f'{self.type_document.title} | {self.cliente}'
+    
+    class Meta:
+        verbose_name = "Ticket"
+        verbose_name_plural = "Tickets"
+    
 
 
 class TicketMsg(models.Model):
@@ -59,4 +70,8 @@ class TicketMsg(models.Model):
 
     def __str__(self):
         return f'{self.autor} | {self.date_create}'
+    
+    class Meta:
+        verbose_name = "Message"
+        verbose_name_plural = "Messages"
 

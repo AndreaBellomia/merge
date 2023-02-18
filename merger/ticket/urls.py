@@ -1,22 +1,15 @@
 from django.urls import path
 
+from ticket.views import TicketApiView, TicketTipeApiView
 
 
 
-# urlpatterns = [
-#     # path('appointments/', 
-#     #     AppointmentsListApiView.as_view(), 
-#     #     name='pre-boking-list'),
-    
-#     # path('appointments/<int:pk>', 
-#     #     AppointmentDatailApiView.as_view(), 
-#     #     name='pre-boking'),
-    
-#     # path('booking/', 
-#     #     BookingApiView.as_view(), 
-#     #     name='list-booking'),
-    
-#     # path('booking/<int:pk>', 
-#     #     BookingUpdateDeleteApiView.as_view(), 
-#     #     name='meke-booking'),
-# ]
+urlpatterns = [
+    path('client/tickets/', 
+        TicketApiView.as_view(), 
+        name='ticket-list'),
+
+    path('client/ticket-tipe/', 
+        TicketTipeApiView.as_view(), 
+        name='ticket-type-list'),
+]
