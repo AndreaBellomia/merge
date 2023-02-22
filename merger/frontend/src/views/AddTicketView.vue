@@ -18,7 +18,7 @@
                 <h2>Tipo di Ticket</h2>
             </div>
 
-            <TicketTypeListItem v-for="type in ticketType" :key="type.id" :title="type.title" :context="type.description"/>
+            <TicketTypeListItem class="custom-item" v-for="type in ticketType" :key="type.id" :title="type.title" :context="type.description"/>
         </main>
 
         <nav class="custom-fb-container flex flex-col items-start m-1">
@@ -88,6 +88,7 @@ main {
 
     .custom-input-find-container{
         position: relative;
+        top: -3rem;
         
         .custom-input-find{
             position: relative;
@@ -120,6 +121,7 @@ main {
 
     .custom-header-text{
         position: relative;
+        top: -3.2rem;
         display: flex;
         justify-content: center;
         left: 50%;
@@ -129,6 +131,11 @@ main {
             font-size: 1.5rem;
             font-weight: 600;
         }
+    }
+
+    .custom-item{
+        position: relative;
+        top: -3rem;
     }
 }
 

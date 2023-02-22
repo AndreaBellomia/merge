@@ -8,9 +8,10 @@
         </main>
         <nav class="custom-fb-container">
             <FloatingActionButton :routerLink="'/AddTicketView'" :icon="'add'" />
-            <FloatingActionButton :routerLink="'/'" :icon="'filter_list'" />
+            <FloatingActionButton :icon="'filter_list'" @btnClick="dropDownMenu = !dropDownMenu"/>
         </nav>
-        <DropDownFilter v-show="false"/>
+        <DropDownFilter :dropActive="dropDownMenu" @filterClose="dropDownMenu = !dropDownMenu"/>
+
     </div>
 </template>
 
@@ -29,6 +30,7 @@ export default {
     data () {
         return {
             tickets: Object,
+            dropDownMenu: false
         }
     },
     mounted() {
@@ -45,7 +47,7 @@ export default {
                 console.log(error);
                 });
             },
-    }
+    }   
 }
 </script>
 
