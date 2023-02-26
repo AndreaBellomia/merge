@@ -15,7 +15,9 @@
                         <slot></slot>
                     </div>
                     <div class="custom-box-bottom">
-                        <button @click="$emit('closeModal')" class="custom-btn-bottom">{{ buttonText }}</button>
+                        <RouterLink to="/MyBookingView">
+                            <button @click="$emit('closeModal')" class="custom-btn-bottom">{{ buttonText }}</button>
+                        </RouterLink>
                     </div>
                 </div>
             </Transition>
@@ -24,6 +26,8 @@
 </template>
 
 <script>
+import { RouterLink } from 'vue-router';
+
 export default {
     props: {
         show: {
@@ -46,7 +50,8 @@ export default {
             type: String,
             required: true
         }
-    }
+    },
+    components: { RouterLink }
 };
 </script>
 

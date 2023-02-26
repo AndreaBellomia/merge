@@ -1,6 +1,6 @@
 <template>
-    <div v-if="booking.stato != 'FREE'" class="custom-card" >
-        <div class="custom-status-bar" :class="getStateClass()"/>
+    <div v-if="booking.stato != 'FREE'" class="custom-card">
+        <div class="custom-status-bar" :class="getStateClass()" />
         <div class="custom-card-container">
             <div class="flex flex-col items-start">
                 <span class="custom-card-header">{{ formatData() }}</span>
@@ -9,9 +9,12 @@
             </div>
             <div class="flex flex-col items-center">
                 <span class="custom-card-secondary-text">Id {{ booking.id }}</span>
-                <span class="custom-card-icon material-symbols-outlined">
-                    chevron_right
-                </span>
+                <RouterLink
+                    :to="{ name: 'FormEditBookingView', params: { id: booking.id, type: `edit-${getStateClass()}` } }">
+                    <span class="custom-card-icon material-symbols-outlined">
+                        chevron_right
+                    </span>
+                </RouterLink>
             </div>
         </div>
     </div>
@@ -70,7 +73,7 @@ export default {
     border-radius: 14px;
     margin: 0.6rem;
 
-    .custom-status-bar{
+    .custom-status-bar {
         position: absolute;
         top: 50%;
         transform: translate(0%, -50%);
@@ -125,19 +128,18 @@ export default {
         -webkit-user-select: none;
         cursor: pointer;
     }
+
     .custom-status-bar.green {
         background-color: #1ABD00
     }
 
-        .custom-status-bar.orange {
-            background-color: #FFB800
+    .custom-status-bar.orange {
+        background-color: #FFB800
     }
 
-        .custom-status-bar.red {
-            background-color: #FF1F00
+    .custom-status-bar.red {
+        background-color: #FF1F00
     }
 }
-
-
 </style>
 

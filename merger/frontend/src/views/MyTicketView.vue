@@ -4,14 +4,14 @@
             <h1>I miei Ticket</h1>
         </header>
         <main>
-            
+
             <TicketListItem v-for="ticket in tickets" :key="ticket.id" :ticket="ticket" />
         </main>
         <nav class="custom-fb-container">
             <FloatingActionButton :routerLink="'/'" :icon="'add'" />
             <FloatingActionButton :routerLink="'/'" :icon="'filter_list'" />
         </nav>
-        
+
     </div>
 </template>
 
@@ -19,7 +19,7 @@
 
 <script>
 import axios from 'axios';
-import FloatingActionButton from '../components/Ticket/FloatingActionButton.vue'
+import FloatingActionButton from '../components/FloatingActionButton.vue'
 import TicketListItem from '../components/Ticket/TicketListItem.vue'
 
 
@@ -28,7 +28,7 @@ export default {
         FloatingActionButton,
         TicketListItem
     },
-    data () {
+    data() {
         return {
             tickets: Object,
         }
@@ -41,12 +41,12 @@ export default {
             axios
                 .get("/api/client/tickets/?format=json")
                 .then((response) => {
-                this.tickets = response.data;
+                    this.tickets = response.data;
                 })
                 .catch((error) => {
-                console.log(error);
+                    console.log(error);
                 });
-            },
+        },
     }
 }
 </script>
@@ -54,7 +54,6 @@ export default {
 
 
 <style scoped lang="scss">
-
 .prova {
     background-color: red;
     height: 10rem;
@@ -81,10 +80,10 @@ main {
 }
 
 nav {
-  position: absolute;
-  bottom: 8rem;
-  right: 1.5rem;
-  display: flex;
-  flex-direction: column;
+    position: absolute;
+    bottom: 8rem;
+    right: 1.5rem;
+    display: flex;
+    flex-direction: column;
 }
 </style>
