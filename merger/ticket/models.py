@@ -12,6 +12,7 @@ class TicketType(models.Model):
     description = models.CharField(max_length=250)
     active = models.BooleanField(default=True)
     img_url =  models.URLField(blank=True)
+    template = models.JSONField(default={})
 
     def __str__(self):
         return f'{self.title} | {self.active}'
@@ -49,6 +50,8 @@ class Ticket(models.Model):
     date_create = models.DateTimeField(auto_now_add=True)
     date_close = models.DateTimeField(blank=True, null=True)
     date_last_update = models.DateTimeField(auto_now=True)
+
+    form = models.JSONField(null=True)
 
     def __str__(self):
         return f'{self.type_document.title} | {self.cliente}'

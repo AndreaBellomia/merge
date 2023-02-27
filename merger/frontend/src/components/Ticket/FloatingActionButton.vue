@@ -2,13 +2,22 @@
 <!-- <NameComponent :routerLink="'/navigate-to'" :icon="'example'"/> -->
 
 <template>
-    <router-link :to="routerLink">
-        <div class="custom-fb-container">
-            <span class="material-symbols-outlined">
-                {{ icon }}
-            </span>
-        </div>
-    </router-link>
+    <div>
+        <router-link :to="routerLink" v-if="routerLink != ''">
+            <div class="custom-fb-container">
+                <span class="material-symbols-outlined">
+                    {{ icon }}
+                </span>
+            </div>
+        </router-link>
+        <main v-else>
+            <div class="custom-fb-container" @click="$emit('btnClick')">
+                <span class="material-symbols-outlined">
+                    {{ icon }}
+                </span>
+            </div>
+        </main>
+    </div>
 </template>
 
 <script>
@@ -16,7 +25,7 @@ export default {
     props: {
         routerLink: {
             type: String,
-            required: true
+            default: ''
         },
         icon: {
             type: String,

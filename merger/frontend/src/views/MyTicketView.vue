@@ -4,33 +4,33 @@
             <h1>I miei Ticket</h1>
         </header>
         <main>
-            
             <TicketListItem v-for="ticket in tickets" :key="ticket.id" :ticket="ticket" />
         </main>
         <nav class="custom-fb-container">
-            <FloatingActionButton :routerLink="'/'" :icon="'add'" />
-            <FloatingActionButton :routerLink="'/'" :icon="'filter_list'" />
+            <FloatingActionButton :routerLink="'/AddTicketView'" :icon="'add'" />
+            <FloatingActionButton :icon="'filter_list'" @btnClick="dropDownMenu = !dropDownMenu"/>
         </nav>
-        
+        <DropDownFilter :dropActive="dropDownMenu" @filterClose="dropDownMenu = !dropDownMenu"/>
+
     </div>
 </template>
-
-
 
 <script>
 import axios from 'axios';
 import FloatingActionButton from '../components/Ticket/FloatingActionButton.vue'
 import TicketListItem from '../components/Ticket/TicketListItem.vue'
-
+import DropDownFilter from '../components/Ticket/DropDownFilter.vue'
 
 export default {
     components: {
         FloatingActionButton,
-        TicketListItem
+        TicketListItem,
+        DropDownFilter
     },
     data () {
         return {
             tickets: Object,
+            dropDownMenu: false
         }
     },
     mounted() {
@@ -47,11 +47,9 @@ export default {
                 console.log(error);
                 });
             },
-    }
+    }   
 }
 </script>
-
-
 
 <style scoped lang="scss">
 
