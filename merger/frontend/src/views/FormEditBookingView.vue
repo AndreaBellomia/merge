@@ -15,10 +15,14 @@
     <div v-if="this.$route.params.type == 'edit-orange'">
         <PopUp :show="showPopUp" :icon="'edit'" :title="'Modificato!'" :buttonText="'Chiudi'"
             :content="`Modifica per ${this.formatData()} avvenuta con successo! ID: ${this.booking.id}`"
-            @close-modal="showPopUp = false">
+            :routerLink="'/MyBookingView'" @close-modal="showPopUp = false">
         </PopUp>
-        <PopUp :show="showPopUpDelete" :icon="'delete'" :title="'Prenotato!'" :buttonText="'Chiudi'">
-        </PopUp>
+        <PopUpWithConfirmAction :show="showPopUpDelete" :icon="'delete'" :titleFirst="'Elimina'" :titleSecond="'Eliminato!'"
+            :contentFirst="`Vuoi eliminare l'appuntamento per ${this.formatData()}? ID: ${this.booking.id}`"
+            :contentSecond="`Appuntamento per ${this.formatData()} eliminato con successo! ID: ${this.booking.id}`"
+            :buttonTextFirst="'Conferma'" :buttonTextSecond="'Chiudi'" :routerLink="'/MyBookingView'"
+            @close-modal="showPopUpDelete = false">
+        </PopUpWithConfirmAction>
         <HeaderForm :booking="booking" :state="'In Attesa'" class="mb-8"></HeaderForm>
         <EditBookingContentForm :booking="booking" :formTitle="'Modifica'" :isToSend="true" :formType="'update'"
             @open-modal="showPopUp = true">
@@ -51,13 +55,15 @@ import axios from 'axios';
 import HeaderForm from '../components/Booking/HeaderForm.vue'
 import EditBookingContentForm from '../components/Booking/EditBookingContentForm.vue'
 import PopUp from '../components/Booking/PopUp.vue';
+import PopUpWithConfirmAction from '@/components/Booking/PopUpWithConfirmAction.vue';
 import FloatingActionButton from '../components/FloatingActionButton.vue';
 export default {
     components: {
         HeaderForm,
         EditBookingContentForm,
         PopUp,
-        FloatingActionButton
+        PopUpWithConfirmAction,
+        FloatingActionButton,
     },
     data() {
         return {
