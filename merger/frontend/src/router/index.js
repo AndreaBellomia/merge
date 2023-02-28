@@ -1,7 +1,8 @@
 import { createRouter, createWebHashHistory } from 'vue-router'
 import MyBookingView from '../views/MyBookingView.vue'
-import AddBookingView from '../views/AddBookingView.vue'
-import FormBookingView from '../views/FormBookingView.vue'
+import NewBookingView from '../views/NewBookingView.vue'
+import FormEditBookingView from '../views/FormEditBookingView.vue'
+import FormAddBookingView from '../views/FormAddBookingView.vue'
 import MyTicketView from '../views/MyTicketView.vue'
 import AddTicketView from '../views/AddTicketView.vue'
 
@@ -12,14 +13,19 @@ const routes = [
     component: MyBookingView
   },
   {
-    path: '/AddBookingView',
-    name: 'AddBookingView',
-    component: AddBookingView
+    path: '/NewBookingView',
+    name: 'NewBookingView',
+    component: NewBookingView
   },
   {
-    path: '/FormBookingView',
-    name: 'FormBookingView',
-    component: FormBookingView
+    path: '/FormEditBookingView/:id/:type',
+    name: 'FormEditBookingView',
+    component: FormEditBookingView
+  },
+  {
+    path: '/FormAddBookingView/:id',
+    name: 'FormAddBookingView',
+    component: FormAddBookingView
   },
   {
     path: '/MyTicketView',

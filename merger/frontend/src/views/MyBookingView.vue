@@ -1,29 +1,29 @@
 <template>
   <div>
     <header class="flex flex-col space-y-8 p-8">
-        <span class="custom-title">Prenotazioni</span>
-        <div class="custom-legend-container flex space-x-4">
+      <span class="custom-title">Prenotazioni</span>
+      <div class="custom-legend-container flex space-x-4">
         <span class="custom-legend flex items-center">
-            <span class="custom-circle confirmed"></span>
-            <span class="custom-label">Confermato</span>
+          <span class="custom-circle confirmed"></span>
+          <span class="custom-label">Confermato</span>
         </span>
         <span class="custom-legend flex items-center">
-            <span class="custom-circle waiting ml-3"></span>
-            <span class="custom-label">In Attesa</span>
+          <span class="custom-circle waiting ml-3"></span>
+          <span class="custom-label">In Attesa</span>
         </span>
         <span class="custom-legend ml-3 flex items-center">
-            <span class="custom-circle canceled ml-3"></span>
-            <span class="custom-label">Annullato</span>
+          <span class="custom-circle canceled ml-3"></span>
+          <span class="custom-label">Annullato</span>
         </span>
-        </div>
+      </div>
     </header>
     <main class="mb-32">
-        <BookingListItem v-for="booking in bookings" :key="booking" :booking="booking">
-        </BookingListItem>
+      <BookingListItem v-for="booking in bookings" :key="booking" :booking="booking">
+      </BookingListItem>
     </main>
     <nav class="custom-fb-container">
-        <FloatingActionButton :routerLink="'/AddBookingView'" :icon="'add'" />
-        <FloatingActionButton :routerLink="'/'" :icon="'filter_list'" />
+      <FloatingActionButton :routerLink="'/NewBookingView'" :icon="'add'" />
+      <FloatingActionButton :routerLink="'/'" :icon="'filter_list'" />
     </nav>
   </div>
 </template>
@@ -31,7 +31,7 @@
 <script>
 import axios from 'axios';
 import BookingListItem from '../components/Booking/BookingListItem.vue'
-import FloatingActionButton from '../components/Booking/FloatingActionButton.vue'
+import FloatingActionButton from '../components/FloatingActionButton.vue'
 
 export default {
   components: {

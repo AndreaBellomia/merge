@@ -1,5 +1,5 @@
 <template>
-    <div class="custom-card" >
+    <div class="custom-card">
         <div class="custom-card-container">
             <div class="flex flex-col items-start">
                 <span class="custom-card-header">{{ ticket.type_document.title }}</span>
@@ -15,8 +15,8 @@
         <div class="custom-progres-bar-container">
             <div class="custom-progress-bar-background">
                 <p>{{ state }}</p>
-                <div class="custom-progress-state" :style="styleStatusProgresBar()"/>
-                
+                <div class="custom-progress-state" :style="styleStatusProgresBar()" />
+
             </div>
         </div>
     </div>
@@ -30,7 +30,7 @@ export default {
             required: true
         }
     },
-    data () {
+    data() {
         return {
             state: String,
         }
@@ -40,7 +40,7 @@ export default {
             if (this.ticket.status == "SEND") {
                 this.state = 'Inviato'
                 return 'background-color: #8F62DA; width: 5%;'
-            } else if (this.ticket.status == "WAIT" || this.ticket.status == "START" ) {
+            } else if (this.ticket.status == "WAIT" || this.ticket.status == "START") {
                 this.state = 'In lavorazione'
                 return 'background-color: #FFB800; width: 70%'
             } else if (this.ticket.status == "BUSY") {
@@ -65,7 +65,7 @@ export default {
     border-radius: 14px;
     margin: 0.6rem;
 
-    .custom-status-bar{
+    .custom-status-bar {
         position: absolute;
         top: 50%;
         transform: translate(0%, -50%);
@@ -121,14 +121,14 @@ export default {
         cursor: pointer;
     }
 
-    .custom-progres-bar-container{
+    .custom-progres-bar-container {
         bottom: 1rem;
         position: relative;
         width: 100%;
 
-        .custom-progress-bar-background{
+        .custom-progress-bar-background {
             position: relative;
-            width:calc(93% - 0.75rem );
+            width: calc(93% - 0.75rem);
             left: 1.2rem;
             height: 0.4rem;
             background-color: #9c9c9c;
@@ -151,6 +151,4 @@ export default {
         }
     }
 }
-
-
 </style>

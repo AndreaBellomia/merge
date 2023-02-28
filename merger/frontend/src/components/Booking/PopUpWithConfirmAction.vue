@@ -3,25 +3,36 @@
         <div class="custom-popup-background" v-if="show">
             <Transition name="popup">
                 <div class="custom-popup-container">
-                    <span class="material-symbols-outlined">
+                    <span class="material-symbols-outlined custom-material-symbols-outlined">
                         {{ icon }}
                     </span>
-                    <h1>{{ title }}</h1>
+                    <h1>{{ titleCurrent }}</h1>
                     <div class="custom-box-content">
-                        <p>{{ content }}</p>
+                        <p>{{ contentCurrent }}</p>
                         <slot></slot>
                     </div>
-                    <div class="custom-box-bottom">
-                        <RouterLink :to="routerLink">
-                            <button @click="$emit('closeModal')" class="custom-btn-bottom">{{ buttonText }}</button>
-                        </RouterLink>
+                    <div class="custom-box-bottom flex flex-row justify-center space-x-4">
+                        <button v-if="isFirstPopUp" @click="$emit('closeModal')"
+                            class="custom-btn-bottom back flex self-center"><span class="material-symbols-outlined">
+                                arrow_back
+                            </span></button>
+                        <button v-if="isFirstPopUp" @click="isFirstPopUp = false"
+                            class="custom-btn-bottom flex self-center">{{
+                                buttonTextCurrent
+                            }}</button>
+                        <routerLink :to="routerLink">
+                            <button v-if="!isFirstPopUp" @click="$emit('closeModal'), isFirstPopUp = true, $emit('action')"
+                                class="custom-btn-bottom flex self-center">{{
+                                    buttonTextCurrent
+                                }}</button>
+                        </routerLink>
                     </div>
                 </div>
             </Transition>
         </div>
     </Transition>
 </template>
-
+    
 <script>
 export default {
     props: {
@@ -33,27 +44,64 @@ export default {
             type: String,
             required: true
         },
-        title: {
+        titleFirst: {
             type: String,
             required: true
         },
-        content: {
+        titleSecond: {
+            type: String,
+            required: true
+        },
+        contentFirst: {
             type: String,
             required: false
         },
-        buttonText: {
+        contentSecond: {
             type: String,
             required: true
-        }
-        ,
+        },
+        buttonTextFirst: {
+            type: String,
+            required: true
+        },
+        buttonTextSecond: {
+            type: String,
+            required: true
+        },
         routerLink: {
             type: String,
             default: ''
         }
     },
+    data() {
+        return {
+            titleCurrent: '',
+            contentCurrent: '',
+            buttonTextCurrent: '',
+            isFirstPopUp: true
+        }
+    },
+    updated() {
+        this.titleCurrent = this.titleFirst
+        this.contentCurrent = this.contentFirst
+        this.buttonTextCurrent = this.buttonTextFirst
+    },
+    watch: {
+        isFirstPopUp(newValue) {
+            if (newValue) {
+                this.titleCurrent = this.titleFirst
+                this.contentCurrent = this.contentFirst
+                this.buttonTextCurrent = this.buttonTextFirst
+            } else {
+                this.titleCurrent = this.titleSecond
+                this.contentCurrent = this.contentSecond
+                this.buttonTextCurrent = this.buttonTextSecond
+            }
+        }
+    }
 };
 </script>
-
+    
 <style lang="scss" scoped>
 .v-enter-active,
 .v-leave-active {
@@ -105,7 +153,7 @@ export default {
             text-align: center;
         }
 
-        .material-symbols-outlined {
+        .custom-material-symbols-outlined {
             position: relative;
             top: 1.5rem;
             left: 50%;
@@ -129,18 +177,11 @@ export default {
         .custom-box-bottom {
             position: absolute;
             width: 100%;
-            height: 4rem;
-
+            height: 3rem;
             bottom: 0rem;
-
-            background-color: #ffffff;
+            margin-bottom: 0.5rem;
 
             .custom-btn-bottom {
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%, -50%);
-
                 font-size: 24px;
                 color: #ffffff;
                 background-color: #7432E1;
@@ -153,6 +194,22 @@ export default {
 
                 &:focus {
                     background-color: #a67ee6;
+                }
+            }
+
+            .custom-btn-bottom.back {
+                color: #8F62DA;
+                background-color: #FFFFFF;
+                border: 2px solid #8F62DA;
+
+                &:hover {
+                    color: #5a1eb9;
+                    border: 2px solid #5a1eb9;
+                }
+
+                &:focus {
+                    color: #a67ee6;
+                    border: 2px solid #5a1eb9;
                 }
             }
         }

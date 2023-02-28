@@ -1,5 +1,5 @@
 <template>
-    <div>  
+    <div>
         <main>
             <div class="custom-calendar-background">
                 <div class="custom-calendar-container">
@@ -24,7 +24,7 @@
                             <div class="custom-item" v-for="day in getDayNumberOfMonth()" :key="day"
                                 :style="`${day == 1 ? 'grid-column-start: ' + getFirstDayOfMonth() : ''}`"
                                 :class="`${day == daySelected ? 'custom-select' : ''}
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    ${styleRedDay(day) ? 'custom-holiday' : ''}`"
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                ${styleRedDay(day) ? 'custom-holiday' : ''}`"
                                 @click="setdate(day)">{{
                                     day }}
                             </div>
@@ -40,7 +40,7 @@
             </div>
         </main>
         <nav class="custom-fb-container flex flex-col items-start m-1">
-            <FloatingActionButton :routerLink="'/MyBookingView'" :icon="'undo'"/>
+            <FloatingActionButton :routerLink="'/MyBookingView'" :icon="'undo'" />
         </nav>
     </div>
 </template>
@@ -48,7 +48,7 @@
 <script>
 import axios from 'axios';
 import AppointmentsAvailableListItem from '../components/Booking/AppointmentsAvailableListItem.vue'
-import FloatingActionButton from '../components/Booking/FloatingActionButton.vue'
+import FloatingActionButton from '../components/FloatingActionButton.vue'
 
 export default {
     components: {
@@ -77,7 +77,7 @@ export default {
             this.getAppointmentsOfDateSelected()
         },
         previousDate: function () {
-            this.daySelected = new Date(this.date.getFullYear(), this.date.getMonth(), -1).getDate()+1
+            this.daySelected = new Date(this.date.getFullYear(), this.date.getMonth(), -1).getDate() + 1
             this.date = new Date(this.date.getFullYear(), this.date.getMonth() - 1, this.daySelected)
             this.getAppointmentsOfDateSelected()
         },
@@ -201,7 +201,7 @@ export default {
                     font-weight: 500;
                     font-size: 1rem;
                     cursor: pointer;
-
+                    -webkit-user-select: none;
 
                     &:hover {
                         background-color: #313131;
@@ -231,10 +231,10 @@ export default {
 }
 
 .custom-fb-container {
-  position: absolute;
-  bottom: 8rem;
-  left: 1.5rem;
-  display: flex;
-  flex-direction: column;
+    position: absolute;
+    bottom: 8rem;
+    left: 1.5rem;
+    display: flex;
+    flex-direction: column;
 }
 </style>

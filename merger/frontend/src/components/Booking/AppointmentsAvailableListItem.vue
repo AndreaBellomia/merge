@@ -1,6 +1,6 @@
 <template>
     <div class="custom-card">
-        <div class="custom-status-bar"/>
+        <div class="custom-status-bar" />
         <div class="custom-card-container">
             <div class="flex flex-col items-start">
                 <span class="custom-card-header"> {{ formatData().starttime }} - {{ formatData().endtime }}
@@ -8,7 +8,11 @@
                 <span class="custom-card-text">{{ appointment.owner }}</span>
             </div>
             <div class="flex flex-col items-center">
-                <RouterLink to="/FormBookingView">
+                <RouterLink :to="{
+                    name: 'FormAddBookingView', params: {
+                        id: appointment.id
+                    }
+                }">
                     <span class="custom-card-icon material-symbols-outlined">
                         chevron_right
                     </span>
@@ -64,7 +68,7 @@ export default {
     border-radius: 14px;
     margin: 0.6rem;
 
-    .custom-status-bar{
+    .custom-status-bar {
         position: absolute;
         top: 50%;
         transform: translate(0%, -50%);

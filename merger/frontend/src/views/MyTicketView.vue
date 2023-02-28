@@ -17,7 +17,7 @@
 
 <script>
 import axios from 'axios';
-import FloatingActionButton from '../components/Ticket/FloatingActionButton.vue'
+import FloatingActionButton from '../components/FloatingActionButton.vue'
 import TicketListItem from '../components/Ticket/TicketListItem.vue'
 import DropDownFilter from '../components/Ticket/DropDownFilter.vue'
 
@@ -27,7 +27,7 @@ export default {
         TicketListItem,
         DropDownFilter
     },
-    data () {
+    data() {
         return {
             tickets: Object,
             dropDownMenu: false
@@ -41,10 +41,10 @@ export default {
             axios
                 .get("/api/client/tickets/?format=json")
                 .then((response) => {
-                this.tickets = response.data;
+                    this.tickets = response.data;
                 })
                 .catch((error) => {
-                console.log(error);
+                    console.log(error);
                 });
             },
     }   
@@ -52,7 +52,6 @@ export default {
 </script>
 
 <style scoped lang="scss">
-
 .prova {
     background-color: red;
     height: 10rem;
@@ -79,10 +78,10 @@ main {
 }
 
 nav {
-  position: absolute;
-  bottom: 8rem;
-  right: 1.5rem;
-  display: flex;
-  flex-direction: column;
+    position: absolute;
+    bottom: 8rem;
+    right: 1.5rem;
+    display: flex;
+    flex-direction: column;
 }
 </style>
