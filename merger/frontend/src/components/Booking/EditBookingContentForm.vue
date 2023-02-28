@@ -77,11 +77,11 @@ export default {
         },
         updateHTTP_booking: function () {
             const data = {
-                appointments: this.booking.id,
                 type: this.type,
                 description: this.description
             };
-            axios.put("/api/client/booking/?format=json", data)
+            console.log(data)
+            axios.patch(`/api/client/booking/${this.booking.id}`, data)
                 .then(response => {
                     console.log(response.data);
                 })

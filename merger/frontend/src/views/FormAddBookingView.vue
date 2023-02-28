@@ -1,6 +1,6 @@
 <template>
     <PopUp :show="showPopUp" :icon="'check_circle'" :title="'Prenotato!'" :buttonText="'Chiudi'"
-        :content="`Prenotazione per ${formatData()} avvenuta con successo! Per modificare o eliminare la prenotazione recati nella sezione Gestione Appuntamenti`"
+        :content="`Prenotazione per ${formatData()} avvenuta con successo! Per modificare o eliminare la prenotazione recati nella sezione Prenotazioni`"
         :routerLink="'/MyBookingView'" @close-modal="showPopUp = false">
     </PopUp>
     <HeaderForm :booking="appointment" class="mb-8"></HeaderForm>

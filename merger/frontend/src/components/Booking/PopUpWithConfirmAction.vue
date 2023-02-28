@@ -1,5 +1,3 @@
-<!--  @click="$emit('closeModal')"  -->
-
 <template>
     <Transition>
         <div class="custom-popup-background" v-if="show">
@@ -23,7 +21,7 @@
                                 buttonTextCurrent
                             }}</button>
                         <routerLink :to="routerLink">
-                            <button v-if="!isFirstPopUp" @click="$emit('closeModal'), isFirstPopUp = true"
+                            <button v-if="!isFirstPopUp" @click="$emit('closeModal'), isFirstPopUp = true, $emit('action')"
                                 class="custom-btn-bottom flex self-center">{{
                                     buttonTextCurrent
                                 }}</button>

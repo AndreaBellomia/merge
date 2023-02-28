@@ -21,7 +21,7 @@
             :contentFirst="`Vuoi eliminare l'appuntamento per ${this.formatData()}? ID: ${this.booking.id}`"
             :contentSecond="`Appuntamento per ${this.formatData()} eliminato con successo! ID: ${this.booking.id}`"
             :buttonTextFirst="'Conferma'" :buttonTextSecond="'Chiudi'" :routerLink="'/MyBookingView'"
-            @close-modal="showPopUpDelete = false">
+            @close-modal="showPopUpDelete = false" @action="deleteHTTP_bookingById()">
         </PopUpWithConfirmAction>
         <HeaderForm :booking="booking" :state="'In Attesa'" class="mb-8"></HeaderForm>
         <EditBookingContentForm :booking="booking" :formTitle="'Modifica'" :isToSend="true" :formType="'update'"
@@ -82,6 +82,15 @@ export default {
         },
         getHTTP_bookingById: function () {
             axios.get(`/api/client/booking/${this.$route.params.id}`)
+                .then(response => {
+                    this.booking = response.data
+                })
+                .catch(error => {
+                    console.log(error);
+                });
+        },
+        deleteHTTP_bookingById: function () {
+            axios.delete(`/api/client/booking/${this.$route.params.id}`)
                 .then(response => {
                     this.booking = response.data
                 })
