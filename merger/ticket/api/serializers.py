@@ -50,6 +50,11 @@ class GroupRadioButtonSerializer(serializers.ModelSerializer):
 
     input_group_radiogroup = ElementRadioSerializer(many=True)
 
+    type_field = serializers.SerializerMethodField()
+
+    def get_type_field(self, obj):
+        return "group_radio"
+
     class Meta:
         model = GroupRadioButton
         fields = "__all__"
@@ -62,6 +67,11 @@ class GroupDropDownSerializer(serializers.ModelSerializer):
 
     input_group_dropdown = ElementDropDownSerializer(many=True)
 
+    type_field = serializers.SerializerMethodField()
+
+    def get_type_field(self, obj):
+        return "group_dropdown"
+
     class Meta:
         model = GroupDropDown
         fields = "__all__"
@@ -73,6 +83,11 @@ class GroupCeckBoxSerializer(serializers.ModelSerializer):
     """
 
     input_group_ceckbox = ElementCeckBoxSerializer(many=True)
+
+    type_field = serializers.SerializerMethodField()
+
+    def get_type_field(self, obj):
+        return "group_ceckbox"
 
     class Meta:
         model = GroupCeckBox
@@ -90,6 +105,12 @@ class FieldInputTextSerializer(serializers.ModelSerializer):
     """
     Serilize a related_name for a FieldType 
     """
+
+    type_field = serializers.SerializerMethodField()
+
+    def get_type_field(self, obj):
+        return "text_field"
+
     class Meta:
         model = FieldInputText
         fields = "__all__"
@@ -98,6 +119,11 @@ class FieldTextAreaSerializer(serializers.ModelSerializer):
     """
     Serilize a related_name for a FieldType 
     """
+
+    type_field = serializers.SerializerMethodField()
+
+    def get_type_field(self, obj):
+        return "text_area"
     class Meta:
         model = FieldTextArea
         fields = "__all__"
@@ -106,6 +132,10 @@ class FieldCeckBoxSerializer(serializers.ModelSerializer):
     """
     Serilize a related_name for a FieldType 
     """
+    type_field = serializers.SerializerMethodField()
+
+    def get_type_field(self, obj):
+        return "ceck_box"
     class Meta:
         model = FieldCeckBox
         fields = "__all__"

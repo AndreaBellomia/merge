@@ -11,7 +11,13 @@
                 <div class="custom-container-description">
                     <p>{{ context }}</p>
                 </div>
-                <button @click="'ciao'">Richiedi</button>
+                <RouterLink class="ustom-btn-router"
+                    :to="{ name: 'FormAddTicketView', params: {id: formId} }">
+                    <p class="ustom-btn-router">
+                        Richiedi
+                    </p>
+                    
+                </RouterLink>
             </div>
         </div>
     </div>
@@ -31,6 +37,10 @@ export default {
         img: {
             type: String,
             required: false
+        },
+        formId: {
+            type: Number,
+            required: true
         }
     }
 }
@@ -91,11 +101,11 @@ export default {
             }
             
 
-            button {
+            .custom-btn-router {
                 color: #6A2EFF;
-                position: absolute;
+                position: relative;
                 bottom: 2px;
-                right: 1.2rem;
+                margin: 1rem;
             }
         }
     }
