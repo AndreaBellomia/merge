@@ -18,7 +18,7 @@
                 <h2>Tipo di Ticket</h2>
             </div>
 
-            <TicketTypeListItem class="custom-item" v-for="type in ticketType" :key="type.id" :title="type.title" :context="type.description"/>
+            <TicketTypeListItem class="custom-item" v-for="type in ticketType" :key="type.id" :title="type.title" :context="type.description" :formId="type.id"/>
         </main>
 
         <nav class="custom-fb-container flex flex-col items-start m-1">
@@ -50,7 +50,7 @@ export default {
     methods:{
         getHTTP_ticketTypeList() {
             axios
-                .get("api/client/ticket-tipe/")
+                .get("api/client/ticket-type/")
                 .then((response) => {
                     this.ticketType = response.data;
                 })

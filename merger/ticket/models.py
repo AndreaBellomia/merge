@@ -58,7 +58,7 @@ class TicketField(models.Model):
     """
 
     lable = models.CharField(max_length=60)
-    vlaue = models.CharField(max_length=60, blank=True, null=True)
+    value = models.CharField(max_length=60, blank=True, null=True)
 
     ticket_type = models.ForeignKey(Ticket, on_delete=models.PROTECT, related_name="ticket_field")
 
@@ -76,7 +76,7 @@ class FieldInputText(models.Model):
     lable = models.CharField(max_length=60)
 
     placeholder = models.CharField(max_length=60, blank=True, null=True)
-    vlaue = models.CharField(max_length=60, blank=True, null=True)
+    value = models.CharField(max_length=60, blank=True, null=True)
     max_lenght = models.IntegerField(validators=[MinValueValidator(1),
                                                  MaxValueValidator(250)])
     min_lenght = models.IntegerField(validators=[MinValueValidator(0),

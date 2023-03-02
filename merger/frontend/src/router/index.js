@@ -5,6 +5,7 @@ import FormEditBookingView from '../views/FormEditBookingView.vue'
 import FormAddBookingView from '../views/FormAddBookingView.vue'
 import MyTicketView from '../views/MyTicketView.vue'
 import AddTicketView from '../views/AddTicketView.vue'
+import FormAddTicketView from '../views/FormAddTicketView.vue'
 
 const routes = [
   {
@@ -36,6 +37,11 @@ const routes = [
     path: '/AddTicketView',
     name: 'AddTicketView',
     component: AddTicketView
+  },
+  {
+    path: '/FormAddTicketView/:id',
+    name: 'FormAddTicketView',
+    component: FormAddTicketView
   },
 ]
 
