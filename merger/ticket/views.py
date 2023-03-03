@@ -22,7 +22,7 @@ class TicketApiView(generics.ListCreateAPIView):
         for the currently authenticated user.
         """
         user = self.request.user
-        return Ticket.objects.filter(cliente=user)
+        return Ticket.objects.filter(client=user)
 
 class TicketTypeDatailApiView(APIView):
     """

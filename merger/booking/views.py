@@ -83,15 +83,16 @@ class BookingApiView(generics.ListCreateAPIView):
         """
         Manage the Creating mixin for auto compile the readonly filds
         """
-        query = serializer.validated_data['appointments']
+        
         instace = Appointments.objects.get(pk=self.request.data['appointments'])
         if BookingValidator(instace).ValidateAppBooking():
             instace.state='WAIT'
             instace.save()
-            serializer.save(start_time=query.start_time, 
-                            end_time=query.end_time,
+            serializer.save(start_time=instace.start_time, 
+                            end_time=instace.end_time,
                             stato='WAIT',
-                            commiter=self.request.user)
+                            commiter=self.request.user,
+                            appointments=instace)
 
 
 

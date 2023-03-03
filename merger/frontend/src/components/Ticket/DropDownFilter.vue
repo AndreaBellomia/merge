@@ -106,7 +106,7 @@ export default  {
         
         getHTTP_ticketTypeList: function () {
             axios
-                .get("api/client/ticket-tipe/")
+                .get("api/client/ticket-type/")
                 .then((response) => {
                     this.ticketType = response.data;
                 })
