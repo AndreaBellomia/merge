@@ -7,7 +7,25 @@
                 <h1>{{ ticketType }}</h1>
             </div>
         </header>
+
+
+
+
         <main>
+            <div class="custom-model-header">
+                
+                <div class="custom-model-container">
+                    <label for="titolo">Titolo</label>
+                    <input type="text" class="input-text" name="titolo" placeholder="Inserisci titolo del ticket..." v-model="formTitle">
+                </div>
+
+                <div class="custom-model-container">
+                    <label for="description">Descrizione</label>
+                    <input type="text" class="input-text" name="description" placeholder="Inserisci description del ticket..." v-model="formDescription">
+                </div>
+            </div>
+
+            
             <div v-for="item in listFields" :key="item">
                 <FieldsContainer :content="item" @input-change="setValueOfFields"/>
             </div>
@@ -15,30 +33,45 @@
                 <RouterLink to="/AddTicketView">
                     <button class="custom-button custom-button-decline">Annulla</button>
                 </RouterLink>
-                <button class="custom-button custom-button-confirm" @click="'confirm()'">Conferma</button>
+                <button class="custom-button custom-button-confirm" @click="showPopUpConfirm = !showPopUpConfirm">Conferma</button>
+            </div>
+            <div class="my-10 py-10">
+            
             </div>
         </main>
-        
 
-        <button @click="prova">prova</button>
+        <PopUpWithConfirmAction :show="showPopUpConfirm" :icon="'confirmation_number'" :titleFirst="'Crea Ticket'" :titleSecond="'Inviato!'"
+            :contentFirst="`Vuoi Richieder un ticket per: ${this.ticketType}?`"
+            :contentSecond="`Ticket ${this.ticketType} è stato richeisto correttamente`"
+            :buttonTextFirst="'Conferma'" :buttonTextSecond="'Chiudi'" :routerLink="'/MyTicketView'"
+            @close-modal="showPopUpConfirm = false" @action="postHTTP_booking()">
+        </PopUpWithConfirmAction>
+
     </div>
 </template>
 
 
 <script>
 import axios from 'axios';
-import FieldsContainer from '../components/Ticket//FieldsContainer.vue'
+import FieldsContainer from '../components/Ticket/FieldsContainer.vue'
+import PopUpWithConfirmAction from '../components/Ticket/PopUpWithConfirmAction.vue'
 
 
 export default {
     components: {
-        FieldsContainer
+        FieldsContainer,
+        PopUpWithConfirmAction
     },
     data() {
         return {
             ticketType: '',
             listFields: [],
-            responseField: []
+            responseField: [],
+            booking: [],
+            showPopUp: false,
+            showPopUpConfirm: false,
+            formTitle: '',
+            formDescription: '',
         }
     },
     mounted() {
@@ -104,11 +137,23 @@ export default {
                     element.value = object.value
                 }
             })
-
-            console.log(object)
         },
-        prova: function () {
-            console.log(this.responseField)
+        postHTTP_booking: function () {
+            const data = {
+                title: this.formTitle,
+                description: this.formDescription,
+                json_fields: this.responseField,
+                type_document: 1
+            }
+
+            axios.post("/api/client/tickets/?format=json", data)
+
+                .then(response => {
+                    console.log(response.data);
+                })
+                .catch(error => {
+                    console.log(error);
+                });
         }
     }
 }
@@ -116,6 +161,7 @@ export default {
 
 
 <style scoped lang="scss">
+
 .custom-header-backgroud{
     position: relative;
     display: flex;
@@ -162,4 +208,38 @@ export default {
     }
 
 }
+
+main{
+    margin: 0rem .5rem;
+}
+
+.custom-model-header {
+
+    background-color: #313131;
+    padding-bottom: .5rem;
+    margin-top: 2rem;
+    border-radius: 14px;
+
+    .custom-model-container {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        margin: 0.5rem;
+
+        label {
+            margin: 1rem 0 0.5rem 0;
+            font-weight: 600;
+            font-size: 1.2rem;
+            color: white;
+        }
+
+        input.input-text {
+            padding: .5rem .5rem;
+            border-radius: 8px;
+            border: 1px solid #313131;
+        }
+    }
+}
+
+
 </style>

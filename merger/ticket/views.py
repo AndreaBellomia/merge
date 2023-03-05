@@ -12,17 +12,34 @@ from rest_framework.response    import Response
 
 
 
+
+
+
+
 class TicketApiView(generics.ListCreateAPIView):
-
+    
     serializer_class = TicketsSerializer
+    queryset = Ticket.objects.filter()
 
-    def get_queryset(self):
-        """
-        This view should return a list of all ticket
-        for the currently authenticated user.
-        """
-        user = self.request.user
-        return Ticket.objects.filter(client=user)
+
+# class TicketApiView(APIView):
+
+
+#     def get_object(self):
+#         user = self.request.user
+#         return Ticket.objects.filter(client=user)
+
+#     def get(self, request):
+#         instace = self.get_object()
+#         serializer = TicketsSerializer(instace, many=True)
+#         return Response(serializer.data) 
+    
+#     def post(self, request):
+#         print(request.data)
+#         serializer = TicketsSerializer()
+#         print(serializer)
+#         return Response('serializer.data', status=status.HTTP_201_CREATED)
+
 
 class TicketTypeDatailApiView(APIView):
     """
@@ -42,7 +59,6 @@ class TicketTypeDatailApiView(APIView):
 class TicketTypeView(generics.ListAPIView):
     serializer_class = TicketTypeSerializer
     queryset = TicketType.objects.all()
-
 
 
 class TesetView(generics.ListAPIView):

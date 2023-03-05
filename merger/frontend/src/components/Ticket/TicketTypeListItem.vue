@@ -11,9 +11,9 @@
                 <div class="custom-container-description">
                     <p>{{ context }}</p>
                 </div>
-                <RouterLink class="ustom-btn-router"
+                <RouterLink class="custom-btn-router"
                     :to="{ name: 'FormAddTicketView', params: {id: formId} }">
-                    <p class="ustom-btn-router">
+                    <p class="">
                         Richiedi
                     </p>
                     
@@ -102,10 +102,9 @@ export default {
             
 
             .custom-btn-router {
+                position: absolute;
+                right: 1rem;
                 color: #6A2EFF;
-                position: relative;
-                bottom: 2px;
-                margin: 1rem;
             }
         }
     }

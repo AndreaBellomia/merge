@@ -8,19 +8,19 @@
 
             <div v-else-if="content.type_field == 'text_area'" class="custom-model-container">
                 <label :for="content.lable">{{ content.lable }}</label>
-                <textarea class="text-area" :name="content.lable" :placeholder="content.placeholder" :rows="content.rows" :cols="content.cols" v-model="formInpuit" @input="emitValue()"></textarea>
+                <textarea class="text-area" :name="content.lable" :placeholder="content.placeholder" :rows="content.rows" :cols="content.cols" v-model="formInpuit" @input="emitValue()"/>
             </div>
 
             <div v-else-if="content.type_field == 'ceck_box'" class="custom-model-container ceckbox">
                 <label :for="content.lable">{{ content.lable }}</label>
-                <input type="checkbox" class="ceck-box" :name="content.lable" :placeholder="content.placeholder" v-model="formInpuit" @input="emitValue()"/>
+                <input type="checkbox" class="ceck-box" :name="content.lable" :placeholder="content.placeholder" v-model="formWatch"/>
             </div>
 
             <div v-else-if="content.type_field == 'group_ceckbox'" class="custom-model-container">
                 <label :for="content.lable">{{ content.lable }}</label>
-                <div v-for="item in grupInpuitCeckbox" :key="item.id" class="custom-group-input">
+                <div v-for="item in this.content.input_group_ceckbox" :key="item.id" class="custom-group-input">
                     <label :for="item.label">
-                        <input type="checkbox"  :name="item.lable" :value="item.value" v-model="item.state" @input="emitValue('ceckbox')">
+                        <input type="checkbox"  :name="item.lable" :value="item.value" v-model="formWatchList">
                         {{ item.lable }}
                     </label>
                 </div>
@@ -28,15 +28,18 @@
 
             <div v-else-if="content.type_field == 'group_dropdown'" class="custom-model-container">
                 <label :for="content.lable">{{ content.lable }}</label>
-                <div v-for="item in content.input_group_dropdown" :key="item.id">
-                    {{ item }}
-                </div>
+                <select v-model="formWatch" class="custom-dropdown-select">
+                    <option disabled :value="undefined">Seleziona un opzione</option>
+                    <option v-for="item in content.input_group_dropdown" :key="item.id" :value="item.value">
+                        {{ item.lable }}
+                    </option>
+                </select>
             </div>
 
             <div v-else-if="content.type_field == 'group_radio'" class="custom-model-container">
                 <label :for="content.lable">{{ content.lable }}</label>
                 <div v-for="item in content.input_group_radiogroup" :key="item" class="custom-group-input">
-                    <input v-model="grupInpuitRadio" type="radio" :name="item.lable" :value="item.value"  @input="emitValue('radio')">
+                    <input  type="radio" :id="item.lable" :value="item.value" v-model="formWatch">
                     <label :for="content.lable">
                         {{ item.lable }}
                     </label>
@@ -57,50 +60,37 @@ export default {
     data () {
         return {
             formInpuit : this.content.vlaue,
-            grupInpuitCeckbox : this.generateGrupInpuitCeckbox(),
-            grupInpuitRadio : undefined
+            formWatch : undefined,
+            formWatchList : []
+        }
+    },
+    watch: {
+        formWatch(value) {
+            this.$emit("input-change", {
+                modelId : this.content.id,
+                primary_key : this.content.primary_key,
+                field : this.content.type_field,
+                value : value,
+            });
+        },
+        formWatchList(value) {
+            this.$emit("input-change", {
+                modelId : this.content.id,
+                primary_key : this.content.primary_key,
+                field : this.content.type_field,
+                value : value,
+            });
         }
     },
     methods: {
-        emitValue: function (input) {
-            
-
-            if (input == 'ceckbox') {
-                
-                this.$emit("input-change", {
-                    modelId : this.content.id,
-                    primary_key : this.content.primary_key,
-                    field : this.content.type_field,
-                    value : this.grupInpuitCeckbox,
-                });
-            } else if (input == 'radio') {
-                console.log(this.grupInpuitRadio)
-                this.$emit("input-change", {
-                    modelId : this.content.id,
-                    primary_key : this.content.primary_key,
-                    field : this.content.type_field,
-                    value : this.grupInpuitRadio,
-                });
-            } else {
-                this.$emit("input-change", {
-                    modelId : this.content.id,
-                    primary_key : this.content.primary_key,
-                    field : this.content.type_field,
-                    value : this.formInpuit,
-                });
-            }
+        emitValue: function () {
+            this.$emit("input-change", {
+                modelId : this.content.id,
+                primary_key : this.content.primary_key,
+                field : this.content.type_field,
+                value : this.formInpuit,
+            });
         },
-        generateGrupInpuitCeckbox : function () {
-            if (this.content.input_group_ceckbox) {
-                const result = []
-                this.content.input_group_ceckbox.forEach(element => {
-                    element.state = false
-                    result.push(element)
-                });
-                return result
-            }
-            return undefined
-        }
     }
 }
 </script>
@@ -149,6 +139,12 @@ export default {
             font-size: 1rem;
             margin-left: .25rem;
         }
+    }
+
+    .custom-dropdown-select{
+        padding: .5rem .5rem;
+        border-radius: 8px;
+        border: 1px solid #313131;
     }
 }
 
