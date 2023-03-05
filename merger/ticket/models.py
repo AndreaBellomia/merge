@@ -63,7 +63,7 @@ class TicketField(models.Model):
     ticket_type = models.ForeignKey(Ticket, on_delete=models.PROTECT, related_name="ticket_field")
 
     def __str__(self):
-        return f'{self.ticket_type.title} | {self.lable}'
+        return f'{self.ticket_type.pk} - {self.ticket_type.title} | {self.lable}'
 
 
 # TicketType reference 

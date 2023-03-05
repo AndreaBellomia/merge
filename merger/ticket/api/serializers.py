@@ -1,8 +1,12 @@
-from rest_framework     import serializers
-from ticket.models      import (ElementRadio, ElementDropDown, ElementCeckBox,
-                                FieldInputText, FieldTextArea, FieldCeckBox, 
-                                GroupRadioButton, GroupDropDown, GroupCeckBox,
-                                TicketType, Ticket, TicketField)
+from rest_framework             import serializers
+from ticket.models              import (ElementRadio, ElementDropDown, ElementCeckBox,
+                                        FieldInputText, FieldTextArea, FieldCeckBox, 
+                                        GroupRadioButton, GroupDropDown, GroupCeckBox,
+                                        TicketType, Ticket)
+
+from django.core.exceptions     import ValidationError as DjangoValidationError
+
+from .autofield                 import TicketFieldsSerializer
 
 
 
@@ -174,10 +178,24 @@ class TicketTypeRelatedSerializer(serializers.ModelSerializer):
     ticket_type_field_ceckbox = FieldCeckBoxSerializer(many=True)
 
 
-class TicketsSerializer(serializers.ModelSerializer):
 
-    type_document = TicketTypeRelatedSerializer(many=True)
-    
+
+
+
+class TicketsSerializer(serializers.ModelSerializer):
+    json_fields = serializers.JSONField(required=False)
+
     class Meta:
         model = Ticket
-        fields = "__all__"
+        fields = '__all__'
+
+    def create(self, validated_data):
+
+        type_document = validated_data["type_document"]
+        json_fields = validated_data["json_fields"]
+        
+
+        del validated_data["json_fields"]
+        instance = super().create(validated_data)
+        TicketFieldsSerializer(type_document, json_fields, instance)
+        return instance
