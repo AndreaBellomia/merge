@@ -1,1 +1,1 @@
-# Applicazione in fase di sviluppo
+# Application under development
