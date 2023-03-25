@@ -1,22 +1,19 @@
-from rest_framework             import serializers
-from ticket.models              import (ElementRadio, ElementDropDown, ElementCeckBox,
-                                        FieldInputText, FieldTextArea, FieldCeckBox, 
-                                        GroupRadioButton, GroupDropDown, GroupCeckBox,
-                                        TicketType, Ticket)
+from rest_framework import serializers
 
-from django.core.exceptions     import ValidationError as DjangoValidationError
-
-from .autofield                 import TicketFieldsSerializer
-
-
-
-
+from .autofield import TicketFieldsSerializer
+from ..models import (ElementRadio, ElementDropDown, ElementCeckBox,
+                      FieldInputText, FieldTextArea, FieldCeckBox,
+                      GroupRadioButton, GroupDropDown, GroupCeckBox,
+                      TicketType, Ticket)
 
 """ Element Section """
+
+
 class ElementRadioSerializer(serializers.ModelSerializer):
     """
-    Serilize a related_name for a FieldType 
+    Serialize a related_name for a FieldType
     """
+
     class Meta:
         model = ElementRadio
         fields = "__all__"
@@ -24,8 +21,9 @@ class ElementRadioSerializer(serializers.ModelSerializer):
 
 class ElementDropDownSerializer(serializers.ModelSerializer):
     """
-    Serilize a related_name for a FieldType 
+    Serialize a related_name for a FieldType
     """
+
     class Meta:
         model = ElementDropDown
         fields = "__all__"
@@ -33,23 +31,20 @@ class ElementDropDownSerializer(serializers.ModelSerializer):
 
 class ElementCeckBoxSerializer(serializers.ModelSerializer):
     """
-    Serilize a related_name for a FieldType 
+    Serialize a related_name for a FieldType
     """
+
     class Meta:
         model = ElementCeckBox
         fields = "__all__"
 
 
-
-
-
-
-
-
 """ Group Section """
+
+
 class GroupRadioButtonSerializer(serializers.ModelSerializer):
     """
-    Serilize a related_name for a FieldType 
+    Serialize a related_name for a FieldType
     """
 
     input_group_radiogroup = ElementRadioSerializer(many=True)
@@ -66,7 +61,7 @@ class GroupRadioButtonSerializer(serializers.ModelSerializer):
 
 class GroupDropDownSerializer(serializers.ModelSerializer):
     """
-    Serilize a related_name for a FieldType 
+    Serialize a related_name for a FieldType
     """
 
     input_group_dropdown = ElementDropDownSerializer(many=True)
@@ -83,7 +78,7 @@ class GroupDropDownSerializer(serializers.ModelSerializer):
 
 class GroupCeckBoxSerializer(serializers.ModelSerializer):
     """
-    Serilize a related_name for a FieldType 
+    Serialize a related_name for a FieldType
     """
 
     input_group_ceckbox = ElementCeckBoxSerializer(many=True)
@@ -98,16 +93,12 @@ class GroupCeckBoxSerializer(serializers.ModelSerializer):
         fields = "__all__"
 
 
-
-
-
-
-
-
 """ Field Section """
+
+
 class FieldInputTextSerializer(serializers.ModelSerializer):
     """
-    Serilize a related_name for a FieldType 
+    Serialize a related_name for a FieldType
     """
 
     type_field = serializers.SerializerMethodField()
@@ -119,39 +110,38 @@ class FieldInputTextSerializer(serializers.ModelSerializer):
         model = FieldInputText
         fields = "__all__"
 
+
 class FieldTextAreaSerializer(serializers.ModelSerializer):
     """
-    Serilize a related_name for a FieldType 
+    Serialize a related_name for a FieldType
     """
 
     type_field = serializers.SerializerMethodField()
 
     def get_type_field(self, obj):
         return "text_area"
+
     class Meta:
         model = FieldTextArea
         fields = "__all__"
 
+
 class FieldCeckBoxSerializer(serializers.ModelSerializer):
     """
-    Serilize a related_name for a FieldType 
+    Serialize a related_name for a FieldType
     """
     type_field = serializers.SerializerMethodField()
 
     def get_type_field(self, obj):
         return "ceck_box"
+
     class Meta:
         model = FieldCeckBox
         fields = "__all__"
 
 
-
-
-
-
-
 class TicketTypeSerializer(serializers.ModelSerializer):
-    """  
+    """
     TicketType Serializer without related fields
     """
 
@@ -161,7 +151,7 @@ class TicketTypeSerializer(serializers.ModelSerializer):
 
 
 class TicketTypeRelatedSerializer(serializers.ModelSerializer):
-    """  
+    """
     TicketType Serializer with related fields
     """
 
@@ -178,10 +168,6 @@ class TicketTypeRelatedSerializer(serializers.ModelSerializer):
     ticket_type_field_ceckbox = FieldCeckBoxSerializer(many=True)
 
 
-
-
-
-
 class TicketsSerializer(serializers.ModelSerializer):
     json_fields = serializers.JSONField(required=False)
 
@@ -190,10 +176,8 @@ class TicketsSerializer(serializers.ModelSerializer):
         fields = '__all__'
 
     def create(self, validated_data):
-
         type_document = validated_data["type_document"]
         json_fields = validated_data["json_fields"]
-        
 
         del validated_data["json_fields"]
         instance = super().create(validated_data)

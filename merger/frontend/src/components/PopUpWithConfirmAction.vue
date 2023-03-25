@@ -20,7 +20,7 @@
                             class="custom-btn-bottom flex self-center">{{
                                 buttonTextCurrent
                             }}</button>
-                        <routerLink :to="routerLink">
+                        <routerLink :to="destination">
                             <button v-if="!isFirstPopUp" @click="$emit('closeModal'), isFirstPopUp = true, $emit('action')"
                                 class="custom-btn-bottom flex self-center">{{
                                     buttonTextCurrent
@@ -68,7 +68,7 @@ export default {
             type: String,
             required: true
         },
-        routerLink: {
+        destination: {
             type: String,
             default: ''
         }

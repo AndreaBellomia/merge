@@ -42,7 +42,6 @@ INSTALLED_APPS = [
     'rest_framework',
     'webpack_loader',
 
-
     'booking',
     'ticket',
     'core',
@@ -63,7 +62,6 @@ MIDDLEWARE = [
 CORS_ORIGIN_WHITELIST = (
     'http://localhost:8080',
     'http://127.0.0.1:8080',
-    'http://192.168.178.36:8080/',
 )
 
 ROOT_URLCONF = 'merger.urls'
@@ -72,7 +70,7 @@ TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [os.path.join(BASE_DIR, 'templates'),
-                ],
+                 ],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -93,8 +91,8 @@ WSGI_APPLICATION = 'merger.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql', 
-        'NAME': 'merger_database',
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'airoffice',
         'USER': 'root',
         'PASSWORD': '',
         'HOST': 'localhost',   # Or an IP Address that your DB is hosted on
@@ -147,9 +145,9 @@ STATICFILES_DIRS = [
 ]
 
 WEBPACK_LOADER = {
-    'DEFAULT' : {
-        'BUNDLE_DIR_NAME' : 'dist/',
-        'STATS_FILE' : os.path.join(BASE_DIR, 'frontend', 'webpack-stats.json')
+    'DEFAULT': {
+        'BUNDLE_DIR_NAME': 'dist/',
+        'STATS_FILE': os.path.join(BASE_DIR, 'frontend', 'webpack-stats.json')
     }
 }
 

@@ -1,9 +1,17 @@
 <template>
-    <router-link :to="routerLink">
-        <div class="custom-fb-container" :style="{ background: bgColor }">
-            <span class="material-symbols-outlined" :style="{ color: color, cursor: `${getCursorByDisabled(disabled)}` }">
-                {{ icon }}
-            </span>
+    <router-link :to="destination">
+        <div :class="[
+            'w-12',
+            'h-12',
+            'p-2',
+            'shadow-md',
+            'rounded-full',
+            `bg-${bgColor}`,
+            bgColor === 'secondary' ? 'hover:bg-secondaryVariant' : '',
+            `text-${color}`,
+            disabled ? 'cursor-default' : ''
+        ]">
+            <component :is="icon"></component>
         </div>
     </router-link>
 </template>
@@ -11,52 +19,26 @@
 <script>
 export default {
     props: {
-        routerLink: {
+        destination: {
             type: String,
-            default: '',
+            default: '/',
         },
         icon: {
-            type: String,
+            type: [Object, Function],
             required: true
         },
         bgColor: {
             type: String,
-            default: '#8F62DA',
+            default: 'secondary',
         },
         color: {
             type: String,
-            default: '#F8FCFF',
+            default: 'white',
         },
         disabled: {
             type: Boolean,
             default: false,
         }
-    },
-    methods: {
-        getCursorByDisabled(disabled) {
-            if (!disabled) {
-                return 'pointer'
-            } else {
-                return 'default'
-            }
-        }
     }
 }
 </script>
-
-<style scoped lang="scss">
-.custom-fb-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
-    margin-top: 1rem;
-    box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.5);
-
-    .material-symbols-outlined {
-        font-size: 2rem;
-        padding: 0.5rem;
-        -webkit-user-select: none;
-    }
-}
-</style>
