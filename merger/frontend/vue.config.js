@@ -25,11 +25,10 @@ module.exports = defineConfig({
     headers: { "Access-Control-Allow-Origin": "*" },
   },
 
-//   uncomment before executing 'npm run build' if you wish to have a separate .css file
-//   css: {
-//       extract: {
-//         filename: 'bundle.css',
-//         chunkFilename: 'bundle.css',
-//       },
-//   }
+  css: {
+    extract: {
+      filename: 'bundle.css',
+      chunkFilename: 'bundle.css',
+    },
+  }
 })

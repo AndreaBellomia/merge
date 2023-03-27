@@ -1,47 +1,54 @@
 import { createRouter, createWebHashHistory } from 'vue-router'
-import MyBookingView from '../views/MyBookingView.vue'
-import NewBookingView from '../views/NewBookingView.vue'
-import FormEditBookingView from '../views/FormEditBookingView.vue'
-import FormAddBookingView from '../views/FormAddBookingView.vue'
-import MyTicketView from '../views/MyTicketView.vue'
-import AddTicketView from '../views/AddTicketView.vue'
-import FormAddTicketView from '../views/FormAddTicketView.vue'
+
+/* Booking */
+import MainBooking from '../views/MainBooking.vue'
+import NewAppointmentBooking from '../views/NewAppointmentBooking.vue'
+import FormDetailsBooking from '../views/FormDetailsBooking.vue'
+import FormAddBooking from '../views/FormAddBooking.vue'
+
+/* Ticket */
+import MainTicket from '../views/MainTicket.vue'
+import NewTicket from '../views/NewTicket.vue'
+import FormAddTicket from '../views/FormAddTicket.vue'
 
 const routes = [
+  /* Booking */
   {
-    path: '/MyBookingView',
-    name: 'MyBookingView',
-    component: MyBookingView
+    name: 'MainBooking',
+    path: '/booking',
+    component: MainBooking
   },
   {
-    path: '/NewBookingView',
-    name: 'NewBookingView',
-    component: NewBookingView
+    name: 'NewAppointmentBooking',
+    path: '/booking/new',
+    component: NewAppointmentBooking
   },
   {
-    path: '/FormEditBookingView/:id/:type',
-    name: 'FormEditBookingView',
-    component: FormEditBookingView
+    name: 'FormAddBooking',
+    path: '/booking/new/form/:id',
+    component: FormAddBooking
   },
   {
-    path: '/FormAddBookingView/:id',
-    name: 'FormAddBookingView',
-    component: FormAddBookingView
+    name: 'FormDetailsBooking',
+    path: '/booking/details/:id/:type',
+    component: FormDetailsBooking
+  },
+
+  /* Ticket */
+  {
+    name: 'MainTicket',
+    path: '/ticket',
+    component: MainTicket
   },
   {
-    path: '/MyTicketView',
-    name: 'MyTicketView',
-    component: MyTicketView
+    name: 'NewTicket',
+    path: '/ticket/new',
+    component: NewTicket
   },
   {
-    path: '/AddTicketView',
-    name: 'AddTicketView',
-    component: AddTicketView
-  },
-  {
-    path: '/FormAddTicketView/:id',
-    name: 'FormAddTicketView',
-    component: FormAddTicketView
+    name: 'FormAddTicket',
+    path: '/ticket/new/form/:id',
+    component: FormAddTicket
   },
 ]
 
