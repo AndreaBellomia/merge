@@ -100,7 +100,7 @@ export default {
         },
         getAppointments() {
             axios
-                .get("/api/client/appointments")
+                .get("api/client/appointments/")
                 .then((response) => {
                     this.appointments = response.data;
                 })

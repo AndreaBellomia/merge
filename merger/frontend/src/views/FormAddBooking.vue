@@ -100,7 +100,7 @@ export default {
                 type: this.type,
                 description: this.description
             };
-            axios.post("/api/client/booking", data)
+            axios.post("api/client/booking", data)
                 .then(response => {
                     console.log(response.data);
                 })

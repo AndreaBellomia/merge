@@ -1,54 +1,52 @@
 <template>
-
-    <div>
-        <header>
-            <div class="custom-header-backgroud">
-                <h1>Crea un Ticket</h1>
-            </div>
-        </header>
-        <main>
-            <div class="custom-input-find-container">
-                <input type="text" class="custom-input-find" placeholder="Cerca Ticket">
-                <span class="material-symbols-outlined" @click="''">
-                    search
-                </span>
-            </div>
-            
-            <div class="custom-header-text">
-                <h2>Tipo di Ticket</h2>
-            </div>
-
-            <TicketTypeListItem class="custom-item" v-for="type in ticketType" :key="type.id" :title="type.title" :context="type.description" :formId="type.id"/>
-        </main>
-
-        <nav class="custom-fb-container flex flex-col items-start m-1">
-            <FloatingActionButton :routerLink="'/MyTicketView'" :icon="'undo'"/>
-        </nav>
+    <!-- Header -->
+    <div :class="[styles.flexCenter, 'bg-primary shadow-md rounded-b-lg mb-12']">
+        <h1 :class="[styles.heading1, styles.paddingX, 'text-white py-6']">Crea un Ticket</h1>
     </div>
-    
+    <!-- Search Bar -->
+    <div :class="[styles.marginX, 'custom-input-find-container']">
+        <input type="text" class="custom-input-find" placeholder="Cerca Ticket">
+        <span class="material-symbols-outlined" @click="''">
+            search
+        </span>
+    </div>
+    <!-- Ticket List -->
+    <h2 :class="[styles.heading2, styles.paddingX, 'text-center']">Tipo di Ticket</h2>
+    <div :class="[styles.flexCenter, styles.paddingY, 'flex-col mb-44']">
+        <CardTicketType v-for="ticketTypeItem in ticketType" :key="ticketTypeItem.id" :title="ticketTypeItem.title"
+            :context="ticketTypeItem.description" :formId="ticketTypeItem.id" />
+    </div>
+    <!-- Floating Action Button -->
+    <div :class="[styles.flexEnd, styles.margin, styles.floatingActionButtonPositionRight]">
+        <FloatingActionButton :destination="'/ticket'" :icon="iconBack" />
+    </div>
 </template>
 
 
 <script>
 import axios from 'axios';
-import FloatingActionButton from '../components/Ticket/FloatingActionButton.vue'
-import TicketTypeListItem from '../components/Ticket/TicketTypeListItem.vue'
+import FloatingActionButton from '../components/FloatingActionButton.vue'
+import CardTicketType from '../components/Ticket/CardTicketType.vue'
+import { ArrowUturnLeftIcon } from '@heroicons/vue/24/solid'
+import { styles } from '@/assets/css';
 
 export default {
     components: {
         FloatingActionButton,
-        TicketTypeListItem
+        CardTicketType
     },
-    data () {
+    data() {
         return {
-            ticketType: Object
+            styles: styles,
+            iconBack: ArrowUturnLeftIcon,
+            ticketType: []
         }
     },
     mounted() {
-        this.getHTTP_ticketTypeList()
+        this.getTicketType()
     },
-    methods:{
-        getHTTP_ticketTypeList() {
+    methods: {
+        getTicketType() {
             axios
                 .get("api/client/ticket-type/")
                 .then((response) => {
@@ -64,87 +62,36 @@ export default {
 </script>
 
 <style scoped lang="scss">
-.custom-header-backgroud{
+.custom-input-find-container {
     position: relative;
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    background-color: #1F1F1F;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.4);
-    border-radius: 0px 0px 28px 28px;
+    top: -3rem;
 
-    h1 {
-        margin: 1rem 0rem;
-        color: white;
-        font-size: 2rem;
-        font-weight: 600;
-    }
-}
-
-main {
-    position: absolute;
-    top: 8.5rem;
-    width: 100%;
-
-    .custom-input-find-container{
+    .custom-input-find {
         position: relative;
-        top: -3rem;
-        
-        .custom-input-find{
-            position: relative;
-            left: 50%;
-            transform: translate(-50%, -0%);
-            height: 2.5rem;
-            width: 90%;
-            background-color: white;
-            padding: 0rem 1rem;
-            border-radius: 8px;
-            border: 1px solid #313131;
-            margin: 2rem 0rem;
-        }
-
-        .material-symbols-outlined{
-            position: absolute;
-            bottom: 2.45rem;
-            right: 6%;
-            cursor: pointer;
-
-            &:hover {
-                font-weight: 600;
-            }
-
-            &:focus {
-                font-weight: 600;
-            }
-        }
-    }
-
-    .custom-header-text{
-        position: relative;
-        top: -3.2rem;
-        display: flex;
-        justify-content: center;
         left: 50%;
         transform: translate(-50%, -0%);
-        
-        h2 {
-            font-size: 1.5rem;
+        height: 2.5rem;
+        width: 90%;
+        background-color: white;
+        padding: 0rem 1rem;
+        border-radius: 8px;
+        border: 1px solid #313131;
+        margin: 2rem 0rem;
+    }
+
+    .material-symbols-outlined {
+        position: absolute;
+        bottom: 2.45rem;
+        right: 6%;
+        cursor: pointer;
+
+        &:hover {
+            font-weight: 600;
+        }
+
+        &:focus {
             font-weight: 600;
         }
     }
-
-    .custom-item{
-        position: relative;
-        top: -3rem;
-    }
 }
-
-.custom-fb-container {
-  position: absolute;
-  bottom: 8rem;
-  left: 1.5rem;
-  display: flex;
-  flex-direction: column;
-}
-
 </style>

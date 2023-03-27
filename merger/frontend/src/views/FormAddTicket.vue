@@ -1,60 +1,55 @@
 <template>
-    <div>
-        <header>
-            <div class="custom-header-backgroud">
-                <h1>Crea un Ticket</h1>
-                <div class="custom-line"/>
-                <h1>{{ ticketType }}</h1>
-            </div>
-        </header>
+    <PopUpWithConfirmAction :show="showPopUpConfirm" :icon="'confirmation_number'" :titleFirst="'Crea Ticket'"
+        :titleSecond="'Inviato!'" :contentFirst="`Vuoi Richieder un ticket per: ${this.ticketType}?`"
+        :contentSecond="`Ticket ${this.ticketType} è stato richeisto correttamente`" :buttonTextFirst="'Conferma'"
+        :buttonTextSecond="'Chiudi'" :routerLink="'/MyTicketView'" @close-modal="showPopUpConfirm = false"
+        @action="getTicketTypeRelated()">
+    </PopUpWithConfirmAction>
+    <header>
+        <div class="custom-header-backgroud">
+            <h1>Crea un Ticket</h1>
+            <div class="custom-line" />
+            <h1>{{ ticketType }}</h1>
+        </div>
+    </header>
+    <main>
+        <div class="custom-model-header">
 
-
-
-
-        <main>
-            <div class="custom-model-header">
-                
-                <div class="custom-model-container">
-                    <label for="titolo">Titolo</label>
-                    <input type="text" class="input-text" name="titolo" placeholder="Inserisci titolo del ticket..." v-model="formTitle">
-                </div>
-
-                <div class="custom-model-container">
-                    <label for="description">Descrizione</label>
-                    <input type="text" class="input-text" name="description" placeholder="Inserisci description del ticket..." v-model="formDescription">
-                </div>
+            <div class="custom-model-container">
+                <label for="titolo">Titolo</label>
+                <input type="text" class="input-text" name="titolo" placeholder="Inserisci titolo del ticket..."
+                    v-model="formTitle">
             </div>
 
-            
-            <div v-for="item in listFields" :key="item">
-                <FieldsContainer :content="item" @input-change="setValueOfFields"/>
+            <div class="custom-model-container">
+                <label for="description">Descrizione</label>
+                <input type="text" class="input-text" name="description" placeholder="Inserisci description del ticket..."
+                    v-model="formDescription">
             </div>
-            <div class="flex flex-row self-center space-x-4 mt-8 justify-center">
-                <RouterLink to="/AddTicketView">
-                    <button class="custom-button custom-button-decline">Annulla</button>
-                </RouterLink>
-                <button class="custom-button custom-button-confirm" @click="showPopUpConfirm = !showPopUpConfirm">Conferma</button>
-            </div>
-            <div class="my-10 py-10">
-            
-            </div>
-        </main>
+        </div>
 
-        <PopUpWithConfirmAction :show="showPopUpConfirm" :icon="'confirmation_number'" :titleFirst="'Crea Ticket'" :titleSecond="'Inviato!'"
-            :contentFirst="`Vuoi Richieder un ticket per: ${this.ticketType}?`"
-            :contentSecond="`Ticket ${this.ticketType} è stato richeisto correttamente`"
-            :buttonTextFirst="'Conferma'" :buttonTextSecond="'Chiudi'" :routerLink="'/MyTicketView'"
-            @close-modal="showPopUpConfirm = false" @action="postHTTP_booking()">
-        </PopUpWithConfirmAction>
 
-    </div>
+        <div v-for="item in listFields" :key="item">
+            <FieldsContainer :content="item" @input-change="setValueOfFields" />
+        </div>
+        <div class="flex flex-row self-center space-x-4 mt-8 justify-center">
+            <RouterLink to="/AddTicketView">
+                <button class="custom-button custom-button-decline">Annulla</button>
+            </RouterLink>
+            <button class="custom-button custom-button-confirm"
+                @click="showPopUpConfirm = !showPopUpConfirm">Conferma</button>
+        </div>
+        <div class="my-10 py-10">
+
+        </div>
+    </main>
 </template>
 
 
 <script>
 import axios from 'axios';
 import FieldsContainer from '../components/Ticket/FieldsContainer.vue'
-import PopUpWithConfirmAction from '../components/Ticket/PopUpWithConfirmAction.vue'
+import PopUpWithConfirmAction from '../components/PopUpWithConfirmAction.vue'
 
 
 export default {
@@ -75,13 +70,13 @@ export default {
         }
     },
     mounted() {
-        this.getHTTP_ticketTypeRelatedList()
-        
+        this.getTicketTypeRelated()
+
     },
     methods: {
-        getHTTP_ticketTypeRelatedList() {
+        getTicketTypeRelated() {
             axios
-                .get(`api/client/ticket-type/${this.$route.params.id}`)
+                .get(`api/client/ticket-type/${this.$route.params.id}/`)
                 .then((response) => {
                     this.unpackTicketType(response.data)
                 })
@@ -105,19 +100,19 @@ export default {
                         element.primary_key = pk
                         fields.push(element)
                         this.responseField.push({
-                            id : element.id,
-                            primary_key : element.primary_key,
-                            type_field : element.type_field,
-                            value : ''
+                            id: element.id,
+                            primary_key: element.primary_key,
+                            type_field: element.type_field,
+                            value: ''
                         })
                         pk++
                     })
-                    
+
                 }
             }
 
             // Sort in order of index a filde object
-            fields.sort(function(a, b){
+            fields.sort(function (a, b) {
                 if (a.index < b.index) {
                     return -1
                 }
@@ -125,8 +120,8 @@ export default {
                     return 1
                 }
                 return 0
-                })
-            
+            })
+
             // Sett globaly a sorted list of filds
             this.listFields = fields
         },
@@ -161,8 +156,7 @@ export default {
 
 
 <style scoped lang="scss">
-
-.custom-header-backgroud{
+.custom-header-backgroud {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -209,7 +203,7 @@ export default {
 
 }
 
-main{
+main {
     margin: 0rem .5rem;
 }
 
@@ -240,6 +234,4 @@ main{
         }
     }
 }
-
-
 </style>

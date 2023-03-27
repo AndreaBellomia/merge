@@ -1,32 +1,37 @@
 <template>
-    <section class="flex flex-col">
-        <span class="custom-form-title mb-4">
+    <div :class="[styles.flexCenter, 'flex-col']">
+        <h2 :class="[styles.heading2, 'text-center']">
             {{ formTitle }}
-        </span>
-        <form class="custom-form">
-            <div class="flex flex-col px-12 mb-8">
-                <label class="custom-label mb-2">Titolo</label>
-                <input v-model="type" class="custom-input" type="text" :class="validOrInvalidTypeClass"
-                    placeholder="Titolo Inserito dal Cliente" :disabled="!isToSend">
+        </h2>
+        <form :class="[styles.padding, 'shadow-md rounded-lg w-full']">
+            <div class="mb-8">
+                <label :class="[styles.heading3]" for="type">* Titolo</label>
+                <input v-model="type" class="w-full border-2 p-2 rounded-lg focus:outline-none focus:border-secondary"
+                    :class="validOrInvalidTypeClass" type="text" placeholder="Titolo Inserito dal Cliente" id="type"
+                    :disabled="!isToSend" />
             </div>
-            <div class="flex flex-col px-12">
-                <label class="custom-label mb-2">Descrizione</label>
-                <textarea v-model="description" class="custom-input" :class="validOrInvalidDescriptionClass" rows="7"
-                    type="text" placeholder="Descrizione inserita dal Cliente" :disabled="!isToSend"></textarea>
+            <div class="mb-8">
+                <label :class="[styles.heading3]" for="description">* Descrizione</label>
+                <textarea v-model="description"
+                    class="w-full border-2 border-gray-200 p-2 rounded-lg focus:outline-none focus:border-indigo-500"
+                    :class="validOrInvalidDescriptionClass" rows="7" type="text"
+                    placeholder="Descrizione inserita dal Cliente" id="description" :disabled="!isToSend"></textarea>
             </div>
-
-            <div v-if="isToSend" class="flex flex-row self-center space-x-4 mt-8 justify-center">
-                <RouterLink to="/MyBookingView">
-                    <button class="custom-button custom-button-decline">Annulla</button>
+            <div v-if="isToSend" :class="[styles.flexCenter, styles.spaceBetweenX]">
+                <RouterLink to="/booking/new">
+                    <button
+                        :class="[styles.heading3, styles.paddingButton, 'border-2 text-secondary border-secondary rounded-lg hover:border-secondaryVariant hover:text-secondaryVariant']">Annulla</button>
                 </RouterLink>
-                <button class="custom-button custom-button-confirm" @click="confirm()">Conferma</button>
+                <button :class="[styles.heading3, styles.paddingButton, validOrInvalidTypeClass.length > 0 && validOrInvalidDescriptionClass.length > 0 ? 'bg-secondary border-secondary hover:bg-secondaryVariant hover:border-secondaryVariant' : 'bg-primaryVariant  border-primaryVariant cursor-default opacity-50',
+                    'border-2 text-white rounded-lg']" @click="confirm()">Conferma</button>
             </div>
         </form>
-    </section>
+    </div>
 </template>
 
 <script>
 import axios from 'axios'
+import { styles } from '@/assets/css';
 export default {
     props: {
         booking: {
@@ -44,6 +49,7 @@ export default {
     },
     data() {
         return {
+            styles: styles,
             type: '',
             description: '',
             validOrInvalidTypeClass: '',
@@ -65,7 +71,7 @@ export default {
     methods: {
         confirm() {
             if (this.validateForm()) {
-                this.updateHTTP_booking()
+                this.updateBooking()
                 this.$emit('openModal');
             }
         },
@@ -75,13 +81,13 @@ export default {
             else
                 return false
         },
-        updateHTTP_booking: function () {
+        updateBooking: function () {
             const data = {
                 type: this.type,
                 description: this.description
             };
             console.log(data)
-            axios.patch(`/api/client/booking/${this.booking.id}`, data)
+            axios.patch(`api/client/booking/${this.booking.id}`, data)
                 .then(response => {
                     console.log(response.data);
                 })
@@ -92,60 +98,3 @@ export default {
     }
 }
 </script>
-
-<style scoped lang="scss">
-.custom-form-title {
-    font-style: normal;
-    font-weight: 600;
-    font-size: 22px;
-    line-height: 27px;
-    color: #000000;
-    text-align: center;
-}
-
-.custom-input {
-    background: #FFFFFF;
-    border: 1px solid #1F1F1F;
-    border-radius: 8px;
-    padding: 0.4rem;
-}
-
-.custom-input.valid {
-    border: 2px solid #1ABD00;
-}
-
-.custom-input.invalid {
-    border: 2px solid #FF1F00;
-}
-
-.custom-label {
-    font-style: normal;
-    font-weight: 500;
-    font-size: 22px;
-    line-height: 27px;
-    color: #000000;
-}
-
-.custom-button {
-    border-radius: 8px;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 24px;
-    padding-left: 1.4rem;
-    padding-right: 1.4rem;
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
-}
-
-.custom-button.custom-button-decline {
-    border: 2px solid #8F62DA;
-    color: #8F62DA;
-    background: #F8FCFF;
-}
-
-.custom-button.custom-button-confirm {
-    color: #F8FCFF;
-    background: #8F62DA;
-}
-</style>

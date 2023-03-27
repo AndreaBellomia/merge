@@ -1,87 +1,56 @@
 <template>
-    <div>
-        <header class="flex">
-            <h1>I miei Ticket</h1>
-        </header>
-        <main>
-            <TicketListItem v-for="ticket in tickets" :key="ticket.id" :ticket="ticket" />
-        </main>
-        <nav class="custom-fb-container">
-            <FloatingActionButton :routerLink="'/AddTicketView'" :icon="'add'" />
-            <FloatingActionButton :icon="'filter_list'" @btnClick="dropDownMenu = !dropDownMenu"/>
-        </nav>
-        <DropDownFilter :dropActive="dropDownMenu" @filterClose="dropDownMenu = !dropDownMenu"/>
-
+    <h1 :class="[styles.heading1, styles.padding]">I miei Ticket</h1>
+    <!-- Ticket List -->
+    <div :class="[styles.paddingX, 'flex']">
+        <CardTicket v-for="ticket in tickets" :key="ticket.id" :ticket="ticket" />
     </div>
+    <!-- Floating Action Button -->
+    <div
+        :class="[styles.flexEnd, styles.margin, styles.floatingActionButtonPositionRight, styles.spaceBetweenY, 'flex-col']">
+        <FloatingActionButton :destination="'/ticket/new'" :icon="iconPlus" />
+        <FloatingActionButton :icon="iconFilter" @btnClick="dropDownMenu = !dropDownMenu" />
+    </div>
+    <!-- Drop Down Filter -->
+    <DropDownFilter :dropActive="dropDownMenu" @filterClose="dropDownMenu = !dropDownMenu" />
 </template>
 
 <script>
 import axios from 'axios';
 import FloatingActionButton from '../components/FloatingActionButton.vue'
-import TicketListItem from '../components/Ticket/TicketListItem.vue'
+import CardTicket from '../components/Ticket/CardTicket.vue'
 import DropDownFilter from '../components/Ticket/DropDownFilter.vue'
+import { PlusSmallIcon, FunnelIcon } from '@heroicons/vue/24/solid'
+import { styles } from '@/assets/css';
 
 export default {
     components: {
         FloatingActionButton,
-        TicketListItem,
+        CardTicket,
         DropDownFilter
     },
     data() {
         return {
+            styles: styles,
+            iconPlus: PlusSmallIcon,
+            iconFilter: FunnelIcon,
             tickets: Object,
             dropDownMenu: false
         }
     },
     mounted() {
-        this.getHTTP_ticketList()
+        this.getTicket()
     },
     methods: {
-        getHTTP_ticketList() {
+        getTicket() {
             axios
-                .get("/api/client/tickets/?format=json")
+                .get("api/client/tickets/")
                 .then((response) => {
                     this.tickets = response.data;
                 })
                 .catch((error) => {
                     console.log(error);
                 });
-            },
-    }   
-}
-</script>
-
-<style scoped lang="scss">
-.prova {
-    background-color: red;
-    height: 10rem;
-    width: 10rem;
-}
-
-header {
-    h1 {
-        font-weight: 600;
-        font-size: 1.75rem;
-        line-height: 29px;
-        margin-top: 2rem;
-        margin-left: 2rem;
+        },
     }
 }
-
-main {
-    position: absolute;
-    top: 8.5rem;
-    left: 50%;
-    transform: translate(-50%, -0%);
-    width: 100%;
-
-}
-
-nav {
-    position: absolute;
-    bottom: 8rem;
-    right: 1.5rem;
-    display: flex;
-    flex-direction: column;
-}
-</style>
+</script>

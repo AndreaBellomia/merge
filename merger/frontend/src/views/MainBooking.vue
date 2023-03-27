@@ -1,4 +1,5 @@
 <template>
+    <!-- Header -->
     <h1 :class="[styles.heading1, styles.padding]">Prenotazioni</h1>
     <!-- Legend -->
     <div :class="[styles.paddingX, 'flex']">
@@ -60,7 +61,7 @@ export default {
     methods: {
         getBooking() {
             axios
-                .get("/api/client/booking")
+                .get("api/client/booking/")
                 .then((response) => {
                     this.bookings = response.data;
                 })

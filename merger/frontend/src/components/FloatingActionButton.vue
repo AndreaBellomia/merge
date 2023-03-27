@@ -1,5 +1,5 @@
 <template>
-    <router-link :to="destination">
+    <router-link :class="disabled ? 'pointer-events-none' : ''" :to="destination">
         <div :class="[
             'w-12',
             'h-12',
@@ -7,9 +7,9 @@
             'shadow-md',
             'rounded-full',
             `bg-${bgColor}`,
-            bgColor === 'secondary' ? 'hover:bg-secondaryVariant' : '',
+            `hover:bg-${bgColorHover}`,
             `text-${color}`,
-            disabled ? 'cursor-default' : ''
+            disabled ? 'opacity-50' : ''
         ]">
             <component :is="icon"></component>
         </div>
@@ -30,6 +30,10 @@ export default {
         bgColor: {
             type: String,
             default: 'secondary',
+        },
+        bgColorHover: {
+            type: String,
+            default: 'secondaryVariant',
         },
         color: {
             type: String,
