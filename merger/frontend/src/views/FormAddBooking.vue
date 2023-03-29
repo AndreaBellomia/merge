@@ -6,7 +6,7 @@
     </PopUp>
     <!-- Form Header -->
     <FormHeader :booking="appointment" class="mb-8"></FormHeader>
-    <!-- Form Add Booking -->
+    <!-- Form -->
     <div :class="[styles.flexCenter, 'flex-col']">
         <h2 :class="[styles.heading2, 'text-center']">
             Prenotazione

@@ -1,9 +1,9 @@
 <template>
     <div :class="[styles.flexCenter, styles.padding, styles.card, styles.spaceBetweenX]">
         <div class="flex flex-col">
-            <span :class="[styles.heading2,]">{{ formatData().starttime }} - {{
-                formatData().endtime }}</span>
-            <span :class="[styles.heading3, 'mb-5']">{{ appointment.owner }}</span>
+            <h2 :class="[styles.heading2,]">{{ formatData().starttime }} - {{
+                formatData().endtime }}</h2>
+            <h3 :class="[styles.heading3, 'mb-5']">{{ appointment.owner }}</h3>
         </div>
         <div class='flex flex-col'>
             <RouterLink :to="{
@@ -11,7 +11,7 @@
                     id: appointment.id
                 }
             }"> <span
-                    :class="[styles.heading1, 'w-8 h-8 shadow-xl cursor-pointer text-primary hover:text-secondary active:text-secondaryVariant material-symbols-outlined']">chevron_right</span>
+                    :class="[styles.heading1, 'w-8 h-8 cursor-pointer text-primary hover:text-secondary active:text-secondaryVariant material-symbols-outlined']">chevron_right</span>
             </RouterLink>
         </div>
     </div>

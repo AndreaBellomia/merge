@@ -8,33 +8,27 @@
     <div
         :class="[styles.flexEnd, styles.margin, styles.floatingActionButtonPositionRight, styles.spaceBetweenY, 'flex-col']">
         <FloatingActionButton :destination="'/ticket/new'" :icon="iconPlus" />
-        <FloatingActionButton :icon="iconFilter" @btnClick="dropDownMenu = !dropDownMenu" />
     </div>
-    <!-- Drop Down Filter -->
-    <DropDownFilter :dropActive="dropDownMenu" @filterClose="dropDownMenu = !dropDownMenu" />
 </template>
 
 <script>
 import axios from 'axios';
 import FloatingActionButton from '../components/FloatingActionButton.vue'
 import CardTicket from '../components/Ticket/CardTicket.vue'
-import DropDownFilter from '../components/Ticket/DropDownFilter.vue'
 import { PlusSmallIcon, FunnelIcon } from '@heroicons/vue/24/solid'
 import { styles } from '@/assets/css';
 
 export default {
     components: {
         FloatingActionButton,
-        CardTicket,
-        DropDownFilter
+        CardTicket
     },
     data() {
         return {
             styles: styles,
             iconPlus: PlusSmallIcon,
             iconFilter: FunnelIcon,
-            tickets: Object,
-            dropDownMenu: false
+            tickets: [],
         }
     },
     mounted() {

@@ -21,7 +21,7 @@ export default {
     props: {
         destination: {
             type: String,
-            default: '/',
+            default: '',
         },
         icon: {
             type: [Object, Function],

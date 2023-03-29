@@ -27,7 +27,7 @@ export const styles = {
     spaceBetweenY: "space-y-4",
 
     header: "shadow-2xl rounded-b-2xl",
-    card: "sm:space-x-96 shadow-2xl rounded-2xl"
+    card: "sm:space-x-96 sm:w-[52rem] space-x-4 w-[22rem] justify-between shadow-2xl rounded-2xl"
 };
 
 export const layout = {

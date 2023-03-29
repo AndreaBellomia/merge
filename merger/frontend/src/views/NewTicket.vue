@@ -17,7 +17,7 @@
             :context="ticketTypeItem.description" :formId="ticketTypeItem.id" />
     </div>
     <!-- Floating Action Button -->
-    <div :class="[styles.flexEnd, styles.margin, styles.floatingActionButtonPositionRight]">
+    <div :class="[styles.flexStart, styles.margin, styles.floatingActionButtonPositionLeft]">
         <FloatingActionButton :destination="'/ticket'" :icon="iconBack" />
     </div>
 </template>
