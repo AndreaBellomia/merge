@@ -3,7 +3,7 @@
         <section class="w-full h-full">
             <router-view />
         </section>
-        <nav :class="[styles.paddingX, 'w-full fixed bottom-0 left-0 right-0 bg-primary sm:py-8 py-4']">
+        <nav :class="[styles.padding, 'w-full fixed bottom-0 left-0 right-0 bg-primary']">
             <ul class="flex justify-center items-center flex-1 list-none">
                 <li v-for="(item, index) in navLinks" :key="item.id"
                     :class="[index === navLinks.length - 1 ? 'mr-0' : 'mr-6 sm:mr-24', 'cursor-pointer']"

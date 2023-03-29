@@ -1,5 +1,5 @@
 <template>
-    <div :class="[styles.flexCenter, styles.padding, 'space-x-20 sm:space-x-96 shadow-md rounded-xl']">
+    <div :class="[styles.flexCenter, styles.padding, styles.card, styles.spaceBetweenX]">
         <div class="flex flex-col">
             <span :class="[styles.heading2,]">{{ formatData().starttime }} - {{
                 formatData().endtime }}</span>
@@ -11,7 +11,7 @@
                     id: appointment.id
                 }
             }"> <span
-                    :class="[styles.heading1, 'w-8 h-8 cursor-pointer text-primary hover:text-secondary active:text-secondaryVariant material-symbols-outlined']">chevron_right</span>
+                    :class="[styles.heading1, 'w-8 h-8 shadow-xl cursor-pointer text-primary hover:text-secondary active:text-secondaryVariant material-symbols-outlined']">chevron_right</span>
             </RouterLink>
         </div>
     </div>

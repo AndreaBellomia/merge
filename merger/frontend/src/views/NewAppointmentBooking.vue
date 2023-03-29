@@ -1,6 +1,6 @@
 <template>
     <!-- Calendar -->
-    <div :class="[styles.flexCenter, 'flex-col min-w-400 bg-primary shadow-md rounded-b-lg pb-16 mb-8']">
+    <div :class="[styles.flexCenter, styles.header, 'flex-col min-w-400 bg-primary pb-16 mb-8']">
         <div :class="[styles.flexCenter, styles.paddingX, 'py-6']">
             <span @click="previousDate()"
                 :class="[styles.heading1, 'text-white select-none cursor-pointer material-symbols-outlined sm:hover:text-secondary active:text-secondary mx-2']">chevron_left
@@ -33,7 +33,7 @@
     </div>
     <!-- Appointment List -->
     <h2 :class="[styles.heading2, 'text-center']">Appuntamenti</h2>
-    <div :class="[styles.flexCenter, styles.paddingY, 'flex-col mb-44']">
+    <div :class="[styles.flexCenter, styles.paddingY, styles.spaceBetweenY, 'flex-col mb-44']">
         <CardAppointment v-for="appointment in appointmentsSelected" :key="appointment" :appointment=appointment>
         </CardAppointment>
     </div>

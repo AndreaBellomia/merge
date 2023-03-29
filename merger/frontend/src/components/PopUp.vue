@@ -12,7 +12,7 @@
                         <slot></slot>
                     </div>
                     <div class="custom-box-bottom">
-                        <RouterLink :to="routerLink">
+                        <RouterLink :to="destination">
                             <button @click="$emit('closeModal')" class="custom-btn-bottom">{{ buttonText }}</button>
                         </RouterLink>
                     </div>
@@ -46,7 +46,7 @@ export default {
             required: true
         }
         ,
-        routerLink: {
+        destination: {
             type: String,
             default: ''
         }

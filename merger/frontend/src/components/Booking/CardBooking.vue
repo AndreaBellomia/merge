@@ -1,20 +1,19 @@
 <template>
     <div class="flex">
-        <div :class="['border-' + getStateClass() + 'Custom', 'w-1 border-l-2']"></div>
-        <div v-if="booking.stato != 'FREE'"
-            :class="[styles.flexCenter, styles.padding, 'space-x-20 sm:space-x-96 shadow-md rounded-xl']">
+        <div :class="[styles.marginY, 'border-' + getStateClass() + 'Custom', 'border-l-4 -mr-1']"></div>
+        <div v-if="booking.stato != 'FREE'" :class="[styles.flexCenter, styles.padding, styles.card, styles.spaceBetweenX]">
             <div class="flex flex-col">
                 <span :class="[styles.heading2, 'mb-2']">{{ formatData() }}</span>
-                <span :class="[styles.heading3, 'mb-8']">{{ booking.appointments }}</span>
+                <span :class="[styles.heading3, 'mb-2']">{{ booking.appointments }}</span>
                 <span>{{ booking.type }}</span>
             </div>
 
             <div class='flex flex-col'>
-                <span :class="[styles.heading4, 'mb-8']">Id {{ booking.id }}</span>
+                <span :class="[styles.heading5, 'mb-8']">Id {{ booking.id }}</span>
                 <RouterLink
                     :to="{ name: 'FormDetailsBooking', params: { id: booking.id, type: `edit-${getStateClass()}` } }">
                     <span
-                        :class="[styles.heading1, 'w-8 h-8 cursor-pointer text-primary hover:text-secondary active:text-secondaryVariant material-symbols-outlined']">chevron_right</span>
+                        :class="[styles.heading1, ' cursor-pointer text-primary hover:text-secondary active:text-secondaryVariant material-symbols-outlined']">chevron_right</span>
                 </RouterLink>
             </div>
         </div>

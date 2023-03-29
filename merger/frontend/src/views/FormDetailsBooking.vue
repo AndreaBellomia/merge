@@ -103,7 +103,7 @@ export default {
             return `${date.toLocaleString('default', { weekday: 'long' })} ${date.getDate()} ${date.toLocaleString('default', { month: 'long' })}`
         },
         getBookingById: function () {
-            axios.get(`api/client/booking/${this.$route.params.id}/`)
+            axios.get(`api/client/booking/${this.$route.params.id}`)
                 .then(response => {
                     this.booking = response.data
                 })
@@ -112,7 +112,7 @@ export default {
                 });
         },
         deleteBookingById: function () {
-            axios.delete(`api/client/booking/${this.$route.params.id}/`)
+            axios.delete(`api/client/booking/${this.$route.params.id}`)
                 .then(response => {
                     this.booking = response.data
                 })
