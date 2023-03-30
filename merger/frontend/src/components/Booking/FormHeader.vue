@@ -1,5 +1,5 @@
 <template>
-    <div :class="[styles.flexCenter, 'flex-col bg-primary shadow-md rounded-b-lg p-8']">
+    <div :class="[styles.flexCenter, styles.header, styles.padding, 'flex-col bg-primary']">
         <span :class="[styles.heading1, 'text-white']">{{ formatData().formatDateString }}</span>
         <span :class="[styles.heading2, 'text-white']"><span :class="[styles.heading2, 'text-secondary']">{{
             formatData().starttimeHours

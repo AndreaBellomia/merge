@@ -1,48 +1,40 @@
 <template>
+    <!-- PopUp With Confirm Action -->
     <PopUpWithConfirmAction :show="showPopUpConfirm" :icon="'confirmation_number'" :titleFirst="'Crea Ticket'"
         :titleSecond="'Inviato!'" :contentFirst="`Vuoi Richieder un ticket per: ${this.ticketType}?`"
         :contentSecond="`Ticket ${this.ticketType} è stato richeisto correttamente`" :buttonTextFirst="'Conferma'"
-        :buttonTextSecond="'Chiudi'" :routerLink="'/MyTicketView'" @close-modal="showPopUpConfirm = false"
+        :buttonTextSecond="'Chiudi'" :routerLink="'/ticket'" @close-modal="showPopUpConfirm = false"
         @action="getTicketTypeRelated()">
     </PopUpWithConfirmAction>
-    <header>
-        <div class="custom-header-backgroud">
-            <h1>Crea un Ticket</h1>
-            <div class="custom-line" />
-            <h1>{{ ticketType }}</h1>
+    <!-- Header -->
+    <div :class="[styles.flexCenter, styles.header, 'bg-primary mb-12']">
+        <h1 :class="[styles.heading1, styles.paddingX, 'text-white py-6']">Crea un Ticket</h1>
+    </div>
+    <!-- Form -->
+    <form :class="[styles.padding, 'shadow-md rounded-lg w-full']">
+        <div class="mb-8">
+            <label :class="[styles.heading3]" for="title">* Titolo</label>
+            <input v-model="formTitle" class="w-full border-2 p-2 rounded-lg focus:outline-none focus:border-secondary"
+                :class="validOrInvalidTitleClass" type="text" placeholder="Inserisci titolo del ticket..." id="title" />
         </div>
-    </header>
-    <main>
-        <div class="custom-model-header">
-
-            <div class="custom-model-container">
-                <label for="titolo">Titolo</label>
-                <input type="text" class="input-text" name="titolo" placeholder="Inserisci titolo del ticket..."
-                    v-model="formTitle">
-            </div>
-
-            <div class="custom-model-container">
-                <label for="description">Descrizione</label>
-                <input type="text" class="input-text" name="description" placeholder="Inserisci description del ticket..."
-                    v-model="formDescription">
-            </div>
+        <div class="mb-8">
+            <label :class="[styles.heading3]" for="description">* Descrizione</label>
+            <input v-model="formDescription"
+                class="w-full border-2 p-2 rounded-lg focus:outline-none focus:border-secondary"
+                :class="validOrInvalidDescriptionClass" type="text" placeholder="Inserisci descrizione del ticket..."
+                id="description" />
         </div>
-
-
-        <div v-for="item in listFields" :key="item">
-            <FieldsContainer :content="item" @input-change="setValueOfFields" />
-        </div>
-        <div class="flex flex-row self-center space-x-4 mt-8 justify-center">
-            <RouterLink to="/AddTicketView">
-                <button class="custom-button custom-button-decline">Annulla</button>
+        <!-- Fields Container -->
+        <FieldsContainer v-for="item in listFields" :key="item" :content="item" @input-change="setValueOfFields" />
+        <div :class="[styles.flexCenter, styles.spaceBetweenX]">
+            <RouterLink to="/ticket/new">
+                <button
+                    :class="[styles.heading3, styles.paddingButton, 'border-2 text-secondary border-secondary rounded-lg hover:border-secondaryVariant hover:text-secondaryVariant']">Annulla</button>
             </RouterLink>
-            <button class="custom-button custom-button-confirm"
-                @click="showPopUpConfirm = !showPopUpConfirm">Conferma</button>
+            <button :class="[styles.heading3, styles.paddingButton, validOrInvalidTitleClass.length > 0 && validOrInvalidDescriptionClass.length > 0 ? 'bg-secondary border-secondary hover:bg-secondaryVariant hover:border-secondaryVariant' : 'bg-primaryVariant  border-primaryVariant cursor-default opacity-50',
+                'border-2 text-white rounded-lg']" @click="showPopUpConfirm = !showPopUpConfirm">Conferma</button>
         </div>
-        <div class="my-10 py-10">
-
-        </div>
-    </main>
+    </form>
 </template>
 
 
@@ -50,7 +42,7 @@
 import axios from 'axios';
 import FieldsContainer from '../components/Ticket/FieldsContainer.vue'
 import PopUpWithConfirmAction from '../components/PopUpWithConfirmAction.vue'
-
+import { styles } from '@/assets/css';
 
 export default {
     components: {
@@ -59,6 +51,7 @@ export default {
     },
     data() {
         return {
+            styles: styles,
             ticketType: '',
             listFields: [],
             responseField: [],
@@ -67,6 +60,16 @@ export default {
             showPopUpConfirm: false,
             formTitle: '',
             formDescription: '',
+            validOrInvalidTitleClass: '',
+            validOrInvalidDescriptionClass: '',
+        }
+    },
+    watch: {
+        formTitle(newValue) {
+            this.validOrInvalidTitleClass = newValue.length > 0 ? 'border-greenCustom' : 'border-redCustom'
+        },
+        formDescription(newValue) {
+            this.validOrInvalidDescriptionClass = newValue.length > 0 ? 'border-greenCustom' : 'border-redCustom'
         }
     },
     mounted() {
@@ -85,7 +88,6 @@ export default {
                 });
         },
         unpackTicketType: function (object) {
-
             // List of fields to exclude
             const excludedFields = ['title', 'description', 'id'];
             const fields = [];
@@ -133,7 +135,7 @@ export default {
                 }
             })
         },
-        postHTTP_booking: function () {
+        postBooking: function () {
             const data = {
                 title: this.formTitle,
                 description: this.formDescription,
@@ -153,85 +155,3 @@ export default {
     }
 }
 </script>
-
-
-<style scoped lang="scss">
-.custom-header-backgroud {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    background-color: #1F1F1F;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.4);
-    border-radius: 0px 0px 28px 28px;
-
-    h1 {
-        margin: 1rem 0rem;
-        color: white;
-        font-size: 2rem;
-        font-weight: 600;
-    }
-
-    .custom-line {
-        border: 1px solid white;
-        width: 95%;
-    }
-}
-
-.custom-button {
-    border-radius: 8px;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 24px;
-    padding-left: 1.4rem;
-    padding-right: 1.4rem;
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
-
-    &.custom-button-decline {
-        border: 2px solid #8F62DA;
-        color: #8F62DA;
-        background: #F8FCFF;
-    }
-
-    &.custom-button-confirm {
-        color: #F8FCFF;
-        background: #8F62DA;
-    }
-
-}
-
-main {
-    margin: 0rem .5rem;
-}
-
-.custom-model-header {
-
-    background-color: #313131;
-    padding-bottom: .5rem;
-    margin-top: 2rem;
-    border-radius: 14px;
-
-    .custom-model-container {
-        position: relative;
-        display: flex;
-        flex-direction: column;
-        margin: 0.5rem;
-
-        label {
-            margin: 1rem 0 0.5rem 0;
-            font-weight: 600;
-            font-size: 1.2rem;
-            color: white;
-        }
-
-        input.input-text {
-            padding: .5rem .5rem;
-            border-radius: 8px;
-            border: 1px solid #313131;
-        }
-    }
-}
-</style>

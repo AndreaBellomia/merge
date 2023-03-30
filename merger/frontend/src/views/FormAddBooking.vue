@@ -6,7 +6,7 @@
     </PopUp>
     <!-- Form Header -->
     <FormHeader :booking="appointment" class="mb-8"></FormHeader>
-    <!-- Form Add Booking -->
+    <!-- Form -->
     <div :class="[styles.flexCenter, 'flex-col']">
         <h2 :class="[styles.heading2, 'text-center']">
             Prenotazione
@@ -74,7 +74,7 @@ export default {
             return `${date.toLocaleString('default', { weekday: 'long' })} ${date.getDate()} ${date.toLocaleString('default', { month: 'long' })}`
         },
         getAppointmentById: function () {
-            axios.get(`/api/client/appointments/${this.$route.params.id}`)
+            axios.get(`api/client/appointments/${this.$route.params.id}`)
                 .then(response => {
                     this.appointment = response.data
                 })
@@ -100,7 +100,7 @@ export default {
                 type: this.type,
                 description: this.description
             };
-            axios.post("api/client/booking", data)
+            axios.post("api/client/booking/", data)
                 .then(response => {
                     console.log(response.data);
                 })

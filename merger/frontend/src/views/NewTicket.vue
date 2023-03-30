@@ -1,6 +1,6 @@
 <template>
     <!-- Header -->
-    <div :class="[styles.flexCenter, 'bg-primary shadow-md rounded-b-lg mb-12']">
+    <div :class="[styles.flexCenter, styles.header, 'bg-primary mb-12']">
         <h1 :class="[styles.heading1, styles.paddingX, 'text-white py-6']">Crea un Ticket</h1>
     </div>
     <!-- Search Bar -->
@@ -17,7 +17,7 @@
             :context="ticketTypeItem.description" :formId="ticketTypeItem.id" />
     </div>
     <!-- Floating Action Button -->
-    <div :class="[styles.flexEnd, styles.margin, styles.floatingActionButtonPositionRight]">
+    <div :class="[styles.flexStart, styles.margin, styles.floatingActionButtonPositionLeft]">
         <FloatingActionButton :destination="'/ticket'" :icon="iconBack" />
     </div>
 </template>
