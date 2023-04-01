@@ -1,8 +1,10 @@
 <template>
     <div>
+        <!-- View -->
         <section class="w-full h-full">
             <router-view />
         </section>
+        <!-- Navbar -->
         <nav :class="[styles.padding, 'w-full fixed bottom-0 left-0 right-0 bg-primary']">
             <ul class="flex justify-center items-center flex-1 list-none">
                 <li v-for="(item, index) in navLinks" :key="item.id"

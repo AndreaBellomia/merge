@@ -13,7 +13,6 @@ export const styles = {
     paddingX: "sm:px-6 px-4",
     paddingY: "sm:py-6 py-4",
     padding: "sm:px-6 px-4 sm:py-6 py-4",
-
     paddingButton: "py-2 px-4",
 
     marginX: "sm:mx-6 mx-4",
@@ -27,7 +26,8 @@ export const styles = {
     spaceBetweenY: "space-y-4",
 
     header: "shadow-2xl rounded-b-2xl",
-    card: "sm:space-x-96 sm:w-[52rem] space-x-4 w-[22rem] justify-between shadow-2xl rounded-2xl"
+    card: "sm:space-x-96 sm:w-[52rem] space-x-4 w-[22rem] justify-between shadow-2xl rounded-2xl",
+    arrow: `text-3xl sm:text-4xl cursor-pointer select-none text-primary hover:text-secondary active:text-secondaryVariant material-symbols-outlined`,
 };
 
 export const layout = {

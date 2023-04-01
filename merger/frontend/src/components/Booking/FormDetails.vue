@@ -3,7 +3,7 @@
         <h2 :class="[styles.heading2, 'text-center']">
             {{ formTitle }}
         </h2>
-        <form :class="[styles.padding, 'shadow-md rounded-lg w-full']">
+        <form :class="[styles.padding, 'w-full']">
             <div class="mb-8">
                 <label :class="[styles.heading3]" for="type">* Titolo</label>
                 <input v-model="type" class="w-full border-2 p-2 rounded-lg focus:outline-none focus:border-secondary"

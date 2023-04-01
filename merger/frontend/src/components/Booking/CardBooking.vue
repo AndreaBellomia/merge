@@ -12,8 +12,7 @@
                 <h5 :class="[styles.heading5, 'mb-8']">Id {{ booking.id }}</h5>
                 <RouterLink
                     :to="{ name: 'FormDetailsBooking', params: { id: booking.id, type: `edit-${getStateClass()}` } }">
-                    <span
-                        :class="[styles.heading1, ' cursor-pointer text-primary hover:text-secondary active:text-secondaryVariant material-symbols-outlined']">chevron_right</span>
+                    <span :class="[styles.arrow]">chevron_right</span>
                 </RouterLink>
             </div>
         </div>

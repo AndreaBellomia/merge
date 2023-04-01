@@ -7,8 +7,7 @@
             </div>
             <div class="flex flex-col">
                 <h5 :class="[styles.heading5, 'mb-8']">Id {{ ticket.id }}</h5>
-                <span
-                    :class="[styles.heading1, ' cursor-pointer text-primary hover:text-secondary active:text-secondaryVariant material-symbols-outlined']">
+                <span :class="[styles.arrow]">
                     chevron_right</span>
             </div>
         </div>

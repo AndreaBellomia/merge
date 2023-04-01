@@ -11,6 +11,9 @@ import MainTicket from '../views/MainTicket.vue'
 import NewTicket from '../views/NewTicket.vue'
 import FormAddTicket from '../views/FormAddTicket.vue'
 
+/* Profile */
+import MainProfile from '../views/MainProfile.vue'
+
 const routes = [
   /* Booking */
   {
@@ -50,6 +53,13 @@ const routes = [
     path: '/ticket/new/form/:id',
     component: FormAddTicket
   },
+
+  /* Profile */
+  {
+    name: 'MainProfile',
+    path: '/profile',
+    component: MainProfile
+  }
 ]
 
 const router = createRouter({

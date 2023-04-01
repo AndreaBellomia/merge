@@ -11,7 +11,7 @@
                     id: appointment.id
                 }
             }"> <span
-                    :class="[styles.heading1, 'w-8 h-8 cursor-pointer text-primary hover:text-secondary active:text-secondaryVariant material-symbols-outlined']">chevron_right</span>
+                    :class="[styles.arrow]">chevron_right</span>
             </RouterLink>
         </div>
     </div>
