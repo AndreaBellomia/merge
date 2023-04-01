@@ -9,11 +9,18 @@ Different back-end and front-end libraries are used for development.
 
 
 ### Python Version
+
 ``
 Python 3.10
 ``
 
 ## Dev Support
+
+### Create dev data for sb
+*Start in folder of db_init.py*
+```
+python db_init.py
+```
 
  *Future Implementation*
  - [Docker](https://www.docker.com/)
@@ -29,14 +36,13 @@ Python 3.10
 
 ## [FrontEnd Lib](https://fireart.studio/blog/9-react-best-practices-to-improve-your-react-code/)
 
-  - [Material-UI](https://mui.com/)
   - [HeadlessuI](https://headlessui.com/)
   - [Heroicons](https://heroicons.com/)
   - [Tailwindcss](https://tailwindcss.com/)
-  - [Router](https://reactrouter.com/en/main)
   - [Sass](https://sass-lang.com/)
   - [axios-http](https://axios-http.com/docs/intro)
-
+  - [vueuse](https://vueuse.org/)
+  - [google icon](https://fonts.google.com/icons)
 
 # Commands
 ### [Venv](https://docs.python.org/3/library/venv.html) Python library management environment
@@ -68,7 +74,7 @@ Start Server
 ```
 python manage.py runserver
 ```
-### [React] FrontEnd JS Framework
+### [VueJs] FrontEnd JS Framework
 
 #### *In local direcory (./frontend)*
 
@@ -78,7 +84,7 @@ npm install
 ```
 Start Dev server 
 ```
-npm start 
+npm run serve 
 ```
 
 
