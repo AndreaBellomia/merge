@@ -1,40 +1,42 @@
 <template>
-    <!-- PopUp With Confirm Action -->
-    <PopUpWithConfirmAction :show="showPopUpConfirm" :icon="'confirmation_number'" :titleFirst="'Crea Ticket'"
-        :titleSecond="'Inviato!'" :contentFirst="`Vuoi Richieder un ticket per: ${this.ticketType}?`"
-        :contentSecond="`Ticket ${this.ticketType} è stato richeisto correttamente`" :buttonTextFirst="'Conferma'"
-        :buttonTextSecond="'Chiudi'" :routerLink="'/ticket'" @close-modal="showPopUpConfirm = false"
-        @action="getTicketTypeRelated()">
-    </PopUpWithConfirmAction>
-    <!-- Header -->
-    <div :class="[styles.flexCenter, styles.header, 'bg-primary mb-12']">
-        <h1 :class="[styles.heading1, styles.paddingX, 'text-white py-6']">Crea un Ticket</h1>
+    <div>
+        <!-- PopUp With Confirm Action -->
+        <PopUpWithConfirmAction :show="showPopUpConfirm" :icon="'confirmation_number'" :titleFirst="'Crea Ticket'"
+            :titleSecond="'Inviato!'" :contentFirst="`Vuoi Richieder un ticket per: ${this.ticketType}?`"
+            :contentSecond="`Ticket ${this.ticketType} è stato richeisto correttamente`" :buttonTextFirst="'Conferma'"
+            :buttonTextSecond="'Chiudi'" :routerLink="'/ticket'" @close-modal="showPopUpConfirm = false"
+            @action="postBooking()">
+        </PopUpWithConfirmAction>
+        <!-- Header -->
+        <div :class="[styles.flexCenter, styles.header, 'bg-primary mb-12']">
+            <h1 :class="[styles.heading1, styles.paddingX, 'text-white py-6']">Crea un Ticket</h1>
+        </div>
+        <!-- Form -->
+        <form :class="[styles.padding, 'shadow-md rounded-lg w-full']">
+            <div class="mb-8">
+                <label :class="[styles.heading3]" for="title">* Titolo</label>
+                <input v-model="formTitle" class="w-full border-2 p-2 rounded-lg focus:outline-none focus:border-secondary"
+                    :class="validOrInvalidTitleClass" type="text" placeholder="Inserisci titolo del ticket..." id="title" />
+            </div>
+            <div class="mb-8">
+                <label :class="[styles.heading3]" for="description">* Descrizione</label>
+                <input v-model="formDescription"
+                    class="w-full border-2 p-2 rounded-lg focus:outline-none focus:border-secondary"
+                    :class="validOrInvalidDescriptionClass" type="text" placeholder="Inserisci descrizione del ticket..."
+                    id="description" />
+            </div>
+            <!-- Fields Container -->
+            <FieldsContainer v-for="item in listFields" :key="item" :content="item" @input-change="setValueOfFields" />
+            <div :class="[styles.flexCenter, styles.spaceBetweenX]">
+                <RouterLink to="/ticket/new">
+                    <button
+                        :class="[styles.heading3, styles.paddingButton, 'border-2 text-secondary border-secondary rounded-lg hover:border-secondaryVariant hover:text-secondaryVariant']">Annulla</button>
+                </RouterLink>
+                <button :class="[styles.heading3, styles.paddingButton, validOrInvalidTitleClass.length > 0 && validOrInvalidDescriptionClass.length > 0 ? 'bg-secondary border-secondary hover:bg-secondaryVariant hover:border-secondaryVariant' : 'bg-primaryVariant  border-primaryVariant cursor-default opacity-50',
+                    'border-2 text-white rounded-lg']" @click="showPopUpConfirm = !showPopUpConfirm">Conferma</button>
+            </div>
+        </form>
     </div>
-    <!-- Form -->
-    <form :class="[styles.padding, 'shadow-md rounded-lg w-full']">
-        <div class="mb-8">
-            <label :class="[styles.heading3]" for="title">* Titolo</label>
-            <input v-model="formTitle" class="w-full border-2 p-2 rounded-lg focus:outline-none focus:border-secondary"
-                :class="validOrInvalidTitleClass" type="text" placeholder="Inserisci titolo del ticket..." id="title" />
-        </div>
-        <div class="mb-8">
-            <label :class="[styles.heading3]" for="description">* Descrizione</label>
-            <input v-model="formDescription"
-                class="w-full border-2 p-2 rounded-lg focus:outline-none focus:border-secondary"
-                :class="validOrInvalidDescriptionClass" type="text" placeholder="Inserisci descrizione del ticket..."
-                id="description" />
-        </div>
-        <!-- Fields Container -->
-        <FieldsContainer v-for="item in listFields" :key="item" :content="item" @input-change="setValueOfFields" />
-        <div :class="[styles.flexCenter, styles.spaceBetweenX]">
-            <RouterLink to="/ticket/new">
-                <button
-                    :class="[styles.heading3, styles.paddingButton, 'border-2 text-secondary border-secondary rounded-lg hover:border-secondaryVariant hover:text-secondaryVariant']">Annulla</button>
-            </RouterLink>
-            <button :class="[styles.heading3, styles.paddingButton, validOrInvalidTitleClass.length > 0 && validOrInvalidDescriptionClass.length > 0 ? 'bg-secondary border-secondary hover:bg-secondaryVariant hover:border-secondaryVariant' : 'bg-primaryVariant  border-primaryVariant cursor-default opacity-50',
-                'border-2 text-white rounded-lg']" @click="showPopUpConfirm = !showPopUpConfirm">Conferma</button>
-        </div>
-    </form>
 </template>
 
 
@@ -79,7 +81,7 @@ export default {
     methods: {
         getTicketTypeRelated() {
             axios
-                .get(`api/client/ticket-type/${this.$route.params.id}/`)
+                .get(`api/client/ticket-type/${this.$route.params.id}`)
                 .then((response) => {
                     this.unpackTicketType(response.data)
                 })
@@ -142,6 +144,8 @@ export default {
                 json_fields: this.responseField,
                 type_document: 1
             }
+
+            console.log(data)
 
             axios.post("/api/client/tickets/?format=json", data)
 

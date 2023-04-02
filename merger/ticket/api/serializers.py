@@ -171,15 +171,33 @@ class TicketTypeRelatedSerializer(serializers.ModelSerializer):
 class TicketsSerializer(serializers.ModelSerializer):
     json_fields = serializers.JSONField(required=False)
 
+
     class Meta:
         model = Ticket
         fields = '__all__'
 
+    
+    def validate(self, value):
+        # Validate autofield
+        try:
+            # Get instance of TicketType
+            instance = TicketType.objects.get(pk=self.initial_data["type_document"])
+            if TicketFieldsSerializer(instance, value["json_fields"], instance).is_valid() == False:
+                raise serializers.ValidationError("Fields Value not validated")
+        except:
+            raise serializers.ValidationError("Error during get a TicketType instance")
+        return value
+    
+
     def create(self, validated_data):
+        # get info for the class
         type_document = validated_data["type_document"]
         json_fields = validated_data["json_fields"]
 
+        # Delete extra fields for saving in db model
         del validated_data["json_fields"]
         instance = super().create(validated_data)
-        TicketFieldsSerializer(type_document, json_fields, instance)
+        
+        # Save fields in correct model
+        TicketFieldsSerializer(type_document, json_fields, instance).save()
         return instance
