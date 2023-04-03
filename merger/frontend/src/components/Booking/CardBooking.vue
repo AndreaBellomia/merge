@@ -10,7 +10,7 @@
             <div class='flex flex-col'>
                 <h5 :class="[styles.heading5, 'mb-8']">Id {{ booking.id }}</h5>
                 <RouterLink
-                    :to="{ name: 'FormDetailsBooking', params: { id: booking.id, type: `edit-${getState('routing')}` } }">
+                    :to="{ name: 'FormDetailsBooking', params: { id: booking.id, type: `${getState('routing')}` } }">
                     <span
                         :class="[styles.heading1, ' cursor-pointer text-primary hover:text-secondary active:text-secondaryVariant material-symbols-outlined']">chevron_right</span>
                 </RouterLink>
@@ -64,9 +64,10 @@ export default {
          * @returns {string} The appropriate CSS class.
          */
         getState: function (typeOfReturn) {
-            var bookingState = this.booking.state;
             const classPrefix = "border-"
             const classSuffixes = "Custom"
+            const routingPrefix = "edit-"
+            var bookingState = this.booking.state;
             var color
 
             if (bookingState === "BUSY") {
@@ -80,7 +81,12 @@ export default {
             // Return a class if typeOfReturn is "class"
             if (typeOfReturn === "class") {
                 return classPrefix + color + classSuffixes
-            } else {
+            }
+            // Return a routing string if typeOfReturn is "routing"
+            else if (typeOfReturn === "routing") {
+                return routingPrefix + color
+            }
+            else {
                 return color
             }
         }
