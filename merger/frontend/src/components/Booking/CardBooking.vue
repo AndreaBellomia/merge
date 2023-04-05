@@ -1,17 +1,16 @@
 <template>
     <div class="flex">
-        <div :class="[styles.marginY, 'border-' + getStateClass() + 'Custom', 'border-l-4 -mr-1']"></div>
+        <div :class="[styles.marginY, getState('class'), 'border-l-4 border-orangeCustom -mr-1']"></div>
         <div v-if="booking.stato != 'FREE'" :class="[styles.flexCenter, styles.padding, styles.card, styles.spaceBetweenX]">
             <div class="flex flex-col">
                 <h2 :class="[styles.heading2, 'mb-2']">{{ formatData() }}</h2>
                 <h3 :class="[styles.heading3, 'mb-2']">{{ booking.appointments }}</h3>
                 <h4 :class="[styles.heading4]">{{ booking.type }}</h4>
             </div>
-
             <div class='flex flex-col'>
                 <h5 :class="[styles.heading5, 'mb-8']">Id {{ booking.id }}</h5>
                 <RouterLink
-                    :to="{ name: 'FormDetailsBooking', params: { id: booking.id, type: `edit-${getStateClass()}` } }">
+                    :to="{ name: 'FormDetailsBooking', params: { id: booking.id, type: `${getState('routing')}` } }">
                     <span :class="[styles.arrow]">chevron_right</span>
                 </RouterLink>
             </div>
@@ -57,13 +56,37 @@ export default {
                 ${date.getDate()} 
                 ${date.toLocaleString('default', { month: 'long' })}`
         },
-        getStateClass: function () {
-            if (this.booking.stato == "BUSY") {
-                return "green"
-            } else if (this.booking.stato == "WAIT" || this.booking.stato == "PAUSE") {
-                return "orange"
+        /**
+         * Returns the appropriate CSS class or parameter of routing based on the current booking state.
+         * 
+         * @param {string} typeOfReturn The parameter of routing.
+         * @returns {string} The appropriate CSS class.
+         */
+        getState: function (typeOfReturn) {
+            const classPrefix = "border-"
+            const classSuffixes = "Custom"
+            const routingPrefix = "edit-"
+            var bookingState = this.booking.state;
+            var color
+
+            if (bookingState === "BUSY") {
+                color = "green"
+            } else if (bookingState === "WAIT" || bookingState === "PAUSE") {
+                color = "orange"
             } else {
-                return "red"
+                color = "red"
+            }
+
+            // Return a class if typeOfReturn is "class"
+            if (typeOfReturn === "class") {
+                return classPrefix + color + classSuffixes
+            }
+            // Return a routing string if typeOfReturn is "routing"
+            else if (typeOfReturn === "routing") {
+                return routingPrefix + color
+            }
+            else {
+                return color
             }
         }
     },

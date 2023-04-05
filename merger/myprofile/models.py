@@ -1,4 +1,5 @@
 from django.db import models
+from django.contrib.auth.models import AbstractUser
 
 # Create your models here.
 
@@ -8,14 +9,14 @@ class Profile(models.Model):
     Model that contain profiles
     """
 
-    first_name = models.CharField(max_length=255)
-    last_name = models.CharField(max_length=255)
+    AbstractUser = models.OneToOneField(
+        AbstractUser, on_delete=models.CASCADE, related_name='abstract_user')
     address = models.CharField(max_length=255)
     birthplace = models.CharField(max_length=255)
     birthday = models.DateField()
 
     def __str__(self):
-        return f"{self.first_name} {self.last_name} - Profile ({self.pk})"
+        return f"{AbstractUser.first_name} {AbstractUser.last_name} - Profile ({self.pk})"
 
     class Meta:
         verbose_name = 'profile'
