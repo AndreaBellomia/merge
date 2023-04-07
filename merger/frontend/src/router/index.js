@@ -1,5 +1,8 @@
 import { createRouter, createWebHashHistory } from 'vue-router'
 
+/* Login */
+import MainLogin from '../views/MainLogin.vue'
+
 /* Booking */
 import MainBooking from '../views/MainBooking.vue'
 import NewAppointmentBooking from '../views/NewAppointmentBooking.vue'
@@ -15,6 +18,13 @@ import FormAddTicket from '../views/FormAddTicket.vue'
 import MainProfile from '../views/MainProfile.vue'
 
 const routes = [
+  /* Login */
+  {
+    name: 'MainLogin',
+    path: '/login',
+    component: MainLogin
+  },
+
   /* Booking */
   {
     name: 'MainBooking',
