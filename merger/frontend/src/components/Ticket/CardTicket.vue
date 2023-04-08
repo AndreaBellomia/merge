@@ -2,8 +2,8 @@
     <div class="flex flex-col">
         <div :class="[styles.flexCenter, styles.padding, styles.card, styles.spaceBetweenX]">
             <div class="flex flex-col mb-12">
-                <h2 :class="[styles.heading2, 'mb-2']">dsds{{ ticket.type_document.title }}</h2>
-                <h3 :class="[styles.heading3, 'mb-2']">dsds{{ ticket.object }}</h3>
+                <h2 :class="[styles.heading2, 'mb-2']">{{ ticket.title }}</h2>
+                <h3 :class="[styles.heading3, 'mb-2']">{{ ticket.description }}</h3>
             </div>
             <div class="flex flex-col">
                 <h5 :class="[styles.heading5, 'mb-8']">Id {{ ticket.id }}</h5>
@@ -41,17 +41,17 @@ export default {
         styleStatusProgresBar: function () {
             if (this.ticket.status == "SEND") {
                 this.state = 'Inviato'
-                return 'bg-secondary w-1/5'
+                return 'bg-secondary w-1/4'
             } else if (this.ticket.status == "WAIT" || this.ticket.status == "START") {
                 this.state = 'In lavorazione'
-                return 'bg-orangeCustom w-2/5'
+                return 'bg-orangeCustom w-2/4'
             } else if (this.ticket.status == "BUSY") {
                 this.state = 'Documenti Richeisti'
-                return 'bg-redCustom w-3/5'
+                return 'bg-redCustom w-3/4'
             } else if (this.ticket.status == "COMP") {
                 this.state = 'Completato'
-                return 'bg-GreenCustom w-4/5'
-            }
+                return 'bg-greenCustom w-4/4'
+            } 
         },
     }
 
@@ -85,7 +85,6 @@ export default {
             top: -1.2rem;
             height: 0.4rem;
             border-radius: 10rem;
-            background-color: #575757;
         }
     }
 }

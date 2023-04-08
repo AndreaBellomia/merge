@@ -1,13 +1,15 @@
 <template>
-    <h1 :class="[styles.heading1, styles.padding, styles.marginY]">I miei Ticket</h1>
-    <!-- Ticket List -->
-    <div :class="[styles.flexCenter, styles.paddingY, styles.spaceBetweenY, 'flex-col mb-44']">
-        <CardTicket v-for="ticket in tickets" :key="ticket.id" :ticket="ticket" />
-    </div>
-    <!-- Floating Action Button -->
-    <div
-        :class="[styles.flexEnd, styles.margin, styles.floatingActionButtonPositionRight, styles.spaceBetweenY, 'flex-col']">
-        <FloatingActionButton :destination="'/ticket/new'" :icon="iconPlus" />
+    <div>
+        <h1 :class="[styles.heading1, styles.padding, styles.marginY]">I miei Ticket</h1>
+        <!-- Ticket List -->
+        <div :class="[styles.flexCenter, styles.paddingY, styles.spaceBetweenY, 'flex-col mb-44']">
+            <CardTicket v-for="ticket in tickets" :key="ticket.id" :ticket="ticket" />
+        </div>
+        <!-- Floating Action Button -->
+        <div
+            :class="[styles.flexEnd, styles.margin, styles.floatingActionButtonPositionRight, styles.spaceBetweenY, 'flex-col']">
+            <FloatingActionButton :destination="'/ticket/new'" :icon="iconPlus" />
+        </div>
     </div>
 </template>
 

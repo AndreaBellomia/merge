@@ -4,13 +4,13 @@
         
             <div v-if="content.type_field === 'text_field'" class="custom-model-container">
                 <label :for="content.lable">{{ content.lable }}</label>
-                <input type="text" class="input-text" :name="content.lable" :placeholder="content.placeholder"
+                <input type="text" class="w-full border-2 p-2 rounded-lg focus:outline-none focus:border-secondary" :name="content.lable" :placeholder="content.placeholder"
                     v-model="formInpuit" @input="emitValue()">
             </div>
             
             <div v-else-if="content.type_field == 'text_area'" class="custom-model-container">
                 <label :for="content.lable">{{ content.lable }}</label>
-                <textarea class="text-area" :name="content.lable" :placeholder="content.placeholder" :rows="content.rows"
+                <textarea class="w-full border-2 p-2 rounded-lg focus:outline-none focus:border-secondary" :name="content.lable" :placeholder="content.placeholder" :rows="content.rows"
                     :cols="content.cols" v-model="formInpuit" @input="emitValue()" />
             </div>
             
@@ -22,8 +22,7 @@
 
             <div v-else-if="content.type_field == 'group_ceckbox'" class="custom-model-container">
                 <label :for="content.lable">{{ content.lable }}</label>
-                <div v-for="item in this.content.input_group_checkbox" :key="item.id" class="custom-group-input">
-                    
+                <div v-for="item in this.content.input_group_ceckbox" :key="item.id" class="custom-group-input">
                     <label :for="item.label">
                         <input type="checkbox" :name="item.lable" :value="item.value" v-model="formWatchList">
                         {{ item.lable }}
@@ -102,7 +101,6 @@ export default {
 
 <style scoped lang="scss">
 .custom-model-container {
-    position: relative;
     display: flex;
     flex-direction: column;
     margin: 0.5rem;
@@ -131,8 +129,8 @@ export default {
     }
 
     input.checkbox {
+        padding-top: .5rem;
         margin-left: .5rem;
-        scale: 120%;
     }
 
     .custom-group-input {
