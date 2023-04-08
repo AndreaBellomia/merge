@@ -2,7 +2,7 @@
 # Django Import
 from django.shortcuts import get_object_or_404
 # Rest Framework import
-from rest_framework import generics
+from rest_framework import generics, status
 from rest_framework.response import Response
 from rest_framework.views import APIView
 
@@ -10,29 +10,24 @@ from .api.serializers import TicketTypeSerializer, TicketTypeRelatedSerializer, 
 from .models import Ticket, TicketType
 
 
-class TicketApiView(generics.ListCreateAPIView):
-    serializer_class = TicketsSerializer
-    queryset = Ticket.objects.filter()
+class TicketApiView(APIView):
 
+    def get(self, request):
+        query_instace = Ticket.objects.filter()
+        serializer = TicketsSerializer(query_instace, many=True)
+        return Response(serializer.data)
 
-# class TicketApiView(APIView):
+    def post(self, request):
 
+        request.data["status"] = "SEND"
+        request.data["client"] = request.user.id
 
-#     def get_object(self):
-#         user = self.request.user
-#         return Ticket.objects.filter(client=user)
+        serializer = TicketsSerializer(data=request.data)
 
-#     def get(self, request):
-#         instace = self.get_object()
-#         serializer = TicketsSerializer(instace, many=True)
-#         return Response(serializer.data)
-
-#     def post(self, request):
-#         print(request.data)
-#         serializer = TicketsSerializer()
-#         print(serializer)
-#         return Response('serializer.data', status=status.HTTP_201_CREATED)
-
+        if serializer.is_valid():
+            serializer.save()
+            return Response(serializer.data, status=status.HTTP_201_CREATED)
+        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
 class TicketTypeDatailApiView(APIView):
     """

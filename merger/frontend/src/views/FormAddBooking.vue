@@ -1,38 +1,40 @@
 <template>
-    <!-- PopUp -->
-    <PopUp :show="showPopUp" :icon="'check_circle'" :title="'Prenotato!'" :buttonText="'Chiudi'"
-        :content="`Prenotazione per ${formatData()} avvenuta con successo! Per modificare o eliminare la prenotazione recati nella sezione Prenotazioni`"
-        :destination="'/booking'" @close-modal="showPopUp = false">
-    </PopUp>
-    <!-- Form Header -->
-    <FormHeader :booking="appointment" class="mb-8"></FormHeader>
-    <!-- Form -->
-    <div :class="[styles.flexCenter, 'flex-col']">
-        <h2 :class="[styles.heading2, 'text-center']">
-            Prenotazione
-        </h2>
-        <form :class="[styles.padding, 'rounded-lg w-full']">
-            <div class="mb-8">
-                <label :class="[styles.heading3]" for="type">* Titolo</label>
-                <input v-model="type" class="w-full border-2 p-2 rounded-lg focus:outline-none focus:border-secondary"
-                    :class="validOrInvalidTypeClass" type="text" placeholder="Titolo Inserito dal Cliente" id="type" />
-            </div>
-            <div class="mb-8">
-                <label :class="[styles.heading3]" for="description">* Descrizione</label>
-                <textarea v-model="description"
-                    class="w-full border-2 border-gray-200 p-2 rounded-lg focus:outline-none focus:border-indigo-500"
-                    :class="validOrInvalidDescriptionClass" rows="7" type="text"
-                    placeholder="Descrizione inserita dal Cliente" id="description"></textarea>
-            </div>
-            <div :class="[styles.flexCenter, styles.spaceBetweenX]">
-                <RouterLink to="/booking/new">
-                    <button
-                        :class="[styles.heading3, styles.paddingButton, 'border-2 text-secondary border-secondary rounded-lg hover:border-secondaryVariant hover:text-secondaryVariant']">Annulla</button>
-                </RouterLink>
-                <button :class="[styles.heading3, styles.paddingButton, validOrInvalidTypeClass.length > 0 && validOrInvalidDescriptionClass.length > 0 ? 'bg-secondary border-secondary hover:bg-secondaryVariant hover:border-secondaryVariant' : 'bg-primaryVariant  border-primaryVariant cursor-default opacity-50',
-                    'border-2 text-white rounded-lg']" @click="confirm()">Conferma</button>
-            </div>
-        </form>
+    <div>
+        <!-- PopUp -->
+        <PopUp :show="showPopUp" :icon="'check_circle'" :title="'Prenotato!'" :buttonText="'Chiudi'"
+            :content="`Prenotazione per ${formatData()} avvenuta con successo! Per modificare o eliminare la prenotazione recati nella sezione Prenotazioni`"
+            :destination="'/booking'" @close-modal="showPopUp = false">
+        </PopUp>
+        <!-- Form Header -->
+        <FormHeader :booking="appointment" class="mb-8"></FormHeader>
+        <!-- Form -->
+        <div :class="[styles.flexCenter, 'flex-col']">
+            <h2 :class="[styles.heading2, 'text-center']">
+                Prenotazione
+            </h2>
+            <form :class="[styles.padding, 'rounded-lg w-full']">
+                <div class="mb-8">
+                    <label :class="[styles.heading3]" for="type">* Titolo</label>
+                    <input v-model="type" class="w-full border-2 p-2 rounded-lg focus:outline-none focus:border-secondary"
+                        :class="validOrInvalidTypeClass" type="text" placeholder="Titolo Inserito dal Cliente" id="type" />
+                </div>
+                <div class="mb-8">
+                    <label :class="[styles.heading3]" for="description">* Descrizione</label>
+                    <textarea v-model="description"
+                        class="w-full border-2 border-gray-200 p-2 rounded-lg focus:outline-none focus:border-indigo-500"
+                        :class="validOrInvalidDescriptionClass" rows="7" type="text"
+                        placeholder="Descrizione inserita dal Cliente" id="description"></textarea>
+                </div>
+                <div :class="[styles.flexCenter, styles.spaceBetweenX]">
+                    <RouterLink to="/booking/new">
+                        <button
+                            :class="[styles.heading3, styles.paddingButton, 'border-2 text-secondary border-secondary rounded-lg hover:border-secondaryVariant hover:text-secondaryVariant']">Annulla</button>
+                    </RouterLink>
+                    <button :class="[styles.heading3, styles.paddingButton, validOrInvalidTypeClass.length > 0 && validOrInvalidDescriptionClass.length > 0 ? 'bg-secondary border-secondary hover:bg-secondaryVariant hover:border-secondaryVariant' : 'bg-primaryVariant  border-primaryVariant cursor-default opacity-50',
+                        'border-2 text-white rounded-lg']" @click="confirm()">Conferma</button>
+                </div>
+            </form>
+        </div>
     </div>
 </template>
 
