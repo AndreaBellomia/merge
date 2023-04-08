@@ -1,27 +1,29 @@
 <template>
     <div>
         <form action="">
+        
             <div v-if="content.type_field === 'text_field'" class="custom-model-container">
                 <label :for="content.lable">{{ content.lable }}</label>
                 <input type="text" class="input-text" :name="content.lable" :placeholder="content.placeholder"
                     v-model="formInpuit" @input="emitValue()">
             </div>
-
+            
             <div v-else-if="content.type_field == 'text_area'" class="custom-model-container">
                 <label :for="content.lable">{{ content.lable }}</label>
                 <textarea class="text-area" :name="content.lable" :placeholder="content.placeholder" :rows="content.rows"
                     :cols="content.cols" v-model="formInpuit" @input="emitValue()" />
             </div>
-
-            <div v-else-if="content.type_field == 'checkbox'" class="custom-model-container checkbox">
+            
+            <div v-else-if="content.type_field == 'ceck_box'" class="custom-model-container checkbox">
                 <label :for="content.lable">{{ content.lable }}</label>
                 <input type="checkbox" class="checkbox" :name="content.lable" :placeholder="content.placeholder"
                     v-model="formWatch" />
             </div>
 
-            <div v-else-if="content.type_field == 'group_checkbox'" class="custom-model-container">
+            <div v-else-if="content.type_field == 'group_ceckbox'" class="custom-model-container">
                 <label :for="content.lable">{{ content.lable }}</label>
                 <div v-for="item in this.content.input_group_checkbox" :key="item.id" class="custom-group-input">
+                    
                     <label :for="item.label">
                         <input type="checkbox" :name="item.lable" :value="item.value" v-model="formWatchList">
                         {{ item.lable }}
