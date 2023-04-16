@@ -19,6 +19,8 @@ class AppointmentsSerializer(serializers.ModelSerializer):
 
 
 class BookingSerializer(serializers.ModelSerializer):
+    commiter = serializers.CharField(source="commiter.username", read_only=True)
+
     class Meta:
         model = Booking
         fields = '__all__'

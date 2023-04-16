@@ -4,7 +4,7 @@
         <div v-if="booking.stato != 'FREE'" :class="[styles.flexCenter, styles.padding, styles.card, styles.spaceBetweenX]">
             <div class="flex flex-col">
                 <h2 :class="[styles.heading2, 'mb-2']">{{ formatData() }}</h2>
-                <h3 :class="[styles.heading3, 'mb-2']">{{ booking.appointments }}</h3>
+                <h3 :class="[styles.heading3, 'mb-2']">{{ booking.commiter }}</h3>
                 <h4 :class="[styles.heading4]">{{ booking.type }}</h4>
             </div>
             <div class='flex flex-col'>
@@ -67,13 +67,13 @@ export default {
             const classPrefix = "border-"
             const classSuffixes = "Custom"
             const routingPrefix = "edit-"
-            var bookingState = this.booking.state;
-            var color
-
+            const bookingState = this.booking.state;
+            let color
+            
             if (bookingState === "BUSY") {
                 color = "green"
             } else if (bookingState === "WAIT" || bookingState === "PAUSE") {
-                color = "orange"
+                color = "altro"
             } else {
                 color = "red"
             }

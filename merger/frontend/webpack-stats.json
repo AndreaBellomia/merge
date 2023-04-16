@@ -1,34 +1,34 @@
 {
   "status": "done",
   "assets": {
-    "app.2958478f0ebe10da.hot-update.js": {
-      "name": "app.2958478f0ebe10da.hot-update.js",
-      "path": "C:\\Users\\Franc\\OneDrive\\Desktop\\merge\\merger\\frontend\\dist\\app.2958478f0ebe10da.hot-update.js",
-      "publicPath": "http://127.0.0.1:8080/app.2958478f0ebe10da.hot-update.js"
+    "app.3fbdd99d97e28d50.hot-update.js": {
+      "name": "app.3fbdd99d97e28d50.hot-update.js",
+      "path": "C:\\Users\\Andry\\Desktop\\airoffice\\merge\\merger\\frontend\\dist\\app.3fbdd99d97e28d50.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/app.3fbdd99d97e28d50.hot-update.js"
     },
-    "app.2958478f0ebe10da.hot-update.json": {
-      "name": "app.2958478f0ebe10da.hot-update.json",
-      "path": "C:\\Users\\Franc\\OneDrive\\Desktop\\merge\\merger\\frontend\\dist\\app.2958478f0ebe10da.hot-update.json",
-      "publicPath": "http://127.0.0.1:8080/app.2958478f0ebe10da.hot-update.json"
+    "app.3fbdd99d97e28d50.hot-update.json": {
+      "name": "app.3fbdd99d97e28d50.hot-update.json",
+      "path": "C:\\Users\\Andry\\Desktop\\airoffice\\merge\\merger\\frontend\\dist\\app.3fbdd99d97e28d50.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/app.3fbdd99d97e28d50.hot-update.json"
     },
     "bundle.css": {
       "name": "bundle.css",
-      "path": "C:\\Users\\Franc\\OneDrive\\Desktop\\merge\\merger\\frontend\\dist\\bundle.css",
+      "path": "C:\\Users\\Andry\\Desktop\\airoffice\\merge\\merger\\frontend\\dist\\bundle.css",
       "publicPath": "http://127.0.0.1:8080/bundle.css"
     },
     "bundle.js": {
       "name": "bundle.js",
-      "path": "C:\\Users\\Franc\\OneDrive\\Desktop\\merge\\merger\\frontend\\dist\\bundle.js",
+      "path": "C:\\Users\\Andry\\Desktop\\airoffice\\merge\\merger\\frontend\\dist\\bundle.js",
       "publicPath": "http://127.0.0.1:8080/bundle.js"
     },
     "favicon.ico": {
       "name": "favicon.ico",
-      "path": "C:\\Users\\Franc\\OneDrive\\Desktop\\merge\\merger\\frontend\\dist\\favicon.ico",
+      "path": "C:\\Users\\Andry\\Desktop\\airoffice\\merge\\merger\\frontend\\dist\\favicon.ico",
       "publicPath": "http://127.0.0.1:8080/favicon.ico"
     },
     "index.html": {
       "name": "index.html",
-      "path": "C:\\Users\\Franc\\OneDrive\\Desktop\\merge\\merger\\frontend\\dist\\index.html",
+      "path": "C:\\Users\\Andry\\Desktop\\airoffice\\merge\\merger\\frontend\\dist\\index.html",
       "publicPath": "http://127.0.0.1:8080/index.html"
     }
   },
@@ -36,7 +36,7 @@
     "app": [
       "bundle.css",
       "bundle.js",
-      "app.2958478f0ebe10da.hot-update.js"
+      "app.3fbdd99d97e28d50.hot-update.js"
     ]
   },
   "publicPath": "http://127.0.0.1:8080/"

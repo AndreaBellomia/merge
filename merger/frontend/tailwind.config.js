@@ -17,6 +17,11 @@ module.exports = {
         redCustom: '#FF1F00',
         redCustomVariant: '#C71800',
 
+        'custom-green' : '#1ABD00',
+        'custom-orange' : '#FFB800',
+        'custom-red' : '#FF1F00',
+        'custom-red-variant' : '#C71800',
+
       },
       fontFamily: {
       },
