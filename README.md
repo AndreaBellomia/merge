@@ -22,9 +22,9 @@ Python 3.10
 python db_init.py
 ```
 
- *Future Implementation*
+## Dev Support
  - [Docker](https://www.docker.com/)
-
+ 
 ## BackEnd Lib
 
  - [Django](https://www.djangoproject.com/)
@@ -58,6 +58,26 @@ Start venv
 Stop venv
 ```
 deactivate
+```
+
+### Docker
+install docker from [Docker](https://www.docker.com/)
+
+Build Docker
+*In dir ./merger/*
+```
+docker compose -f docker/docker-compose.yaml build
+```
+Launch Docker container
+*In dir ``./merger/``*
+```
+docker compose -f docker/docker-compose.yaml up -d
+```
+Prune Docker
+*In dir ``./merger/``*
+in case of delete container
+```
+docker compose -f docker/docker-compose.yaml up -d
 ```
 
 ### [Django] Web Framework Python lang.
