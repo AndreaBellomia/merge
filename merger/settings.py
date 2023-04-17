@@ -91,12 +91,12 @@ WSGI_APPLICATION = 'wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
+        'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'airoffice',
-        'USER': 'root',
-        'PASSWORD': '',
+        'USER': 'airoffice',
+        'PASSWORD': 'airoffice1234',
         'HOST': 'localhost',   # Or an IP Address that your DB is hosted on
-        'PORT': '3306',
+        'PORT': '5432',
     }
 }
 

@@ -1,15 +1,15 @@
 {
   "status": "done",
   "assets": {
-    "app.3fbdd99d97e28d50.hot-update.js": {
-      "name": "app.3fbdd99d97e28d50.hot-update.js",
-      "path": "C:\\Users\\Andry\\Desktop\\airoffice\\merge\\merger\\frontend\\dist\\app.3fbdd99d97e28d50.hot-update.js",
-      "publicPath": "http://127.0.0.1:8080/app.3fbdd99d97e28d50.hot-update.js"
+    "app.c6b49068c0d4ee46.hot-update.js": {
+      "name": "app.c6b49068c0d4ee46.hot-update.js",
+      "path": "C:\\Users\\Andry\\Desktop\\airoffice\\merge\\merger\\frontend\\dist\\app.c6b49068c0d4ee46.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/app.c6b49068c0d4ee46.hot-update.js"
     },
-    "app.3fbdd99d97e28d50.hot-update.json": {
-      "name": "app.3fbdd99d97e28d50.hot-update.json",
-      "path": "C:\\Users\\Andry\\Desktop\\airoffice\\merge\\merger\\frontend\\dist\\app.3fbdd99d97e28d50.hot-update.json",
-      "publicPath": "http://127.0.0.1:8080/app.3fbdd99d97e28d50.hot-update.json"
+    "app.c6b49068c0d4ee46.hot-update.json": {
+      "name": "app.c6b49068c0d4ee46.hot-update.json",
+      "path": "C:\\Users\\Andry\\Desktop\\airoffice\\merge\\merger\\frontend\\dist\\app.c6b49068c0d4ee46.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/app.c6b49068c0d4ee46.hot-update.json"
     },
     "bundle.css": {
       "name": "bundle.css",
@@ -36,7 +36,7 @@
     "app": [
       "bundle.css",
       "bundle.js",
-      "app.3fbdd99d97e28d50.hot-update.js"
+      "app.c6b49068c0d4ee46.hot-update.js"
     ]
   },
   "publicPath": "http://127.0.0.1:8080/"
